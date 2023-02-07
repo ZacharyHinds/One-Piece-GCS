@@ -1,0 +1,211 @@
+{
+	"type": "trait_list",
+	"version": 4,
+	"rows": [
+		{
+			"id": "972bf704-6123-4869-8968-e7da02a09020",
+			"type": "trait",
+			"name": "Place Eyeball",
+			"modifiers": [
+				{
+					"id": "780fbac3-348a-4bc7-a409-00f9b55428b3",
+					"type": "modifier",
+					"cost": -40
+				},
+				{
+					"id": "59ce120d-1538-4552-9846-b2ab0cf0d2db",
+					"type": "modifier",
+					"name": "Increased Range",
+					"reference": "B106",
+					"cost": 10,
+					"levels": 1,
+					"disabled": true
+				},
+				{
+					"id": "54af75c4-150c-4319-a78f-1b64002b8a8b",
+					"type": "modifier",
+					"name": "Aware",
+					"reference": "P44",
+					"cost": 50,
+					"disabled": true
+				}
+			],
+			"base_points": 50,
+			"calc": {
+				"points": 30
+			}
+		},
+		{
+			"id": "7ce52dcd-76cf-41ec-a546-6e4ee4d6bc33",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "c49698b1-6334-4c8c-b575-badc1cb807af",
+					"type": "trait",
+					"name": "Clairsentience",
+					"reference": "B42,P44,PSI13",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "43727ba6-a2a4-429f-908d-edb044ef5af0",
+							"type": "modifier",
+							"name": "Clairaudience",
+							"cost": -30,
+							"disabled": true
+						},
+						{
+							"id": "b71fd02a-0c2c-4ddd-baf4-374c9d24fabc",
+							"type": "modifier",
+							"name": "Cosmic",
+							"notes": "No die roll required",
+							"cost": 100
+						},
+						{
+							"id": "1d1fc2e5-b83e-46f3-b2d0-deda7433ef33",
+							"type": "modifier",
+							"name": "Clairosmia",
+							"cost": -60,
+							"disabled": true
+						},
+						{
+							"id": "a942711b-a8cf-4380-a5ed-d7bb8a2e279c",
+							"type": "modifier",
+							"name": "Clairvoyance",
+							"cost": -10
+						},
+						{
+							"id": "eb3c4d95-ac7f-4680-9403-a0ddd8e4990a",
+							"type": "modifier",
+							"name": "Visible",
+							"cost": -10
+						},
+						{
+							"id": "7aa0567f-a8b7-44ea-9ba4-d06bc752b3b8",
+							"type": "modifier",
+							"name": "Aware",
+							"reference": "P44",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "d936d074-3572-42dc-ad31-3b6b553befde",
+							"type": "modifier",
+							"name": "Projection",
+							"reference": "P43",
+							"notes": "Only affects insubstantial world",
+							"disabled": true
+						},
+						{
+							"id": "accd74a9-e86f-49e1-91f6-775f0890f5b2",
+							"type": "modifier",
+							"name": "Projection",
+							"reference": "P44",
+							"notes": "Can use abilities on material world",
+							"cost": 140,
+							"disabled": true
+						},
+						{
+							"id": "b588f9c9-f12b-48cc-974f-10e98cafeabe",
+							"type": "modifier",
+							"name": "Second Nature",
+							"reference": "P44",
+							"cost": 70,
+							"disabled": true
+						},
+						{
+							"id": "e32a20e3-5980-4e9d-a44b-55f79994f7a6",
+							"type": "modifier",
+							"name": "Fixed Range",
+							"reference": "PSI13",
+							"cost": -5
+						},
+						{
+							"id": "da6f785c-5d1a-48a5-b83f-2129364bde09",
+							"type": "modifier",
+							"name": "Normal Sight",
+							"reference": "PSI13",
+							"cost": -20
+						},
+						{
+							"id": "e7e76abc-cef3-4db1-a9c4-a946209244f3",
+							"type": "modifier",
+							"name": "Breakable",
+							"cost": -20
+						},
+						{
+							"id": "e1bffdb3-ad04-4efa-a4b5-55d9a18763a5",
+							"type": "modifier",
+							"name": "Must be placed in advanced",
+							"cost": -50
+						},
+						{
+							"id": "1053d132-69e7-4b93-9e84-9f784d3b0c25",
+							"type": "modifier",
+							"name": "50x Increased Range",
+							"reference": "B106",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "c2ae643a-c383-47be-aceb-d413b683828e",
+							"type": "modifier",
+							"name": "Increased Range",
+							"cost": 10,
+							"levels": 8,
+							"disabled": true
+						},
+						{
+							"id": "eef7e27b-73ca-4895-b1c3-0ffb6256fc50",
+							"type": "modifier",
+							"name": "100x Increased Range",
+							"reference": "B106",
+							"cost": 60,
+							"disabled": true
+						},
+						{
+							"id": "6adba49b-b88f-4242-8a06-478bd7d56fe2",
+							"type": "modifier",
+							"name": "Devil Fruit",
+							"cost": -10
+						},
+						{
+							"id": "6205aa16-edf3-4786-9c56-74545eddeae3",
+							"type": "modifier",
+							"name": "Nuisance Effect",
+							"notes": "Pull out and place/throw eye, takes Ready Action to pull out eye",
+							"cost": -5
+						},
+						{
+							"id": "74c26000-e3ac-4765-b0ca-451459a0b5d6",
+							"type": "modifier",
+							"name": "Nuisance Effect",
+							"notes": "Gross",
+							"cost": -5
+						},
+						{
+							"id": "53733a37-83c5-4a73-b72d-b05cc384f29d",
+							"type": "modifier",
+							"name": "Accessibility",
+							"reference": "B110,P99",
+							"notes": "Max Eyes: ",
+							"cost": -5
+						}
+					],
+					"base_points": 50,
+					"calc": {
+						"points": 30
+					}
+				}
+			],
+			"name": "Debug Stuff",
+			"calc": {
+				"points": 30
+			}
+		}
+	]
+}

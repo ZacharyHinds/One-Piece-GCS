@@ -1,0 +1,313 @@
+{
+	"type": "equipment_list",
+	"version": 4,
+	"rows": [
+		{
+			"id": "3b821e7f-f83d-43a0-8538-5bb8a2f8d771",
+			"type": "equipment_container",
+			"children": [
+				{
+					"id": "47bed399-c93b-460a-8e7e-358f70957c2d",
+					"type": "equipment",
+					"description": "Den Den Mushi",
+					"notes": "Global range, must know dial code for whoever you call.",
+					"legality_class": "4",
+					"tags": [
+						"Communications and Information Gear"
+					],
+					"quantity": 1,
+					"value": 12500,
+					"weight": "3 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 12500,
+						"extended_weight": "3 lb"
+					}
+				},
+				{
+					"id": "3e1f8afb-62e4-40c4-b5e9-002be4cfcc07",
+					"type": "equipment",
+					"description": "Den Den Mushi, Baby",
+					"notes": "Short range, must know dial code for whoever you call.",
+					"legality_class": "4",
+					"tags": [
+						"Communications and Information Gear"
+					],
+					"quantity": 1,
+					"value": 6500,
+					"weight": "0.25 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 6500,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "a2025183-89f8-4019-a478-a78bfbc440bb",
+					"type": "equipment",
+					"description": "Den Den Mushi, Black",
+					"notes": "Can be used to eavesdrop on Den Den Mushi calls",
+					"legality_class": "2",
+					"tags": [
+						"Communications and Information Gear",
+						"Security and Surveillance"
+					],
+					"quantity": 1,
+					"value": 8000,
+					"weight": "0.25 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 8000,
+						"extended_weight": "0.25 lb"
+					}
+				},
+				{
+					"id": "e6ba3841-c648-4127-8308-ce4e8d33f976",
+					"type": "equipment",
+					"description": "Den Den Mushi, Cameko",
+					"notes": "Able to store or take video. Has a flash for photography. Can transmit to any linked Proko Den Den Mushi",
+					"legality_class": "4",
+					"tags": [
+						"Communications and Information Gear",
+						"Optics and Sensors"
+					],
+					"quantity": 1,
+					"value": 7500,
+					"weight": "2 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 7500,
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "a3fffdb7-eab2-4c46-9064-28009a2b1d3e",
+					"type": "equipment",
+					"description": "Den Den Mushi, Cameko (Surveillance)",
+					"notes": "Live streams visual to linked Proko (Surveillance), also capable of sending alarm in the case it witnesses something out of place",
+					"legality_class": "1",
+					"tags": [
+						"Communications and Information Gear",
+						"Optics and Sensors",
+						"Security and Surveillance"
+					],
+					"quantity": 1,
+					"value": 10000,
+					"weight": "2 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 10000,
+						"extended_weight": "2 lb"
+					}
+				},
+				{
+					"id": "4bf4485f-5d81-4476-a8a1-ad510e36bdc9",
+					"type": "equipment",
+					"description": "Den Den Mushi, Horned",
+					"notes": "Jam Den Den Mushi calls up to 1-2 miles away depending on quality",
+					"legality_class": "3",
+					"tags": [
+						"Communications and Information Gear",
+						"Optics and Sensors",
+						"Security and Surveillance"
+					],
+					"quantity": 1,
+					"value": 8500,
+					"weight": "3 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 8500,
+						"extended_weight": "3 lb"
+					}
+				},
+				{
+					"id": "acdbabc4-3211-468c-b505-1d70f0b6e9be",
+					"type": "equipment",
+					"description": "Den Den Mushi, Projector",
+					"notes": "Views with one eye and projects larger image with other",
+					"legality_class": "4",
+					"tags": [
+						"Communications and Information Gear",
+						"Optics and Sensors"
+					],
+					"quantity": 1,
+					"value": 8000,
+					"weight": "3 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 8000,
+						"extended_weight": "3 lb"
+					}
+				},
+				{
+					"id": "c2573b87-3d0e-4326-bbd3-fec1deffdfb1",
+					"type": "equipment",
+					"description": "Den Den Mushi, Proko",
+					"notes": "Projects images from linked Cameko.",
+					"legality_class": "4",
+					"tags": [
+						"Communications and Information Gear",
+						"Optics and Sensors"
+					],
+					"quantity": 1,
+					"value": 30000,
+					"weight": "100 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 30000,
+						"extended_weight": "100 lb"
+					}
+				},
+				{
+					"id": "87d66e14-302b-4071-b5a5-9c8e7123f53c",
+					"type": "equipment",
+					"description": "Den Den Mushi, Proko (Surveillance)",
+					"notes": "Projects images from Cameko. Can be connected to surveillance system and receive Surveillance Cameko alarm signals.",
+					"legality_class": "4",
+					"tags": [
+						"Communications and Information Gear",
+						"Optics and Sensors",
+						"Security and Surveillance"
+					],
+					"quantity": 1,
+					"value": 32000,
+					"weight": "100 lb",
+					"equipped": true,
+					"calc": {
+						"extended_value": 32000,
+						"extended_weight": "100 lb"
+					}
+				},
+				{
+					"id": "225f9b71-9372-4124-ba08-7a6e7e6cc5bb",
+					"type": "equipment",
+					"description": "Den Den Mushi, White",
+					"notes": "Global range, must know dial code for whoever you call. Cannot be intercepted by Black Den Den Mushi",
+					"legality_class": "0",
+					"tags": [
+						"Communications and Information Gear",
+						"Security and Surveillance"
+					],
+					"quantity": 1,
+					"value": 8000,
+					"equipped": true,
+					"calc": {
+						"extended_value": 8000,
+						"extended_weight": "0 lb"
+					}
+				}
+			],
+			"description": "Den Den Mushi",
+			"legality_class": "4",
+			"tags": [
+				"Communications and Information Gear",
+				"Optics and Sensors",
+				"Security and Surveillance"
+			],
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 131000,
+				"extended_weight": "213.5 lb"
+			}
+		},
+		{
+			"id": "9fe7085e-44e8-43bd-b477-d8f63d10a2b7",
+			"type": "equipment",
+			"description": "Log Pose",
+			"notes": "Allows for navigating to the recorded island. Takes time to record an island's magnetic field.",
+			"legality_class": "4",
+			"quantity": 1,
+			"value": 4000,
+			"equipped": true,
+			"calc": {
+				"extended_value": 4000,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "f3b0b2e3-f59f-4b61-844d-b70439f4c803",
+			"type": "equipment",
+			"description": "Log Pose, Triple",
+			"notes": "Allows for navigating to any of the three recorded islands. Takes time to record the islands' magnetic fields.",
+			"legality_class": "4",
+			"quantity": 1,
+			"value": 15000,
+			"equipped": true,
+			"calc": {
+				"extended_value": 15000,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "90a16128-a466-4f6c-8261-7099613a8ef5",
+			"type": "equipment",
+			"description": "Eternal Log Pose (@Island@)",
+			"notes": "Allows for navigating to @Island@",
+			"legality_class": "4",
+			"quantity": 1,
+			"value": 35000,
+			"equipped": true,
+			"calc": {
+				"extended_value": 35000,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "2f1e19c9-9fbf-42ff-9682-8e5d1e5316f2",
+			"type": "equipment",
+			"description": "Log Pose, Ship",
+			"notes": "Ship-mountable log pose",
+			"legality_class": "4",
+			"quantity": 1,
+			"value": 12000,
+			"equipped": true,
+			"calc": {
+				"extended_value": 12000,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "78d06856-875c-4aa3-a18a-10ae804622bc",
+			"type": "equipment",
+			"description": "Log Pose, Triple Ship",
+			"notes": "Ship-mountable triple log pose",
+			"legality_class": "4",
+			"quantity": 1,
+			"value": 40000,
+			"equipped": true,
+			"calc": {
+				"extended_value": 40000,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "ca132193-3922-4e60-8b18-8b6937ce9a8d",
+			"type": "equipment",
+			"description": "Vivre Card (@Whose Card@)",
+			"notes": "State of card shows @Whose Card@'s current physical state. Allows for navigating to them.",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 0,
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "a7c3f2f0-273b-423c-9aaf-2ac83b21a361",
+			"type": "equipment",
+			"description": "Bubbly Coral, Handheld",
+			"notes": "1 yd. diameter bubble per use, uses can also expand existing bubbles. Use takes 1 Second.",
+			"legality_class": "4",
+			"quantity": 1,
+			"value": 8000,
+			"max_uses": 10,
+			"equipped": true,
+			"calc": {
+				"extended_value": 8000,
+				"extended_weight": "0 lb"
+			}
+		}
+	]
+}

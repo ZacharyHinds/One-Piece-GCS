@@ -1,0 +1,414 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "51a9e5c6-8fc9-42b8-8cbb-31ab7ddeeec0",
+	"traits": [
+		{
+			"id": "457a2fab-8984-4c5d-8233-684c9297b101",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "ee21d416-a4cc-41a4-91a7-59c5aa011cce",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "e004ea1f-2ad2-457f-8aaf-1e969f63d4cb",
+							"type": "trait",
+							"name": "Hooves",
+							"reference": "B42",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"base_points": 3,
+							"weapons": [
+								{
+									"id": "1dd5ef16-e1a2-4722-8dd4-5a45c3c6c75b",
+									"type": "melee_weapon",
+									"damage": {
+										"type": "cr",
+										"st": "thr",
+										"modifier_per_die": 1
+									},
+									"usage": "Trample",
+									"reach": "C,1",
+									"parry": "No",
+									"block": "No",
+									"defaults": [
+										{
+											"type": "dx",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Brawling",
+											"modifier": -2
+										},
+										{
+											"type": "skill",
+											"name": "Karate",
+											"modifier": -2
+										}
+									],
+									"calc": {
+										"parry": "No",
+										"block": "No",
+										"damage": "thr (+1 per die) cr"
+									}
+								}
+							],
+							"features": [
+								{
+									"type": "dr_bonus",
+									"location": "foot",
+									"amount": 1
+								}
+							],
+							"calc": {
+								"points": 3
+							}
+						},
+						{
+							"id": "9c3c5e01-e729-4317-9858-ebf0f784d527",
+							"type": "trait",
+							"name": "Enhanced Move",
+							"reference": "B52,P49",
+							"notes": "Multiply normal ground Move by 1 + level",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "79398643-ba30-4f08-9b12-3405312a3683",
+									"type": "modifier",
+									"name": "Handling Bonus",
+									"reference": "B52",
+									"cost": 5,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "dabd68ec-58b3-401a-af89-de37b838c42c",
+									"type": "modifier",
+									"name": "Handling Penalty",
+									"reference": "B52",
+									"cost": -5,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "e316a3e2-cc8d-4b99-8cd0-bd01ccf20388",
+									"type": "modifier",
+									"name": "Newtonian",
+									"reference": "B52",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "e653e29f-bbea-4a68-8d44-9845da45fad9",
+									"type": "modifier",
+									"name": "Road-Bound",
+									"reference": "B52",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "c02f53b9-8918-478b-a962-3d1a8157f312",
+									"type": "modifier",
+									"name": "All-Out",
+									"reference": "P49",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "ca26e704-8033-4901-bb38-c0e0510ed357",
+									"type": "modifier",
+									"name": "Cosmic",
+									"reference": "SU26",
+									"notes": "Instantaneous Acceleration",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "fa245c74-9d18-4ca8-8c4e-024c63ccaac1",
+									"type": "modifier",
+									"name": "Cosmic",
+									"reference": "SU27",
+									"notes": "Complete Maneuverability",
+									"cost": 50,
+									"disabled": true
+								}
+							],
+							"levels": 0.5,
+							"points_per_level": 20,
+							"can_level": true,
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "d7a723dc-880a-4554-baad-b8a9783c5a0a",
+							"type": "trait",
+							"name": "Long Legs",
+							"reference": "B55",
+							"base_points": 10,
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "eebc7af5-a5f9-4504-b1d4-80db1f1dd2d7",
+							"type": "trait",
+							"name": "Crushing Striker (Shins)",
+							"reference": "B88,MA47",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "856c274e-ea6c-4059-ba68-82319c501d95",
+									"type": "modifier",
+									"name": "Shins",
+									"cost": -20
+								}
+							],
+							"base_points": 5,
+							"weapons": [
+								{
+									"id": "2a9ee24e-3cc4-46a1-861d-4f8de4f8f207",
+									"type": "melee_weapon",
+									"damage": {
+										"type": "cr",
+										"st": "thr",
+										"modifier_per_die": 1
+									},
+									"reach": "C",
+									"parry": "0",
+									"block": "No",
+									"defaults": [
+										{
+											"type": "dx"
+										},
+										{
+											"type": "skill",
+											"name": "Brawling"
+										}
+									],
+									"calc": {
+										"parry": "0",
+										"block": "No",
+										"damage": "thr (+1 per die) cr"
+									}
+								}
+							],
+							"calc": {
+								"points": 4
+							}
+						},
+						{
+							"id": "e9cc74d3-7da3-49bb-8b13-996e6a8e8955",
+							"type": "trait",
+							"name": "Striking ST",
+							"reference": "B88,P78",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "9b8e80e8-e2b2-459f-ab27-d96a9aa1e1ca",
+									"type": "modifier",
+									"name": "No Fine Manipulators",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "32892d90-82df-401d-bddc-d39a12d0f8b7",
+									"type": "modifier",
+									"name": "Size",
+									"cost": -10,
+									"levels": 1,
+									"disabled": true
+								},
+								{
+									"id": "eaabe509-f453-401a-89c1-4830111d0544",
+									"type": "modifier",
+									"name": "Super Effort",
+									"reference": "SU24",
+									"cost": 400,
+									"disabled": true
+								},
+								{
+									"id": "f35b516b-28d2-4935-8caa-e9f85f5310e0",
+									"type": "modifier",
+									"name": "Kicking Only",
+									"reference": "P79",
+									"notes": "Kicking",
+									"cost": -60
+								},
+								{
+									"id": "4c469f7d-a2fc-45fa-9b19-a51985d575cd",
+									"type": "modifier",
+									"name": "Know Your Own Strength Pricing Variant",
+									"reference": "PY83:18",
+									"cost": -4,
+									"affects": "levels_only",
+									"cost_type": "points",
+									"disabled": true
+								}
+							],
+							"levels": 2,
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"limitation": "striking_only",
+									"attribute": "st",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"calc": {
+								"points": 4
+							}
+						},
+						{
+							"id": "006237cc-5965-4eaa-8f82-3b59f109b590",
+							"type": "trait",
+							"name": "Super Jump",
+							"reference": "B89,P79",
+							"notes": "@New Move and Jump Stats@",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "ead7e9ec-99a6-4bcb-b7c6-504d401821a6",
+									"type": "modifier",
+									"name": "Bouncing",
+									"reference": "P80",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "97e171bf-2a5e-4c48-9cbf-7a1edd8b124a",
+									"type": "modifier",
+									"name": "Maneuverable",
+									"reference": "P80",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "726f1e2d-e9b4-42a8-b605-5acf7fd6da67",
+									"type": "modifier",
+									"name": "Full Power Only",
+									"reference": "P80",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "7b091e20-99db-4bdf-93bc-4c14408ce5fe",
+									"type": "modifier",
+									"name": "Horizontal Only",
+									"reference": "P80",
+									"cost": -25,
+									"disabled": true
+								},
+								{
+									"id": "43e11c5f-c581-4792-be2b-704d38fe1d55",
+									"type": "modifier",
+									"name": "Lighter Than Air",
+									"reference": "P80",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "893c6a82-132d-42cf-8de6-f6c0f2a54857",
+									"type": "modifier",
+									"name": "Planetary",
+									"reference": "P80",
+									"cost": -5,
+									"disabled": true
+								},
+								{
+									"id": "0d253161-4efe-45f0-8a97-2e6c49a5be70",
+									"type": "modifier",
+									"name": "Projectile",
+									"reference": "P80",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "bdc30b4f-cace-4319-952a-797ca970cf1e",
+									"type": "modifier",
+									"name": "Vertical Only",
+									"reference": "P80",
+									"cost": -25,
+									"disabled": true
+								},
+								{
+									"id": "b83d1b61-aebf-4572-a945-1a7a37b33b35",
+									"type": "modifier",
+									"name": "Bouncing Only",
+									"reference": "SU28",
+									"cost": -50,
+									"disabled": true
+								}
+							],
+							"levels": 1,
+							"points_per_level": 10,
+							"can_level": true,
+							"calc": {
+								"points": 10
+							}
+						}
+					],
+					"name": "Advantages",
+					"calc": {
+						"points": 41
+					}
+				},
+				{
+					"id": "131dbfc8-2939-41f7-bed2-583485d32b15",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "867c2d5f-58d8-4532-a150-b21fc8ee46e0",
+							"type": "trait",
+							"name": "Rules Exemption (Cannot Hurt Self)",
+							"reference": "PU2:20",
+							"tags": [
+								"Perk"
+							],
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						}
+					],
+					"name": "Perks",
+					"calc": {
+						"points": 1
+					}
+				}
+			],
+			"name": "Longleg Tribe",
+			"ancestry": "Human",
+			"container_type": "race",
+			"calc": {
+				"points": 42
+			}
+		}
+	]
+}

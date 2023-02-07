@@ -1,0 +1,236 @@
+{
+	"type": "skill_list",
+	"version": 4,
+	"rows": [
+		{
+			"id": "11d1a98d-cace-47aa-8d5a-121e104ad97f",
+			"type": "skill_container",
+			"name": "Techniques"
+		},
+		{
+			"id": "434896c8-97cb-43f4-8fd9-546bef6d14b2",
+			"type": "skill_container",
+			"open": true,
+			"children": [
+				{
+					"id": "f322ccb4-7bdd-49fa-90d4-c272865b8b42",
+					"type": "skill",
+					"name": "Fishman Karate!",
+					"difficulty": "dx/w",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Trained By A Master"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "74342003-f3fc-47ef-b31c-79881640a56b",
+					"type": "skill",
+					"name": "Money!",
+					"reference": "PU7:34",
+					"difficulty": "iq/w",
+					"points": 1
+				},
+				{
+					"id": "cacb4895-c7d1-422a-9767-7a6e5016b2e8",
+					"type": "skill",
+					"name": "Swashbuckler!",
+					"reference": "PU7:36",
+					"difficulty": "dx/w",
+					"points": 1
+				},
+				{
+					"id": "835438a7-e188-426e-be96-3e35458de9d1",
+					"type": "skill",
+					"name": "Gun!",
+					"reference": "PU7:30",
+					"difficulty": "dx/w",
+					"points": 1
+				},
+				{
+					"id": "c2357996-0666-4df1-a058-0e3f31b156af",
+					"type": "skill",
+					"name": "Talker!",
+					"reference": "PU7:36",
+					"difficulty": "iq/w",
+					"points": 1
+				},
+				{
+					"id": "68708157-a1cc-4035-ae5d-81ad1bb5f33c",
+					"type": "skill",
+					"name": "Scholar!",
+					"reference": "PU7:35",
+					"difficulty": "iq/w",
+					"points": 1
+				},
+				{
+					"id": "0ab1f21a-963e-4379-abbd-c7d7fdf99c40",
+					"type": "skill",
+					"name": "Thief!",
+					"reference": "PU7:37",
+					"difficulty": "dx/w",
+					"points": 1
+				},
+				{
+					"id": "8ab64075-fc16-4163-9f7e-7398274b126c",
+					"type": "skill",
+					"name": "Katana!",
+					"reference": "PU7:32",
+					"difficulty": "dx/w",
+					"points": 1
+				}
+			],
+			"name": "Other Wildcards"
+		},
+		{
+			"id": "80f298a3-7646-4ed6-90be-df21adc3d4ef",
+			"type": "skill_container",
+			"open": true,
+			"children": [
+				{
+					"id": "df6fccd8-29d3-4bd5-ad20-60cf83778f2e",
+					"type": "skill",
+					"name": "Penetrating Strike",
+					"reference": "PU1:9",
+					"tags": [
+						"Enhancement",
+						"General",
+						"Imbue"
+					],
+					"specialization": "@General Weapon Skill@",
+					"difficulty": "dx/vh",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": false,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Imbue"
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "Imbue level 3"
+								}
+							}
+						]
+					}
+				},
+				{
+					"id": "5ca55d83-51d4-4e76-9859-fa753403cecd",
+					"type": "skill",
+					"name": "Reinforce Weapon",
+					"reference": "PY13:18",
+					"specialization": "@Melee Weapon Skill@",
+					"difficulty": "dx/vh",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Imbue"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					}
+				}
+			],
+			"name": "Imbuements"
+		},
+		{
+			"id": "e90f389a-9c58-4919-bb71-b7a1616b6fbf",
+			"type": "skill_container",
+			"open": true,
+			"children": [
+				{
+					"id": "844fb9ab-0eb4-48e0-b2dc-079230b89eaf",
+					"type": "skill",
+					"name": "Captain!",
+					"difficulty": "will/w",
+					"points": 1
+				},
+				{
+					"id": "938bdf09-060c-4b62-9199-8d99af14531c",
+					"type": "skill",
+					"name": "First Mate!",
+					"difficulty": "will/w",
+					"points": 1
+				},
+				{
+					"id": "639cb649-5523-4750-b86a-3fa08be52d40",
+					"type": "skill",
+					"name": "Navigator!",
+					"difficulty": "iq/w",
+					"points": 1
+				},
+				{
+					"id": "65e13784-0998-44d1-8c1e-eb6c25b06bf8",
+					"type": "skill",
+					"name": "Cook!",
+					"difficulty": "dx/w",
+					"points": 1
+				},
+				{
+					"id": "d115efa9-f0b9-4c76-be96-b6b00f6d7aff",
+					"type": "skill",
+					"name": "Doctor!",
+					"difficulty": "iq/w",
+					"points": 1
+				},
+				{
+					"id": "58656155-f7f0-486b-b051-e2147ab0eedc",
+					"type": "skill",
+					"name": "Shipwright!",
+					"difficulty": "dx/w",
+					"points": 1
+				},
+				{
+					"id": "c7e93983-5a3b-4ff7-8047-47868683ba0b",
+					"type": "skill",
+					"name": "Entertainer!",
+					"difficulty": "per/w",
+					"points": 1
+				},
+				{
+					"id": "7a33d43d-181b-4f24-a6f1-1c0832feecd5",
+					"type": "skill",
+					"name": "Quartermaster!",
+					"difficulty": "dx/w",
+					"points": 1
+				},
+				{
+					"id": "c687037e-4a9c-4f53-93b4-1d7fed1e25db",
+					"type": "skill",
+					"name": "Helmsman!",
+					"difficulty": "dx/w",
+					"points": 1
+				}
+			],
+			"name": "Ship Roles"
+		}
+	]
+}

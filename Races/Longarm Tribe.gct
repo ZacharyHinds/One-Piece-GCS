@@ -1,0 +1,251 @@
+{
+	"type": "template",
+	"version": 4,
+	"id": "7c71dce9-4723-4603-80eb-7daf937c8820",
+	"traits": [
+		{
+			"id": "32974eee-1ec4-4751-890f-97daaa5212ac",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "2bfba853-f1b3-46fa-a5e2-4a38bdde1dec",
+					"type": "trait_container",
+					"open": true,
+					"children": [
+						{
+							"id": "dac6e777-d337-4b5e-96ee-7185728a9c93",
+							"type": "trait",
+							"name": "Arm ST",
+							"reference": "B40",
+							"notes": "Only applies to efforts to lift, throw, or attack with those arms or hands. If a task requires multiple hands and they don't have the same ST, use the average ST.",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "72b97686-cb9a-4eee-9dfd-4df41b60674c",
+									"type": "modifier",
+									"name": "No fine manipulators",
+									"reference": "B145",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "36e05989-7f56-433f-871c-e9516ae1aa8c",
+									"type": "modifier",
+									"name": "Only one arm",
+									"reference": "B40",
+									"notes": "@Which@",
+									"cost": -2,
+									"affects": "levels_only",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "e77c3cf3-d2c5-4268-84e7-176445e63593",
+									"type": "modifier",
+									"name": "Three arms",
+									"reference": "B40",
+									"cost": 3,
+									"affects": "levels_only",
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "adb7bdf6-f0d3-494f-a1da-977efad5eb71",
+									"type": "modifier",
+									"name": "Size",
+									"cost": -10,
+									"levels": 1,
+									"disabled": true
+								}
+							],
+							"levels": 2,
+							"points_per_level": 5,
+							"can_level": true,
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "41ca7807-1818-4860-856c-956758d6526b",
+							"type": "trait",
+							"name": "Long Arms",
+							"reference": "B53",
+							"notes": "+1 per die to swing damage",
+							"base_points": 20,
+							"calc": {
+								"points": 20
+							}
+						}
+					],
+					"name": "Advantages",
+					"calc": {
+						"points": 30
+					}
+				}
+			],
+			"name": "Longarm Tribe",
+			"ancestry": "Human",
+			"container_type": "race",
+			"calc": {
+				"points": 30
+			}
+		},
+		{
+			"id": "ddc9a79a-dc88-4d1c-9b72-d16d5570878a",
+			"type": "trait_container",
+			"open": true,
+			"children": [
+				{
+					"id": "f36b3c59-a6b0-46c0-846c-d2c328eb7c17",
+					"type": "trait",
+					"name": "Blunt Claws",
+					"reference": "B42,MA42",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"base_points": 3,
+					"weapons": [
+						{
+							"id": "8885338b-eb06-4130-88d7-ffcfaead5b85",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1",
+								"modifier_per_die": 1
+							},
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							],
+							"calc": {
+								"parry": "0",
+								"block": "No",
+								"damage": "thr-1 (+1 per die) cr"
+							}
+						},
+						{
+							"id": "76e22d4c-6a5a-43dc-a934-52969c134f8b",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"modifier_per_die": 1
+							},
+							"usage": "Kick",
+							"reach": "C,1",
+							"parry": "No",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Brawling",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Karate",
+									"modifier": -2
+								}
+							],
+							"calc": {
+								"parry": "No",
+								"block": "No",
+								"damage": "thr (+1 per die) cr"
+							}
+						}
+					],
+					"calc": {
+						"points": 3
+					}
+				},
+				{
+					"id": "1718dd13-cf48-470a-87f3-bbb078bbfd33",
+					"type": "trait",
+					"name": "Crushing Striker (Limb)",
+					"reference": "B88,MA47",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"base_points": 5,
+					"weapons": [
+						{
+							"id": "2a9ee24e-3cc4-46a1-861d-4f8de4f8f207",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"modifier_per_die": 1
+							},
+							"reach": "C",
+							"parry": "0",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								}
+							],
+							"calc": {
+								"parry": "0",
+								"block": "No",
+								"damage": "thr (+1 per die) cr"
+							}
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "2a02f3ab-7a47-4b93-a206-43705a88895f",
+					"type": "trait",
+					"name": "Rules Exemption (Cannot Hurt Self)",
+					"reference": "PU2:20",
+					"tags": [
+						"Perk"
+					],
+					"base_points": 1,
+					"calc": {
+						"points": 1
+					}
+				}
+			],
+			"name": "Longarm Options",
+			"calc": {
+				"points": 9
+			}
+		}
+	]
+}

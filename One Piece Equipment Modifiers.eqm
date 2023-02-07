@@ -1,0 +1,15 @@
+{
+	"type": "eqp_modifier_list",
+	"version": 4,
+	"rows": [
+		{
+			"id": "178b5a09-dfd7-4059-9152-cbd4c6238bf1",
+			"type": "eqp_modifier",
+			"name": "Seastone",
+			"notes": "Nullifies Devil Fruit",
+			"cost_type": "to_base_cost",
+			"tech_level": "4",
+			"cost": "+4 CF"
+		}
+	]
+}
