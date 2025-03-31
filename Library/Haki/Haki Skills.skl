@@ -1,0 +1,379 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "StSZqvO9q0MT7pE7y",
+			"name": "Armament Haki",
+			"children": [
+				{
+					"id": "S6k4fPy421TxeqQPo",
+					"name": "Offensive Coating Techniques",
+					"children": [
+						{
+							"id": "q-L0nTZJuJ0I-1Z-b",
+							"name": "Crushing Coating",
+							"notes": "Costs 3 HE\nChange Offensive Coating damage type to crushing",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"difficulty": "h",
+							"default": {
+								"type": "will",
+								"modifier": -8
+							},
+							"limit": 0,
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Armament Haki 4"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									}
+								]
+							},
+							"points": 2
+						},
+						{
+							"id": "qVZx-9E3pet1ZViRe",
+							"name": "Destructive Coating",
+							"notes": "Costs 4 HE\nDouble Offensive Coating damage",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"difficulty": "h",
+							"default": {
+								"type": "will",
+								"modifier": -5
+							},
+							"limit": 0,
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Armament Haki 4"
+										}
+									}
+								]
+							},
+							"points": 2
+						},
+						{
+							"id": "qrv5lWXQSt9uvjRBs",
+							"name": "Penetrating Coating",
+							"notes": "Costs 2 HE\nAdd an Armor Divisor to your imbued attack",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"difficulty": "h",
+							"default": {
+								"type": "will",
+								"modifier": -5
+							},
+							"limit": 0,
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Armament Haki 4"
+										}
+									}
+								]
+							},
+							"points": 2
+						},
+						{
+							"id": "qfmJRVNGmFqwBDTgW",
+							"name": "Slashing Coating",
+							"notes": "Costs 3 HE\nChange Offensive Coating damage type to cutting",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"difficulty": "h",
+							"default": {
+								"type": "will",
+								"modifier": -8
+							},
+							"limit": 0,
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Armament Haki 4"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									}
+								]
+							},
+							"points": 2
+						}
+					]
+				},
+				{
+					"id": "Sc9rxcouSY-YiAsCJ",
+					"name": "Defensive Coating Techniques",
+					"children": [
+						{
+							"id": "qQGonrpUURdt6rbDt",
+							"name": "Impenetrable Coating",
+							"notes": "Costs 2 HE\nAdds Hardened to Defensive Coating",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"difficulty": "h",
+							"default": {
+								"type": "will",
+								"modifier": -2
+							},
+							"limit": 0,
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Armament Haki 4"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									}
+								]
+							},
+							"points": 2
+						},
+						{
+							"id": "qYPtZzxI_cPGvd5rW",
+							"name": "Projected Coating",
+							"notes": "Costs 2 HE\nAllows Defensive Coating to protect against contact-based effects",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"difficulty": "h",
+							"default": {
+								"type": "will",
+								"modifier": -2
+							},
+							"limit": 0,
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Armament Haki 4"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									}
+								]
+							},
+							"points": 2
+						},
+						{
+							"id": "qAU-j48gFiG-xbnjy",
+							"name": "Reflexive Coating",
+							"notes": "Costs 2 HE\nUse Defensive Coating instantly",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"difficulty": "h",
+							"default": {
+								"type": "will",
+								"modifier": -4
+							},
+							"limit": 0,
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Armament Haki 4"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									}
+								]
+							},
+							"points": 2
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "S8Io5WtuhfpAYZG-x",
+			"name": "Observation Haki",
+			"children": [
+				{
+					"id": "sBmXOeertX3xMgWdy",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Skills.skl",
+						"id": "snO8a_369cUR1W1i-"
+					},
+					"name": "Parry Missile-Weapons",
+					"reference": "B212",
+					"tags": [
+						"Combat",
+						"Melee Combat",
+						"Weapon",
+						"Observation Haki",
+						"Haki"
+					],
+					"difficulty": "dx/h",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Presence Sense, Supreme"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Presence Sense, Greater"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									}
+								]
+							}
+						]
+					},
+					"points": 1
+				}
+			]
+		},
+		{
+			"id": "SlUcLFMZGUVaxLdW2",
+			"name": "Conqueror's Haki",
+			"children": [
+				{
+					"id": "qnFp2dmMn88cKGKyK",
+					"name": "Selective Will",
+					"notes": "Costs 1 HE\nSelectively exclude targets",
+					"tags": [
+						"Conqueror's Haki",
+						"Haki"
+					],
+					"difficulty": "h",
+					"default": {
+						"type": "will",
+						"modifier": -2
+					},
+					"limit": 0,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Overwhelming Will"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"points": 2
+				},
+				{
+					"id": "q69Gos17kzplCsfuo",
+					"name": "Selective Will",
+					"notes": "Costs 10 HE\nGive targets a penalty to resist Overwhelming Will",
+					"tags": [
+						"Conqueror's Haki",
+						"Haki"
+					],
+					"difficulty": "h",
+					"default": {
+						"type": "will",
+						"modifier": -10
+					},
+					"limit": 0,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Overwhelming Will"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"points": 2
+				}
+			]
+		}
+	]
+}

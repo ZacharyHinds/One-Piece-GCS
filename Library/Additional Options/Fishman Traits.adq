@@ -1,0 +1,120 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "TMR0Mv36-PVuUavs9",
+			"name": "Predator Species Abilities",
+			"children": [
+				{
+					"id": "tTfimAzl5GDleVFyq",
+					"name": "Biting Parry",
+					"reference": "md:Fishman",
+					"tags": [
+						"Advantage",
+						"Fishman"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "sharp teeth"
+								}
+							}
+						]
+					},
+					"base_points": 10,
+					"calc": {
+						"points": 10
+					}
+				}
+			],
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "Tvx89dw_8DN8yQDFO",
+			"name": "Pufferfish Species Abilities",
+			"children": [
+				{
+					"id": "tl31ewkA5L46v-vUl",
+					"name": "Improved Puff",
+					"reference": "md:Fishman",
+					"notes": "Manually change knockback and imp to 2d-1 in the Puff Traits",
+					"tags": [
+						"Advantage",
+						"Fishman"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Puff Attack"
+								}
+							}
+						]
+					},
+					"base_points": 25,
+					"calc": {
+						"points": 25
+					}
+				},
+				{
+					"id": "tVu27Hiw88WntyMWy",
+					"name": "Puff Cushion",
+					"reference": "md:Fishman,B41",
+					"reference_highlight": "Catfall",
+					"tags": [
+						"Advantage",
+						"Fishman"
+					],
+					"vtt_notes": "[\"DX Roll to halve fall damage\"DX]",
+					"base_points": 9,
+					"calc": {
+						"points": 9
+					}
+				},
+				{
+					"id": "tBvOdguryFFS2zqKE",
+					"name": "Puff Bounce",
+					"reference": "md:Fishman",
+					"tags": [
+						"Advantage",
+						"Fishman"
+					],
+					"base_points": 14,
+					"calc": {
+						"points": 14
+					}
+				},
+				{
+					"id": "ti_5Hop99rwOouSy4",
+					"name": "Aggressive Cushion",
+					"reference": "md:Fishman",
+					"tags": [
+						"Advantage",
+						"Fishman",
+						"Perk"
+					],
+					"base_points": 1,
+					"calc": {
+						"points": 1
+					}
+				}
+			],
+			"calc": {
+				"points": 49
+			}
+		}
+	]
+}

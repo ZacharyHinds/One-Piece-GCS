@@ -308,6 +308,475 @@
 				"extended_value": 8000,
 				"extended_weight": "0 lb"
 			}
+		},
+		{
+			"id": "8f7e377d-ee30-4a14-847c-9eaf84befeba",
+			"type": "equipment_container",
+			"children": [
+				{
+					"id": "6e84efed-486a-48a7-9605-5e889548b5a7",
+					"type": "equipment",
+					"description": "Yubashiri",
+					"reference": "B271",
+					"tech_level": "3",
+					"tags": [
+						"Melee Weapon"
+					],
+					"modifiers": [
+						{
+							"id": "3aaeaf50-7152-43af-a6c2-b01ebfd4336e",
+							"type": "eqp_modifier",
+							"name": "Very Fine",
+							"reference": "LT59",
+							"notes": "Fencing weapons, knives, and swords.",
+							"cost_type": "to_base_cost",
+							"tech_level": "0",
+							"cost": "+19 CF",
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"selection_type": "this_weapon",
+									"amount": 2
+								}
+							]
+						},
+						{
+							"id": "29423c8f-fd4e-4675-a134-828ef516bebb",
+							"type": "eqp_modifier",
+							"name": "Balanced",
+							"reference": "LT59",
+							"cost_type": "to_base_cost",
+							"tech_level": "0",
+							"cost": "+4 CF",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "this_weapon",
+									"amount": 1
+								}
+							]
+						}
+					],
+					"quantity": 1,
+					"value": 650,
+					"weight": "5 lb",
+					"weapons": [
+						{
+							"id": "3b7716ac-1c5f-4d10-b6f6-253c24f8008e",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cut",
+								"st": "sw",
+								"base": "1"
+							},
+							"strength": "11",
+							"usage": "Swung",
+							"usage_notes": "1-handed",
+							"reach": "1-2",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword"
+								},
+								{
+									"type": "skill",
+									"name": "Rapier",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Saber",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Shortsword",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Sword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
+								}
+							],
+							"calc": {
+								"damage": "sw+1 cut"
+							}
+						},
+						{
+							"id": "7cbca692-ed7b-47c1-9c13-25123a07e39d",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "1"
+							},
+							"strength": "11",
+							"usage": "Thrust",
+							"usage_notes": "1-handed",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword"
+								},
+								{
+									"type": "skill",
+									"name": "Rapier",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Saber",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Shortsword",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Sword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
+								}
+							],
+							"calc": {
+								"damage": "thr+1 imp"
+							}
+						},
+						{
+							"id": "8099d176-5b0a-4ca1-90c6-59f0cbcbdc9f",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cut",
+								"st": "sw",
+								"base": "2"
+							},
+							"strength": "10†",
+							"usage": "Swung",
+							"usage_notes": "2-handed",
+							"reach": "1-2",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Sword"
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
+								}
+							],
+							"calc": {
+								"damage": "sw+2 cut"
+							}
+						},
+						{
+							"id": "4d888243-1baa-4d11-8e46-22f5fa4dfb56",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "imp",
+								"st": "thr",
+								"base": "1"
+							},
+							"strength": "10†",
+							"usage": "Thrust",
+							"usage_notes": "2-handed",
+							"reach": "1",
+							"parry": "0",
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -5
+								},
+								{
+									"type": "skill",
+									"name": "Two-Handed Sword"
+								},
+								{
+									"type": "skill",
+									"name": "Broadsword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Force Sword",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Sword!"
+								}
+							],
+							"calc": {
+								"damage": "thr+1 imp"
+							}
+						}
+					],
+					"calc": {
+						"extended_value": 15600,
+						"extended_weight": "5 lb"
+					}
+				}
+			],
+			"open": true,
+			"description": "Great Grade Swords",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 15600,
+				"extended_weight": "5 lb"
+			}
+		},
+		{
+			"id": "4a0a01b9-9158-4116-b63f-50021407cb75",
+			"type": "equipment_container",
+			"children": [
+				{
+					"id": "216ff54d-cac7-4ed7-85f1-6cfa1a0c76cd",
+					"type": "equipment",
+					"description": "Impact Dial",
+					"notes": "Absorbs damage of a single hit of crushing, piercing, cutting, impaling, or knockback damage. Activate by hitting someone with the \"active\" side.",
+					"legality_class": "4",
+					"quantity": 1,
+					"weapons": [
+						{
+							"id": "fff7e6aa-cbca-4d68-9d3a-36a729e47be1",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"base": "0"
+							},
+							"usage": "Activate",
+							"usage_notes": "Deals 10x stored damage as crushing. Deals 1/2 stored damage as backlash",
+							"reach": "1",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								}
+							],
+							"calc": {
+								"damage": "cr"
+							}
+						}
+					],
+					"equipped": true,
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "6d51ec37-77af-4e54-9bbb-ad3445b043c8",
+					"type": "equipment",
+					"description": "Flame Dial",
+					"legality_class": "4",
+					"quantity": 1,
+					"weapons": [
+						{
+							"id": "a18cd36e-0adc-424b-acb1-4750107405b5",
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "burn",
+								"base": "3d"
+							},
+							"usage": "Fire",
+							"accuracy": "Jet",
+							"range": "10",
+							"rate_of_fire": "Jet",
+							"shots": "3",
+							"calc": {
+								"damage": "3d burn"
+							}
+						}
+					],
+					"equipped": true,
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "38bc2886-6847-4dfa-8362-0884e642dfc7",
+					"type": "equipment",
+					"description": "Jet Dial",
+					"legality_class": "4",
+					"quantity": 1,
+					"weapons": [
+						{
+							"id": "5fd2d4a0-2efa-44dd-a07b-56ad197fabf6",
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "nw dkb",
+								"base": "6dx5"
+							},
+							"usage": "Fire",
+							"accuracy": "Jet",
+							"range": "10",
+							"rate_of_fire": "Jet",
+							"shots": "1",
+							"calc": {
+								"damage": "6dx5 nw dkb"
+							}
+						}
+					],
+					"equipped": true,
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "7e7e8e29-199e-415b-82ca-a9297f06b317",
+					"type": "equipment",
+					"description": "Vision Dial",
+					"legality_class": "4",
+					"quantity": 1,
+					"max_uses": 24,
+					"uses": 24,
+					"equipped": true,
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "84edfd71-67fa-4131-b9e9-034cbfd84631",
+					"type": "equipment",
+					"description": "Tone Dial",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "d1b3677a-6813-47a7-91a3-88763160bc30",
+					"type": "equipment",
+					"description": "Reject Dial",
+					"notes": "Absorbs damage of a single hit of crushing, piercing, cutting, impaling, or knockback damage. Activate by hitting someone with the \"active\" side.",
+					"legality_class": "4",
+					"quantity": 1,
+					"weapons": [
+						{
+							"id": "13b96e95-b5a5-49c8-b6dd-c0c260d54486",
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"base": "0"
+							},
+							"usage": "Activate",
+							"usage_notes": "Deals stored damage as crushing. Deals 1/2 stored damage as backlash",
+							"reach": "1",
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								}
+							],
+							"calc": {
+								"damage": "cr"
+							}
+						}
+					],
+					"equipped": true,
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "9effb05d-d033-41d5-bd2a-09418339ec8e",
+					"type": "equipment",
+					"description": "Water Dial",
+					"legality_class": "4",
+					"quantity": 1,
+					"weapons": [
+						{
+							"id": "683ea07f-4247-48af-b84f-cd774e979fb2",
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "nw dkb",
+								"base": "10d"
+							},
+							"usage": "Shoot",
+							"accuracy": "Jet",
+							"rate_of_fire": "Jet",
+							"shots": "3",
+							"calc": {
+								"damage": "10d nw dkb"
+							}
+						}
+					],
+					"equipped": true,
+					"calc": {
+						"extended_value": 0,
+						"extended_weight": "0 lb"
+					}
+				}
+			],
+			"open": true,
+			"description": "Dials",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"extended_value": 0,
+				"extended_weight": "0 lb"
+			}
 		}
 	]
 }

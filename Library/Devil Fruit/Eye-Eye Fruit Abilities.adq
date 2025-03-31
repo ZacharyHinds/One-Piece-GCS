@@ -6,10 +6,12 @@
 			"id": "972bf704-6123-4869-8968-e7da02a09020",
 			"type": "trait",
 			"name": "Place Eyeball",
+			"reference": "md:Eye-Eye Fruit",
 			"modifiers": [
 				{
 					"id": "780fbac3-348a-4bc7-a409-00f9b55428b3",
 					"type": "modifier",
+					"name": "Devil Fruit",
 					"cost": -40
 				},
 				{

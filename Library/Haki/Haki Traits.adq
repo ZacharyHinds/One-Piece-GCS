@@ -1,0 +1,1222 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "TP1s5lB9e5Mwl8V9h",
+			"name": "Armament Haki",
+			"children": [
+				{
+					"id": "TbXXh-DsXk_nJqv7W",
+					"name": "Armament Haki 0",
+					"children": [
+						{
+							"id": "tSzc9kL6RnflImXoP",
+							"name": "Basic Armament Haki",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Haki Potential"
+										}
+									}
+								]
+							},
+							"base_points": 24,
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Natural Attacks"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": 24
+							}
+						}
+					],
+					"calc": {
+						"points": 24
+					}
+				},
+				{
+					"id": "TkR8FGr0EnN0z2qdQ",
+					"name": "Armament Haki 1",
+					"children": [
+						{
+							"id": "tvVtnKsRmXNYRJtou",
+							"name": "Basic Armament Haki",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Haki Potential"
+										}
+									}
+								]
+							},
+							"base_points": 24,
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Natural Attacks"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": 24
+							}
+						},
+						{
+							"id": "tUJRFVoqaZgXoGqeG",
+							"name": "Defensive Coating",
+							"notes": "Costs 2 HE to gain 2 DR to all hit locations for 1 sec. 1 HE to maintain",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"base_points": 9,
+							"calc": {
+								"points": 9
+							}
+						},
+						{
+							"id": "tDLpMEZbseWfDQjK7",
+							"name": "Offensive Coating",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Haki Potential"
+										}
+									}
+								]
+							},
+							"base_points": 10,
+							"weapons": [
+								{
+									"id": "WyfmAUnLCGYL_7UyB",
+									"damage": {
+										"type": "pi",
+										"base": "1d",
+										"modifier_per_die": 1
+									},
+									"usage": "Follow-Up",
+									"usage_notes": "Costs 2 HE",
+									"rate_of_fire": "1",
+									"calc": {
+										"damage": "1d (+1 per die) pi"
+									}
+								}
+							],
+							"calc": {
+								"points": 10
+							}
+						}
+					],
+					"calc": {
+						"points": 43
+					}
+				},
+				{
+					"id": "Tz7pZ0vN1LmZcyWU_",
+					"name": "Armament Haki 2",
+					"children": [
+						{
+							"id": "t8RSRiGZdI8WfJOrH",
+							"name": "Basic Armament Haki",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Haki Potential"
+										}
+									}
+								]
+							},
+							"base_points": 24,
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Natural Attacks"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": 24
+							}
+						},
+						{
+							"id": "tSLSKp74CDh90w3o-",
+							"name": "Defensive Coating",
+							"notes": "Costs 2 HE to gain 4 DR to all hit locations for 1 sec. 1 HE to maintain",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"base_points": 17,
+							"calc": {
+								"points": 17
+							}
+						},
+						{
+							"id": "tDgohNCiqB588hf7u",
+							"name": "Offensive Coating",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Haki Potential"
+										}
+									}
+								]
+							},
+							"base_points": 20,
+							"weapons": [
+								{
+									"id": "WRThITRk1Fo2mS4FR",
+									"damage": {
+										"type": "pi",
+										"base": "2d",
+										"modifier_per_die": 1
+									},
+									"usage": "Follow-Up",
+									"usage_notes": "Costs 2 HE",
+									"rate_of_fire": "1",
+									"calc": {
+										"damage": "2d (+1 per die) pi"
+									}
+								}
+							],
+							"calc": {
+								"points": 20
+							}
+						}
+					],
+					"calc": {
+						"points": 61
+					}
+				},
+				{
+					"id": "TmamAtm8vq96uXJKZ",
+					"name": "Armament Haki 3",
+					"children": [
+						{
+							"id": "tlCZGzCB9U5UDvI_k",
+							"name": "Basic Armament Haki",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Haki Potential"
+										}
+									}
+								]
+							},
+							"base_points": 24,
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Natural Attacks"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": 24
+							}
+						},
+						{
+							"id": "thsPYRxuPst4wSmia",
+							"name": "Defensive Coating",
+							"notes": "Costs 2 HE to gain 6 DR to all hit locations for 1 sec. 1 HE to maintain",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"base_points": 26,
+							"calc": {
+								"points": 26
+							}
+						},
+						{
+							"id": "tHafojW8ps7BtfQ4g",
+							"name": "Offensive Coating",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Haki Potential"
+										}
+									}
+								]
+							},
+							"base_points": 29,
+							"weapons": [
+								{
+									"id": "WXff0NwMXlpEJEAOG",
+									"damage": {
+										"type": "pi",
+										"base": "3d",
+										"modifier_per_die": 1
+									},
+									"usage": "Follow-Up",
+									"usage_notes": "Costs 2 HE",
+									"rate_of_fire": "1",
+									"calc": {
+										"damage": "3d (+1 per die) pi"
+									}
+								}
+							],
+							"calc": {
+								"points": 29
+							}
+						}
+					],
+					"calc": {
+						"points": 79
+					}
+				},
+				{
+					"id": "TqhcFpAytv1HCum0X",
+					"name": "Armament Haki 4",
+					"children": [
+						{
+							"id": "tMrVmbzAmLAHautMf",
+							"name": "Basic Armament Haki",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Haki Potential"
+										}
+									}
+								]
+							},
+							"base_points": 24,
+							"features": [
+								{
+									"type": "weapon_bonus",
+									"selection_type": "weapons_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "Natural Attacks"
+									},
+									"level": {
+										"compare": "at_least"
+									},
+									"amount": 2
+								}
+							],
+							"calc": {
+								"points": 24
+							}
+						},
+						{
+							"id": "t2u86JMgBBq2HzpYS",
+							"name": "Defensive Coating",
+							"notes": "Costs 2 HE to gain 8 DR to all hit locations for 1 sec. 1 HE to maintain",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"base_points": 34,
+							"calc": {
+								"points": 34
+							}
+						},
+						{
+							"id": "t0w4kxa8Gpf9ywpRu",
+							"name": "Offensive Coating",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Haki Potential"
+										}
+									}
+								]
+							},
+							"base_points": 37,
+							"weapons": [
+								{
+									"id": "W9yxSPwxIoBlQQD9D",
+									"damage": {
+										"type": "pi",
+										"base": "4d",
+										"modifier_per_die": 1
+									},
+									"usage": "Follow-Up",
+									"usage_notes": "Costs 2 HE",
+									"rate_of_fire": "1",
+									"calc": {
+										"damage": "4d (+1 per die) pi"
+									}
+								}
+							],
+							"calc": {
+								"points": 37
+							}
+						}
+					],
+					"calc": {
+						"points": 95
+					}
+				},
+				{
+					"id": "tUIqucrBbngGhOhsE",
+					"name": "Armament Haki Talent",
+					"tags": [
+						"Armament Haki",
+						"Haki"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Haki Potential"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to Will rolls to use Haki Resistance.",
+							"amount": 1
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"tags": {
+								"compare": "is",
+								"qualifier": "Armament Haki"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "tgepK276Y_o6apViK",
+					"name": "Iron Body",
+					"tags": [
+						"Armament Haki",
+						"Haki"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "contains",
+									"qualifier": "Armament Haki"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"base_points": 1,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "+3 to ST and HT rolls to resist injury from Arm Lock, Leg Lock, Neck Snap, Wrench Arm, Wrench Leg, or similar techniques when Defensive Coating is active.",
+							"amount": 3
+						}
+					],
+					"calc": {
+						"points": 1
+					}
+				}
+			],
+			"calc": {
+				"points": 308
+			}
+		},
+		{
+			"id": "Tp0D0HxGD6FwdUxhs",
+			"name": "Observation",
+			"children": [
+				{
+					"id": "T2wXKiWJCy39BxGCw",
+					"name": "Presence Sense",
+					"children": [
+						{
+							"id": "tvYWUY0mHqaWt5vHW",
+							"name": "Presence Sense, Basic",
+							"tags": [
+								"Observation Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_least",
+											"qualifier": 14
+										},
+										"which": "per"
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Haki Potential"
+										}
+									}
+								]
+							},
+							"base_points": 27,
+							"calc": {
+								"points": 27
+							}
+						},
+						{
+							"id": "ttq-q6J6AYFQbxxq8",
+							"name": "Presence Sense, Improved",
+							"tags": [
+								"Observation Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_least",
+											"qualifier": 15
+										},
+										"which": "per"
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Haki Potential"
+										}
+									}
+								]
+							},
+							"base_points": 47,
+							"calc": {
+								"points": 47
+							}
+						},
+						{
+							"id": "tS3aPdxCy_FFn0CaS",
+							"name": "Presence Sense, Greater",
+							"tags": [
+								"Observation Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_least",
+											"qualifier": 16
+										},
+										"which": "per"
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Haki Potential"
+										}
+									}
+								]
+							},
+							"base_points": 67,
+							"calc": {
+								"points": 67
+							}
+						},
+						{
+							"id": "tFfHmEedD4blTKKpN",
+							"name": "Presence Sense, Supreme",
+							"tags": [
+								"Observation Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_least",
+											"qualifier": 18
+										},
+										"which": "per"
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Haki Potential"
+										}
+									}
+								]
+							},
+							"base_points": 77,
+							"calc": {
+								"points": 77
+							}
+						}
+					],
+					"calc": {
+						"points": 218
+					}
+				},
+				{
+					"id": "tpnhkVfv_0z-5UbSh",
+					"name": "Emotion Sense",
+					"tags": [
+						"Observation Haki",
+						"Haki"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "contains",
+									"qualifier": "Presence Sense"
+								}
+							}
+						]
+					},
+					"base_points": 15,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to Detect Lies, Fortune-Telling, and Psychology rolls when dealing with subjects whose auras you can detect.",
+							"amount": 3
+						}
+					],
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "T5hNA0CUpw3PK0pzP",
+					"name": "Near-Future Sense",
+					"tags": [
+						"Observation Haki",
+						"Haki"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Presence Sense, Greater"
+										}
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Presence Sense, Supreme"
+										}
+									}
+								]
+							}
+						]
+					},
+					"children": [
+						{
+							"id": "t7ZFPjTC9TNN6IXwL",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tAdgvQpc5XxYoM2Zu"
+							},
+							"name": "Enhanced Time Sense",
+							"reference": "B52,MA44",
+							"notes": "You immediately act in combat before those without Enhanced Time Sense; Never freeze",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Mental"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": false,
+										"name": {
+											"compare": "is",
+											"qualifier": "Combat Reflexes"
+										}
+									}
+								]
+							},
+							"base_points": 43,
+							"features": [
+								{
+									"type": "skill_bonus",
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "contains",
+										"qualifier": "fast-draw"
+									},
+									"amount": 1
+								},
+								{
+									"type": "attribute_bonus",
+									"attribute": "dodge",
+									"amount": 1
+								},
+								{
+									"type": "attribute_bonus",
+									"attribute": "parry",
+									"amount": 1
+								},
+								{
+									"type": "attribute_bonus",
+									"attribute": "block",
+									"amount": 1
+								},
+								{
+									"type": "attribute_bonus",
+									"attribute": "fright_check",
+									"amount": 2
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "on all IQ rolls to wake up or to recover from surprise or mental stun",
+									"amount": 6
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "to your side on initiative rolls (+2 if you're the leader)",
+									"amount": 1
+								}
+							],
+							"calc": {
+								"points": 43
+							}
+						},
+						{
+							"id": "tXGennCX_irMoxsVW",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tgjE-yMzESTjq695x"
+							},
+							"name": "Danger Sense",
+							"reference": "B47,P46",
+							"tags": [
+								"Advantage",
+								"Mental"
+							],
+							"base_points": 15,
+							"calc": {
+								"points": 15
+							}
+						}
+					],
+					"calc": {
+						"points": 58
+					}
+				},
+				{
+					"id": "tuKONk7yLra1LYwAU",
+					"name": "Battle Sense",
+					"tags": [
+						"Observation Haki",
+						"Haki"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Near-Future Sense"
+								}
+							}
+						]
+					},
+					"points_per_level": 30,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "block",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "parry",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "dodge",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 30
+					}
+				},
+				{
+					"id": "treS6sjRVriF8EK-9",
+					"name": "Observation Haki Talent",
+					"tags": [
+						"Observation Haki",
+						"Haki"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "attribute_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_least",
+									"qualifier": 14
+								},
+								"which": "per"
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Haki Potential"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to IQ and Will rolls to use Observation Haki",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"tags": {
+								"compare": "is",
+								"qualifier": "Observation Haki"
+							},
+							"amount": 1
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to Will rolls to use Haki Resistance.",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 5
+					}
+				}
+			],
+			"calc": {
+				"points": 326
+			}
+		},
+		{
+			"id": "tr1Ux-Nlat9iJc5d1",
+			"name": "Extra Haki Energy",
+			"tags": [
+				"Haki"
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "trait_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Haki Potential"
+						},
+						"level": {
+							"compare": "at_least"
+						}
+					}
+				]
+			},
+			"points_per_level": 3,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "he",
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"levels": 1,
+			"calc": {
+				"points": 3
+			}
+		},
+		{
+			"id": "TGmUPRodzW9p8UPkE",
+			"name": "Conqueror's Haki",
+			"children": [
+				{
+					"id": "t8OiL6lOmlndPbl6s",
+					"name": "Overwhelming Will",
+					"notes": "Costs 4 to 22 HE",
+					"tags": [
+						"Conqueror's Haki",
+						"Haki"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "attribute_prereq",
+										"has": true,
+										"qualifier": {
+											"compare": "at_least",
+											"qualifier": 18
+										},
+										"which": "will"
+									},
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "contains",
+											"qualifier": "Destiny"
+										}
+									}
+								]
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Haki Potential"
+								}
+							}
+						]
+					},
+					"base_points": 64,
+					"weapons": [
+						{
+							"id": "W9iR9XKH7VEW897n4",
+							"damage": {
+								"type": "aff"
+							},
+							"usage": "Overwhelm",
+							"defaults": [
+								{
+									"type": "will"
+								}
+							],
+							"calc": {
+								"damage": "aff"
+							}
+						}
+					],
+					"calc": {
+						"points": 64
+					}
+				},
+				{
+					"id": "tB5N3bH-fYoYytQRA",
+					"name": "Conqueror's Haki Talent",
+					"tags": [
+						"Conqueror's Haki",
+						"Haki"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "attribute_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_least",
+									"qualifier": 18
+								},
+								"which": "will"
+							},
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Haki Potential"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"points_per_level": 7,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to Intimidation rolls made against you.",
+							"amount": -1,
+							"per_level": true
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to Will rolls to use Conqueror's Haki and to resist Intimidation.",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "fright_check",
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"tags": {
+								"compare": "is",
+								"qualifier": "Conqueror's Haki"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to Will rolls to use Haki Resistance.",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 7
+					}
+				}
+			],
+			"calc": {
+				"points": 71
+			}
+		},
+		{
+			"id": "t9AG4LqIhGmjE9dRx",
+			"name": "Haki Potential",
+			"tags": [
+				"Haki"
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "attribute_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_least",
+							"qualifier": 12
+						},
+						"which": "will"
+					}
+				]
+			},
+			"base_points": 30,
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"attribute": "he",
+					"amount": 10
+				}
+			],
+			"calc": {
+				"points": 30
+			}
+		}
+	]
+}
