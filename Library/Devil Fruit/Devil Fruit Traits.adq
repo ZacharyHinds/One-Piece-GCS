@@ -1,0 +1,2494 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "Tgj8sZDsdRBB-VoJr",
+			"name": "Eye-Eye Fruit",
+			"tags": [
+				"Devil Fruit",
+				"Eye-Eye Fruit"
+			],
+			"children": [
+				{
+					"id": "tWFz5llKurXhoWTqV",
+					"name": "Eye-Eye Fruit Talent",
+					"tags": [
+						"Devil Fruit",
+						"Eye-Eye Fruit"
+					],
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to rolls for Eye-Eye Fruit abilities",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "TNA41VbrCSYN85MBV",
+					"name": "Core",
+					"tags": [
+						"Devil Fruit",
+						"Eye-Eye Fruit"
+					],
+					"children": [
+						{
+							"id": "tiMJE0GyZgAK3X4fL",
+							"name": "Protected Eyes",
+							"tags": [
+								"Devil Fruit",
+								"Eye-Eye Fruit"
+							],
+							"base_points": 10,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "to resist Vison-based attacks",
+									"amount": 10
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "to HT rolls to involving your eyes or sense of sight.",
+									"amount": 5
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"eye",
+										"torso"
+									],
+									"amount": 5
+								}
+							],
+							"calc": {
+								"points": 10
+							}
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "TNK0qWk1emC1py-Rp",
+					"name": "Awareness",
+					"tags": [
+						"Devil Fruit",
+						"Eye-Eye Fruit"
+					],
+					"children": [
+						{
+							"id": "tMJbmij8Gedat-OGA",
+							"name": "Heightened Sight",
+							"tags": [
+								"Devil Fruit",
+								"Eye-Eye Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Protected Eyes"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									}
+								]
+							},
+							"base_points": 8,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "vision",
+									"amount": 4
+								}
+							],
+							"calc": {
+								"points": 8
+							}
+						},
+						{
+							"id": "tebH4K6Acf0GJ9oFO",
+							"name": "360° Sight",
+							"tags": [
+								"Devil Fruit",
+								"Eye-Eye Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Heightened Sight"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									}
+								]
+							},
+							"base_points": 23,
+							"calc": {
+								"points": 23
+							}
+						},
+						{
+							"id": "ttEQlI8PzZgkLo2FE",
+							"name": "Zooming Sight",
+							"notes": "Ignore -2 (-4 with Aim) in range penalties to Vision. +1 Accuracy per second spent Aiming, up to +2.",
+							"tags": [
+								"Devil Fruit",
+								"Eye-Eye Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "360° Sight"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									}
+								]
+							},
+							"vtt_notes": "[+1 Accuracy for 1 second Aim][+2 Accuracy for 2 seconds Aim]",
+							"base_points": 16,
+							"calc": {
+								"points": 16
+							}
+						},
+						{
+							"id": "tpPp8F2rGqhiuoA7w",
+							"name": "Perfect Sight",
+							"notes": "See through invisibility, illusions, and disguises created by devil fruits",
+							"tags": [
+								"Devil Fruit",
+								"Eye-Eye Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Zooming Sight"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									}
+								]
+							},
+							"vtt_notes": "[+3 Accuracy with 3 seconds Aim][+4 Accuracy with 4 seconds Aim]",
+							"base_points": 30,
+							"calc": {
+								"points": 30
+							}
+						}
+					],
+					"calc": {
+						"points": 77
+					}
+				},
+				{
+					"id": "Tk-8KdWwOZxX1AkEt",
+					"name": "Sensory",
+					"tags": [
+						"Devil Fruit",
+						"Eye-Eye Fruit"
+					],
+					"children": [
+						{
+							"id": "ttmQKLY5ItVDgrNJW",
+							"name": "Heat Vision",
+							"tags": [
+								"Devil Fruit",
+								"Eye-Eye Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Protected Eyes"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									}
+								]
+							},
+							"base_points": 9,
+							"calc": {
+								"points": 9
+							}
+						},
+						{
+							"id": "tjR3kFpWl_rffEh5Q",
+							"name": "Hyper Vision",
+							"tags": [
+								"Devil Fruit",
+								"Eye-Eye Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Heat Vision"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									}
+								]
+							},
+							"base_points": 5,
+							"calc": {
+								"points": 5
+							}
+						},
+						{
+							"id": "ttaxW0E-AlNPUfw31",
+							"name": "Hyper Vision, Improved",
+							"tags": [
+								"Devil Fruit",
+								"Eye-Eye Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Heat Vision"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									}
+								]
+							},
+							"base_points": 12,
+							"calc": {
+								"points": 12
+							}
+						},
+						{
+							"id": "tUEsQoFtDdfgqhP6I",
+							"name": "Dark Vision",
+							"tags": [
+								"Devil Fruit",
+								"Eye-Eye Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "contains",
+											"qualifier": "Hyper Vision"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									}
+								]
+							},
+							"base_points": 23,
+							"calc": {
+								"points": 23
+							}
+						},
+						{
+							"id": "twsxH5QExjuvU4-cJ",
+							"name": "Dark Vision, Improved",
+							"tags": [
+								"Devil Fruit",
+								"Eye-Eye Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "contains",
+											"qualifier": "Hyper Vision"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									}
+								]
+							},
+							"base_points": 28,
+							"calc": {
+								"points": 28
+							}
+						},
+						{
+							"id": "tA6MeUvCWC0N7ffPO",
+							"name": "X-Ray Vision",
+							"tags": [
+								"Devil Fruit",
+								"Eye-Eye Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "contains",
+											"qualifier": "Dark Vision"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									}
+								]
+							},
+							"points_per_level": 6,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 6
+							}
+						}
+					],
+					"calc": {
+						"points": 83
+					}
+				},
+				{
+					"id": "TOL95O69ZDwbQ53Dv",
+					"name": "Surveillance",
+					"tags": [
+						"Devil Fruit",
+						"Eye-Eye Fruit"
+					],
+					"children": [
+						{
+							"id": "tZnx_EnNWng9khhaw",
+							"name": "Place Eyeball",
+							"notes": "Max Eyes: @HT/2@\nRange: @See Table@",
+							"tags": [
+								"Devil Fruit",
+								"Eye-Eye Fruit"
+							],
+							"base_points": 60,
+							"points_per_level": 5,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 65
+							}
+						},
+						{
+							"id": "tqAdU3ryUORulsibL",
+							"name": "Multi-Sight",
+							"tags": [
+								"Devil Fruit",
+								"Eye-Eye Fruit"
+							],
+							"points_per_level": 25,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 25
+							}
+						},
+						{
+							"id": "t1mREEJae5HXsuEfT",
+							"name": "Tracking Eyes",
+							"tags": [
+								"Devil Fruit",
+								"Eye-Eye Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Multi-Sight"
+										},
+										"level": {
+											"compare": "at_least",
+											"qualifier": 2
+										}
+									}
+								]
+							},
+							"points_per_level": 5,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 5
+							}
+						}
+					],
+					"calc": {
+						"points": 95
+					}
+				}
+			],
+			"calc": {
+				"points": 270
+			}
+		},
+		{
+			"id": "TWBu9ijl_ko9NS9uE",
+			"name": "Bird-Bird (Crow) Fruit",
+			"tags": [
+				"Bird-Bird (Crow) Fruit",
+				"Devil Fruit"
+			],
+			"children": [
+				{
+					"id": "t4eJvPU1pZqyGbdKS",
+					"name": "Bird-Bird (Crow) Talent",
+					"tags": [
+						"Bird-Bird (Crow) Fruit",
+						"Devil Fruit"
+					],
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Gathered Valuables"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Cursed Chorus"
+							},
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Banshee Cry"
+							},
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "T-j-man_mR1PaHibx",
+					"name": "Alternate Forms",
+					"tags": [
+						"Bird-Bird (Crow) Fruit",
+						"Devil Fruit"
+					],
+					"children": [
+						{
+							"id": "Th2vSOaWKk45bJ9c2",
+							"name": "Crow Form",
+							"tags": [
+								"Bird-Bird (Crow) Fruit",
+								"Devil Fruit"
+							],
+							"modifiers": [
+								{
+									"id": "mDBEC3AcRMOSQQVus",
+									"name": "Alternate Form",
+									"cost_type": "multiplier"
+								}
+							],
+							"children": [
+								{
+									"id": "T_ODiqMx6zTVQq9lh",
+									"name": "Attributes",
+									"children": [
+										{
+											"id": "tuwKHDDqWHUmzcB9T",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "tGWOSEE6SmBHACE6Y"
+											},
+											"name": "Increased Dexterity",
+											"reference": "B15",
+											"tags": [
+												"Advantage",
+												"Attribute",
+												"Physical"
+											],
+											"modifiers": [
+												{
+													"id": "mOZK-gPLFE3xiNH9z",
+													"name": "No Fine Manipulators",
+													"cost": -40
+												}
+											],
+											"points_per_level": 20,
+											"features": [
+												{
+													"type": "attribute_bonus",
+													"attribute": "dx",
+													"amount": 1,
+													"per_level": true
+												}
+											],
+											"can_level": true,
+											"levels": 4,
+											"calc": {
+												"points": 0
+											}
+										},
+										{
+											"id": "tNru3ijfxzkQXaW82",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "thI3hK3riuknUwkHF"
+											},
+											"name": "Decreased Strength",
+											"reference": "B14",
+											"tags": [
+												"Attribute",
+												"Disadvantage",
+												"Physical"
+											],
+											"points_per_level": -10,
+											"features": [
+												{
+													"type": "attribute_bonus",
+													"attribute": "st",
+													"amount": -1,
+													"per_level": true
+												}
+											],
+											"can_level": true,
+											"levels": 8,
+											"calc": {
+												"points": 0
+											}
+										}
+									],
+									"calc": {
+										"points": 0
+									}
+								},
+								{
+									"id": "TCIc1adTLM3azSQVe",
+									"name": "Secondary Characteristics",
+									"children": [
+										{
+											"id": "tIXn-jW8Z8MOXwrdH",
+											"name": "Decreased Size",
+											"features": [
+												{
+													"type": "attribute_bonus",
+													"attribute": "sm",
+													"amount": -1,
+													"per_level": true
+												}
+											],
+											"can_level": true,
+											"levels": 4,
+											"calc": {
+												"points": 0
+											}
+										},
+										{
+											"id": "tOLrm6jGclnrneT1K",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "tWoMSz-IMAxDJo8rh"
+											},
+											"name": "Extra Hit Points",
+											"reference": "B16",
+											"tags": [
+												"Advantage",
+												"Attribute",
+												"Physical"
+											],
+											"modifiers": [
+												{
+													"id": "mJPiAeQ95gmVE6DKD",
+													"name": "Size",
+													"cost": -10,
+													"levels": 1,
+													"disabled": true
+												}
+											],
+											"points_per_level": 2,
+											"features": [
+												{
+													"type": "attribute_bonus",
+													"attribute": "hp",
+													"amount": 1,
+													"per_level": true
+												}
+											],
+											"can_level": true,
+											"levels": 8,
+											"calc": {
+												"points": 0
+											}
+										},
+										{
+											"id": "tLNlo1zrsmLiAaRMx",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "tBBMkYdKxMwhn73fI"
+											},
+											"name": "Decreased Basic Move",
+											"reference": "B17",
+											"tags": [
+												"Attribute",
+												"Disadvantage",
+												"Physical"
+											],
+											"points_per_level": -5,
+											"features": [
+												{
+													"type": "attribute_bonus",
+													"attribute": "basic_move",
+													"amount": -1,
+													"per_level": true
+												}
+											],
+											"can_level": true,
+											"levels": 3,
+											"calc": {
+												"points": 0
+											}
+										},
+										{
+											"id": "tDJJgUfycNIW6seJu",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "tmpxhXmSORakqvrbn"
+											},
+											"name": "Increased Perception",
+											"reference": "B16",
+											"tags": [
+												"Advantage",
+												"Attribute",
+												"Mental",
+												"Physical"
+											],
+											"points_per_level": 5,
+											"features": [
+												{
+													"type": "attribute_bonus",
+													"attribute": "per",
+													"amount": 1,
+													"per_level": true
+												}
+											],
+											"can_level": true,
+											"levels": 2,
+											"calc": {
+												"points": 0
+											}
+										}
+									],
+									"calc": {
+										"points": 0
+									}
+								},
+								{
+									"id": "TpGicwBy5LQdIanPK",
+									"name": "Advantages",
+									"children": [
+										{
+											"id": "tu4vo16zlx9NaTaoA",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "tkdGzhkqoMAQbknEc"
+											},
+											"name": "Acute Vision",
+											"reference": "B35",
+											"tags": [
+												"Advantage",
+												"Physical"
+											],
+											"points_per_level": 2,
+											"features": [
+												{
+													"type": "attribute_bonus",
+													"attribute": "vision",
+													"amount": 1,
+													"per_level": true
+												}
+											],
+											"can_level": true,
+											"levels": 3,
+											"calc": {
+												"points": 0
+											}
+										},
+										{
+											"id": "twR16mTBJamy5utcO",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "tBp8Q-gJeFHzopeuI"
+											},
+											"name": "Flight",
+											"reference": "B56,P50,PSI14",
+											"notes": "Air Move is Basic Speed x 2 (drop all fractions)",
+											"tags": [
+												"Advantage",
+												"Exotic",
+												"Physical"
+											],
+											"modifiers": [
+												{
+													"id": "mvE05tTUJvJMrDc_z",
+													"name": "Newtonian Space Flight",
+													"reference": "B56",
+													"cost": 25,
+													"disabled": true
+												},
+												{
+													"id": "m_f88MCsGRbk6n5fG",
+													"name": "Space Flight",
+													"reference": "B56",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mi3D5hZBer9KxsOo6",
+													"name": "Cannot Hover",
+													"reference": "B56",
+													"cost": -15,
+													"disabled": true
+												},
+												{
+													"id": "mpcp_VuP9nTvq6Fij",
+													"name": "Controlled Gliding",
+													"reference": "B56",
+													"cost": -45,
+													"disabled": true
+												},
+												{
+													"id": "mDsMVpu780ijqkQDT",
+													"name": "Gliding",
+													"reference": "B56",
+													"cost": -50,
+													"disabled": true
+												},
+												{
+													"id": "mQKyNQCbWqpdMCHhQ",
+													"name": "Lighter Than Air",
+													"reference": "B56",
+													"cost": -10,
+													"disabled": true
+												},
+												{
+													"id": "mMCRBsnPdthBW_9W8",
+													"name": "Low Ceiling",
+													"reference": "B56",
+													"notes": "30'",
+													"cost": -10,
+													"disabled": true
+												},
+												{
+													"id": "mCxlWMOGKHJrPXa3_",
+													"name": "Low Ceiling",
+													"reference": "B56",
+													"notes": "10'",
+													"cost": -20,
+													"disabled": true
+												},
+												{
+													"id": "mvUBipTuQ5ACFTRrl",
+													"name": "Low Ceiling",
+													"reference": "B56",
+													"notes": "5'",
+													"cost": -25,
+													"disabled": true
+												},
+												{
+													"id": "m433V-b__hQ8_wMg6",
+													"name": "Small Wings",
+													"reference": "B56",
+													"cost": -10,
+													"disabled": true
+												},
+												{
+													"id": "mmx-C6tkfLg04UPYn",
+													"name": "Space Flight Only",
+													"reference": "B56",
+													"cost": -75,
+													"disabled": true
+												},
+												{
+													"id": "mNHsqg5kCZ51wKRMf",
+													"name": "Winged",
+													"reference": "B56",
+													"cost": -25
+												},
+												{
+													"id": "mQm2iu2mMAKQw4scx",
+													"name": "Planetary",
+													"reference": "P50",
+													"cost": -5,
+													"disabled": true
+												},
+												{
+													"id": "mI3RH1PlBLhwh89FO",
+													"name": "Requires Surface",
+													"reference": "P50",
+													"cost": -20,
+													"disabled": true
+												},
+												{
+													"id": "mECwU8wLZK11XR6Wg",
+													"name": "Slow",
+													"reference": "PSI14",
+													"notes": "Basic Speed",
+													"cost": -25,
+													"disabled": true
+												},
+												{
+													"id": "m1akDWpG4jUmkzYlZ",
+													"name": "Slow, Move 1",
+													"reference": "PSI14",
+													"cost": -45,
+													"disabled": true
+												},
+												{
+													"id": "mMv1IC4dNyQzFAbo8",
+													"name": "Encumbrance-Limited (No encumbrance)",
+													"reference": "FFWF12",
+													"reference_highlight": "Encumbrance-Limited",
+													"notes": "Can only glide at best when overburdened",
+													"cost": -15,
+													"disabled": true
+												},
+												{
+													"id": "muoTdqzGxvXjzqtSv",
+													"name": "Encumbrance-Limited (Light encumbrance)",
+													"reference": "FFWF12",
+													"reference_highlight": "Encumbrance-Limited",
+													"notes": "Can only glide at best when overburdened",
+													"cost": -10,
+													"disabled": true
+												},
+												{
+													"id": "mSfAuS5s1Ge2Z63fm",
+													"name": "Encumbrance-Limited (Medium encumbrance)",
+													"reference": "FFWF12",
+													"reference_highlight": "Encumbrance-Limited",
+													"notes": "Can only glide at best when overburdened",
+													"cost": -5,
+													"disabled": true
+												}
+											],
+											"base_points": 40,
+											"calc": {
+												"points": 0
+											}
+										},
+										{
+											"id": "tmNVh7ErDNVX2uzPd",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "tk0ZKpvgqpE35AZcM"
+											},
+											"name": "Night Vision",
+											"reference": "B71,P87",
+											"tags": [
+												"Advantage",
+												"Physical"
+											],
+											"points_per_level": 1,
+											"can_level": true,
+											"levels": 3,
+											"calc": {
+												"points": 0
+											}
+										},
+										{
+											"id": "t_9ZwW_own7yzOCZZ",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "tj31zaOtWgklrd4qG"
+											},
+											"name": "Sharp Beak",
+											"reference": "B91",
+											"tags": [
+												"Exotic",
+												"Perk",
+												"Physical"
+											],
+											"modifiers": [
+												{
+													"id": "moLXyOmTZrWmnExQF",
+													"name": "Provided by Vampiric Bite",
+													"reference": "B96",
+													"cost": -1,
+													"cost_type": "points",
+													"disabled": true
+												}
+											],
+											"base_points": 1,
+											"weapons": [
+												{
+													"id": "wpb239juaWXBNTzCT",
+													"damage": {
+														"type": "pi+",
+														"st": "thr",
+														"base": "-1"
+													},
+													"usage": "Peck",
+													"reach": "C",
+													"defaults": [
+														{
+															"type": "dx"
+														},
+														{
+															"type": "skill",
+															"name": "Brawling"
+														}
+													],
+													"calc": {
+														"damage": "thr-1 pi+"
+													}
+												}
+											],
+											"calc": {
+												"points": 0
+											}
+										},
+										{
+											"id": "tsKKWHB826S_UPinc",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "tazU-sCQvlzBtB2X_"
+											},
+											"name": "Talons",
+											"reference": "B43",
+											"tags": [
+												"Advantage",
+												"Physical"
+											],
+											"base_points": 8,
+											"weapons": [
+												{
+													"id": "wuWGgfIAgHoJcT7TI",
+													"damage": {
+														"type": "cut",
+														"st": "thr",
+														"base": "-1"
+													},
+													"usage": "Slash",
+													"reach": "C",
+													"parry": "0",
+													"defaults": [
+														{
+															"type": "dx"
+														},
+														{
+															"type": "skill",
+															"name": "Brawling"
+														},
+														{
+															"type": "skill",
+															"name": "Boxing"
+														},
+														{
+															"type": "skill",
+															"name": "Karate"
+														}
+													],
+													"calc": {
+														"damage": "thr-1 cut"
+													}
+												},
+												{
+													"id": "w6vFdbYBilEZR-iJ2",
+													"damage": {
+														"type": "imp",
+														"st": "thr",
+														"base": "-1"
+													},
+													"usage": "Stab",
+													"reach": "C",
+													"parry": "0",
+													"defaults": [
+														{
+															"type": "dx"
+														},
+														{
+															"type": "skill",
+															"name": "Brawling"
+														},
+														{
+															"type": "skill",
+															"name": "Boxing"
+														},
+														{
+															"type": "skill",
+															"name": "Karate"
+														}
+													],
+													"calc": {
+														"damage": "thr-1 imp"
+													}
+												}
+											],
+											"calc": {
+												"points": 0
+											}
+										}
+									],
+									"calc": {
+										"points": 0
+									}
+								},
+								{
+									"id": "TbIHYjnS05BNgBm3K",
+									"name": "Disadvantages",
+									"children": [
+										{
+											"id": "tOuoDmMz8kGinNS13",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "tvkUum_V1i7jyVLOV"
+											},
+											"name": "No Fine Manipulators",
+											"reference": "B145",
+											"tags": [
+												"Disadvantage",
+												"Physical"
+											],
+											"base_points": -30,
+											"features": [
+												{
+													"type": "cost_reduction",
+													"attribute": "st",
+													"percentage": 40
+												},
+												{
+													"type": "cost_reduction",
+													"attribute": "dx",
+													"percentage": 40
+												}
+											],
+											"calc": {
+												"points": 0
+											}
+										}
+									],
+									"calc": {
+										"points": 0
+									}
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						},
+						{
+							"id": "T_cNJH1wphIsRHPnz",
+							"name": "Hybrid Form",
+							"tags": [
+								"Bird-Bird (Crow) Fruit",
+								"Devil Fruit"
+							],
+							"modifiers": [
+								{
+									"id": "mqknYl2kXHhM8OzU-",
+									"name": "Alternate Form",
+									"cost_type": "multiplier"
+								}
+							],
+							"children": [
+								{
+									"id": "TfvcpolKy-enjiO7w",
+									"name": "Secondary Characteristics",
+									"children": [
+										{
+											"id": "tlm3MgxcMDDsqSJ-P",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "tBBMkYdKxMwhn73fI"
+											},
+											"name": "Decreased Basic Move",
+											"reference": "B17",
+											"tags": [
+												"Attribute",
+												"Disadvantage",
+												"Physical"
+											],
+											"points_per_level": -5,
+											"features": [
+												{
+													"type": "attribute_bonus",
+													"attribute": "basic_move",
+													"amount": -1,
+													"per_level": true
+												}
+											],
+											"can_level": true,
+											"levels": 1,
+											"calc": {
+												"points": 0
+											}
+										}
+									],
+									"calc": {
+										"points": 0
+									}
+								},
+								{
+									"id": "TvEGoAwrl0CZ4cXe5",
+									"name": "Advantages",
+									"children": [
+										{
+											"id": "todDAyJ_j9vze0-LE",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "t6XtSYhM7yan5_B73"
+											},
+											"name": "Acute Hearing",
+											"reference": "B35",
+											"tags": [
+												"Advantage",
+												"Physical"
+											],
+											"points_per_level": 2,
+											"features": [
+												{
+													"type": "attribute_bonus",
+													"attribute": "hearing",
+													"amount": 1,
+													"per_level": true
+												}
+											],
+											"can_level": true,
+											"levels": 1,
+											"calc": {
+												"points": 0
+											}
+										},
+										{
+											"id": "t7mvqiJ40gKq2UnUx",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "tkdGzhkqoMAQbknEc"
+											},
+											"name": "Acute Vision",
+											"reference": "B35",
+											"tags": [
+												"Advantage",
+												"Physical"
+											],
+											"points_per_level": 2,
+											"features": [
+												{
+													"type": "attribute_bonus",
+													"attribute": "vision",
+													"amount": 1,
+													"per_level": true
+												}
+											],
+											"can_level": true,
+											"levels": 1,
+											"calc": {
+												"points": 0
+											}
+										},
+										{
+											"id": "t7QeL0BtkseV2vRlo",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "tk0ZKpvgqpE35AZcM"
+											},
+											"name": "Night Vision",
+											"reference": "B71,P87",
+											"tags": [
+												"Advantage",
+												"Physical"
+											],
+											"points_per_level": 1,
+											"can_level": true,
+											"levels": 1,
+											"calc": {
+												"points": 0
+											}
+										},
+										{
+											"id": "t0BVGH4v_Z80cNSc2",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "t7wwouLr2lKkU9N_5"
+											},
+											"name": "Parabolic Hearing",
+											"reference": "B72,P51",
+											"tags": [
+												"Advantage",
+												"Exotic",
+												"Physical"
+											],
+											"points_per_level": 4,
+											"can_level": true,
+											"levels": 1,
+											"calc": {
+												"points": 0
+											}
+										},
+										{
+											"id": "tGCTzKo5XsF23WUF8",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "tj66NHKyO_GObgGsj"
+											},
+											"name": "Sharp Claws",
+											"reference": "B42",
+											"tags": [
+												"Advantage",
+												"Physical"
+											],
+											"base_points": 5,
+											"weapons": [
+												{
+													"id": "wxbppir49aWJvaRAZ",
+													"damage": {
+														"type": "cut",
+														"st": "thr",
+														"base": "-1"
+													},
+													"usage": "Slash",
+													"reach": "C",
+													"parry": "0",
+													"defaults": [
+														{
+															"type": "dx"
+														},
+														{
+															"type": "skill",
+															"name": "Brawling"
+														},
+														{
+															"type": "skill",
+															"name": "Boxing"
+														},
+														{
+															"type": "skill",
+															"name": "Karate"
+														}
+													],
+													"calc": {
+														"damage": "thr-1 cut"
+													}
+												},
+												{
+													"id": "wZnh_9tIv2-pjj6zN",
+													"damage": {
+														"type": "cut",
+														"st": "thr"
+													},
+													"usage": "Kick",
+													"reach": "C,1",
+													"defaults": [
+														{
+															"type": "dx",
+															"modifier": -2
+														},
+														{
+															"type": "skill",
+															"name": "Karate",
+															"modifier": -2
+														},
+														{
+															"type": "skill",
+															"name": "Brawling",
+															"modifier": -2
+														}
+													],
+													"calc": {
+														"damage": "thr cut"
+													}
+												}
+											],
+											"calc": {
+												"points": 0
+											}
+										},
+										{
+											"id": "tRyS8V4fny_HJqqBG",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "tPa2RCbNO28twKcsw"
+											},
+											"name": "Short Spines",
+											"reference": "B88",
+											"tags": [
+												"Exotic",
+												"Perk",
+												"Physical"
+											],
+											"base_points": 1,
+											"weapons": [
+												{
+													"id": "wpPzrK2ZB1pAcLWoo",
+													"damage": {
+														"type": "imp",
+														"base": "1d-2"
+													},
+													"usage": "Stab",
+													"reach": "C",
+													"defaults": [
+														{
+															"type": "dx",
+															"modifier": -4
+														}
+													],
+													"calc": {
+														"damage": "1d-2 imp"
+													}
+												}
+											],
+											"calc": {
+												"points": 0
+											}
+										},
+										{
+											"id": "tzIsGSDoeLoGAcXje",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "tejSZ8LfoYQcxW8rE"
+											},
+											"name": "Mimicry",
+											"reference": "B68,P60",
+											"tags": [
+												"Advantage",
+												"Exotic",
+												"Mental"
+											],
+											"modifiers": [
+												{
+													"id": "mYizuDl6xeL_fj7jn",
+													"name": "Voice Library",
+													"reference": "P61",
+													"cost": 50,
+													"disabled": true
+												}
+											],
+											"base_points": 10,
+											"calc": {
+												"points": 0
+											}
+										}
+									],
+									"calc": {
+										"points": 0
+									}
+								},
+								{
+									"id": "Tb5Ac9nJSUhLC6hWO",
+									"name": "Disadvantages",
+									"children": [
+										{
+											"id": "tj6JbH7zeVYDWZXxW",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Traits.adq",
+												"id": "tdlCZw4YB4T7QkOnj"
+											},
+											"name": "Appearance",
+											"reference": "B21",
+											"tags": [
+												"Advantage",
+												"Physical"
+											],
+											"modifiers": [
+												{
+													"id": "mMCDfp6ZDIy47Eir4",
+													"name": "Attractive",
+													"reference": "B21",
+													"cost": 4,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"situation": "from others",
+															"amount": 1
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "mDUTBqB7JcelczkSi",
+													"name": "Average",
+													"reference": "B21",
+													"cost_type": "points",
+													"disabled": true
+												},
+												{
+													"id": "mka03ZR3sOZoJnoLD",
+													"name": "Beautiful",
+													"reference": "B21",
+													"cost": 12,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"situation": "from those attracted to members of your sex, +2 from everyone else",
+															"amount": 4
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "mJrzYpEhousXiJkbs",
+													"name": "Beautiful (Androgynous)",
+													"reference": "B21",
+													"cost": 12,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"situation": "from others",
+															"amount": 3
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "m9cekSSIx1memOAVs",
+													"name": "Beautiful (Impressive)",
+													"reference": "B21",
+													"cost": 12,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"situation": "from others",
+															"amount": 3
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "m8zT8JrSfiH_dMyPY",
+													"name": "Handsome",
+													"reference": "B21",
+													"cost": 12,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"situation": "from those attracted to members of your sex, +2 from everyone else",
+															"amount": 4
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "mzvCMq3n5ulrmDyCx",
+													"name": "Handsome (Androgynous)",
+													"reference": "B21",
+													"cost": 12,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"situation": "from others",
+															"amount": 3
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "m7gGcL_aKis8TDKE1",
+													"name": "Handsome (Impressive)",
+													"reference": "B21",
+													"cost": 12,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"situation": "from others",
+															"amount": 3
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "maGfbX9KtQq04QH7f",
+													"name": "Hideous",
+													"reference": "B21,B202",
+													"cost": -16,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "skill_bonus",
+															"selection_type": "skills_with_name",
+															"name": {
+																"compare": "is",
+																"qualifier": "Intimidation"
+															},
+															"amount": 2
+														},
+														{
+															"type": "reaction_bonus",
+															"situation": "from others",
+															"amount": -4
+														}
+													]
+												},
+												{
+													"id": "mWCNVk_WR_w3RQz_x",
+													"name": "Horrific",
+													"reference": "B21,B202",
+													"cost": -24,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "skill_bonus",
+															"selection_type": "skills_with_name",
+															"name": {
+																"compare": "is",
+																"qualifier": "Intimidation"
+															},
+															"amount": 4
+														},
+														{
+															"type": "reaction_bonus",
+															"situation": "from others",
+															"amount": -6
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "m8cNtzGXCgMdF8deA",
+													"name": "Impressive",
+													"reference": "B21",
+													"cost_type": "points",
+													"disabled": true
+												},
+												{
+													"id": "mEshQtSW7gzu0Gv-9",
+													"name": "Monstrous",
+													"reference": "B21,B202",
+													"cost": -20,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "skill_bonus",
+															"selection_type": "skills_with_name",
+															"name": {
+																"compare": "is",
+																"qualifier": "Intimidation"
+															},
+															"amount": 3
+														},
+														{
+															"type": "reaction_bonus",
+															"situation": "from others",
+															"amount": -5
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "m4PI_6DS_dJ2kqsqQ",
+													"name": "Off-the-Shelf Looks",
+													"reference": "B21",
+													"notes": "Halves the usual reaction bonus - adjust manually",
+													"cost": -50,
+													"disabled": true
+												},
+												{
+													"id": "mzfETTOis82Pnv7OO",
+													"name": "Transcendent",
+													"reference": "B21",
+													"cost": 20,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+															"amount": 8
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "mX35KhhmTbBDqmydN",
+													"name": "Transcendent (Androgynous)",
+													"reference": "B21",
+													"cost": 20,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"situation": "from others",
+															"amount": 5
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "mYqnuCPyUFkxD22gR",
+													"name": "Transcendent (Impressive)",
+													"reference": "B21",
+													"cost": 20,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"situation": "from others",
+															"amount": 5
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "mCto71P3huHkDH4me",
+													"name": "Ugly",
+													"reference": "B21",
+													"cost": -8,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"situation": "from others",
+															"amount": -2
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "m0vMRgJBPb6-hmCQv",
+													"name": "Unattractive",
+													"reference": "B21",
+													"cost": -4,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"situation": "from others",
+															"amount": -1
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "mzSisRstGNWfTHNH9",
+													"name": "Universal",
+													"reference": "B21",
+													"cost": 25,
+													"disabled": true
+												},
+												{
+													"id": "mVxf6AsxrkKEZwFvJ",
+													"name": "Very Beautiful",
+													"reference": "B21",
+													"cost": 16,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+															"amount": 6
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "mOYpX1TmKrMOmlxfH",
+													"name": "Very Beautiful (Androgynous)",
+													"reference": "B21",
+													"cost": 16,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"situation": "from others",
+															"amount": 4
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "mjeQnPYVsUb3CD0cP",
+													"name": "Very Beautiful (Impressive)",
+													"reference": "B21",
+													"cost": 16,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"situation": "from others",
+															"amount": 4
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "mqyu3XakDcKamgWbS",
+													"name": "Very Handsome",
+													"reference": "B21",
+													"cost": 16,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+															"amount": 6
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "mT1Rh7tELA4pcIG0_",
+													"name": "Very Handsome (Androgynous)",
+													"reference": "B21",
+													"cost": 16,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"situation": "from others",
+															"amount": 4
+														}
+													],
+													"disabled": true
+												},
+												{
+													"id": "mTcj__xPv3xeUZ00l",
+													"name": "Very Handsome (Impressive)",
+													"reference": "B21",
+													"cost": 16,
+													"cost_type": "points",
+													"features": [
+														{
+															"type": "reaction_bonus",
+															"situation": "from others",
+															"amount": 4
+														}
+													],
+													"disabled": true
+												}
+											],
+											"calc": {
+												"points": 0
+											}
+										}
+									],
+									"calc": {
+										"points": 0
+									}
+								}
+							],
+							"calc": {
+								"points": 0
+							}
+						}
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TU2N_4Yt2MX6Xb3-F",
+					"name": "Core",
+					"tags": [
+						"Bird-Bird (Crow) Fruit",
+						"Devil Fruit"
+					],
+					"children": [
+						{
+							"id": "t8NrP-bk4eyr0cZpz",
+							"name": "Change Form",
+							"reference": "B83",
+							"notes": "Bird-Bird Fruit (Crow)",
+							"tags": [
+								"Bird-Bird (Crow) Fruit",
+								"Devil Fruit"
+							],
+							"modifiers": [
+								{
+									"id": "MyQW5yHetTUkV8hZz",
+									"name": "Level (Choose One)",
+									"children": [
+										{
+											"id": "mYjRTLIgmGIzf-ldL",
+											"name": "Level 1",
+											"notes": "Transformation: 10 seconds",
+											"cost": 36,
+											"cost_type": "points",
+											"use_level_from_trait": true,
+											"disabled": true
+										},
+										{
+											"id": "mzrv2oKcILkpvbtWe",
+											"name": "Level 2",
+											"notes": "Transformation: 5 seconds",
+											"cost": 42,
+											"cost_type": "points"
+										},
+										{
+											"id": "mEyjnlqktq4b1h2SW",
+											"name": "Level 3",
+											"notes": "Transformation: 3 seconds",
+											"cost": 48,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "mvmgzJb-apS_ayeE6",
+											"name": "Level 4",
+											"notes": "Transformation: 2 seconds",
+											"cost": 54,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "miIRvRJgS4fGWhSvs",
+											"name": "Level 5",
+											"notes": "Transformation: 1 seconds",
+											"cost": 60,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "mTMfIbwSrtJk1F68w",
+											"name": "Level 6",
+											"notes": "Transformation: Instant, Free Action",
+											"cost": 66,
+											"cost_type": "points",
+											"disabled": true
+										}
+									]
+								}
+							],
+							"calc": {
+								"points": 42
+							}
+						}
+					],
+					"calc": {
+						"points": 42
+					}
+				},
+				{
+					"id": "TLn2VSczN4FXAr__i",
+					"name": "Beast",
+					"children": [
+						{
+							"id": "tSyKbsziKOgl6Sayh",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tazU-sCQvlzBtB2X_"
+							},
+							"name": "Taloned Hybrid",
+							"reference": "B43",
+							"notes": "Hybrid Form",
+							"tags": [
+								"Bird-Bird (Crow) Fruit",
+								"Devil Fruit"
+							],
+							"modifiers": [
+								{
+									"id": "MhLBQvcB0n6Xfex0H",
+									"name": "Choose one",
+									"children": [
+										{
+											"id": "mZjtYGXoGzKeqYy9b",
+											"name": "Taloned Hybrid",
+											"cost": 3,
+											"cost_type": "points"
+										},
+										{
+											"id": "mLCSzZ91HsDvqDx8M",
+											"name": "Improved Talons",
+											"cost": 11,
+											"cost_type": "points",
+											"use_level_from_trait": true,
+											"features": [
+												{
+													"type": "conditional_modifier",
+													"situation": "triggering condition",
+													"amount": 1
+												},
+												{
+													"type": "weapon_bonus",
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 1,
+													"per_die": true
+												}
+											],
+											"disabled": true
+										}
+									]
+								}
+							],
+							"weapons": [
+								{
+									"id": "w-7TuaN_kbfmO7qMA",
+									"damage": {
+										"type": "cut",
+										"st": "thr",
+										"base": "-1"
+									},
+									"usage": "Slash",
+									"reach": "C",
+									"parry": "0",
+									"defaults": [
+										{
+											"type": "dx"
+										},
+										{
+											"type": "skill",
+											"name": "Brawling"
+										},
+										{
+											"type": "skill",
+											"name": "Boxing"
+										},
+										{
+											"type": "skill",
+											"name": "Karate"
+										}
+									],
+									"calc": {
+										"damage": "thr-1 cut"
+									}
+								},
+								{
+									"id": "wzTr0NhWXDIvPzJnI",
+									"damage": {
+										"type": "imp",
+										"st": "thr",
+										"base": "-1"
+									},
+									"usage": "Stab",
+									"reach": "C",
+									"parry": "0",
+									"defaults": [
+										{
+											"type": "dx"
+										},
+										{
+											"type": "skill",
+											"name": "Brawling"
+										},
+										{
+											"type": "skill",
+											"name": "Boxing"
+										},
+										{
+											"type": "skill",
+											"name": "Karate"
+										}
+									],
+									"calc": {
+										"damage": "thr-1 imp"
+									}
+								}
+							],
+							"calc": {
+								"points": 3
+							}
+						},
+						{
+							"id": "t0WlSWOwgkLCNY05r",
+							"name": "Carrion Diet",
+							"notes": "Hybrid \u0026 Crow Form. Food costs are 1% of normal.",
+							"tags": [
+								"Bird-Bird (Crow) Fruit",
+								"Devil Fruit"
+							],
+							"base_points": 11,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "(Hybrid \u0026 Crow Form) to HT rolls to resist poisons and diseases.",
+									"amount": 3
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "(Hybrid \u0026 Crow Form) to HT rolls to resist food-borne poisons and diseases. (Cumulative with other bonus.)",
+									"amount": 4
+								}
+							],
+							"calc": {
+								"points": 11
+							}
+						},
+						{
+							"id": "tkY1N81qiVXu3hK9B",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tBp8Q-gJeFHzopeuI"
+							},
+							"name": "Hybrid Wings",
+							"reference": "B56,P50,PSI14",
+							"notes": "Hybrid Form. Air Move is Basic Speed x 2 (drop all fractions)",
+							"tags": [
+								"Bird-Bird (Crow) Fruit",
+								"Devil Fruit"
+							],
+							"modifiers": [
+								{
+									"id": "MCOhs_6MmAJ4Czpqc",
+									"name": "Level (Choose One)",
+									"children": [
+										{
+											"id": "mggIdHneV2e-viZnd",
+											"name": "Level 1",
+											"cost": 18,
+											"cost_type": "points"
+										},
+										{
+											"id": "mlSJQvF8DcWfEAjuq",
+											"name": "Level 2",
+											"cost": 27,
+											"cost_type": "points",
+											"disabled": true
+										}
+									]
+								}
+							],
+							"calc": {
+								"points": 18
+							}
+						},
+						{
+							"id": "tp69eHFtgyG8OZBs-",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tG2tK0QWXPQqFk-rd"
+							},
+							"name": "High-Speed Flying",
+							"reference": "B52,P49",
+							"reference_highlight": "Enhanced Move",
+							"notes": "Hybrid \u0026 Crow Form. Double your normal Air Move.",
+							"tags": [
+								"Bird-Bird (Crow) Fruit",
+								"Devil Fruit"
+							],
+							"modifiers": [
+								{
+									"id": "msh8xNfPkMIJ_zlv2",
+									"name": "Handling Modifier",
+									"reference": "B52",
+									"cost": 1,
+									"cost_type": "points",
+									"use_level_from_trait": true,
+									"features": [
+										{
+											"type": "conditional_modifier",
+											"situation": "(Hybrid/Crow Form) to Flight Handling at high speeds.",
+											"amount": 1,
+											"per_level": true
+										},
+										{
+											"type": "conditional_modifier",
+											"situation": "(Hybrid/Crow Form) to Flight Handling at high speeds.",
+											"amount": -6
+										}
+									],
+									"levels": 1
+								}
+							],
+							"base_points": 13,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 14
+							}
+						}
+					],
+					"calc": {
+						"points": 46
+					}
+				},
+				{
+					"id": "TXqQhW4pQJdZf-_Ek",
+					"name": "Scavenger",
+					"tags": [
+						"Bird-Bird (Crow) Fruit",
+						"Devil Fruit"
+					],
+					"children": [
+						{
+							"id": "t3p74TyvaYqK4d1IA",
+							"name": "Feathered Pockets",
+							"notes": "Accessibly only in Hybrid/Crow Form. Total Storage: @BL/5 times Level@",
+							"tags": [
+								"Bird-Bird (Crow) Fruit",
+								"Devil Fruit"
+							],
+							"points_per_level": 3,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 3
+							}
+						},
+						{
+							"id": "tvbJQl9zjvneMzSqO",
+							"name": "Gathered Valuables",
+							"notes": "Hybrid/Crow Form.",
+							"tags": [
+								"Bird-Bird (Crow) Fruit",
+								"Devil Fruit"
+							],
+							"modifiers": [
+								{
+									"id": "MCvYVOoEmQvUMI6bE",
+									"name": "Level (Choose One)",
+									"children": [
+										{
+											"id": "mebI-xXbei0F-OAKs",
+											"name": "Level 1",
+											"notes": "Max object weight: 4 oz.",
+											"cost": 47,
+											"cost_type": "points"
+										},
+										{
+											"id": "m-H2J2JKpMLpEb0CC",
+											"name": "Level 2",
+											"notes": "Max object weight: 1 lb.",
+											"cost": 54,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "mdfFluaHmTs5EjiVw",
+											"name": "Level 3",
+											"notes": "Max object weight: 2 lb.",
+											"cost": 58,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "mTtyaiH-fCmCjlYE_",
+											"name": "Level 4",
+											"notes": "Max object weight: 3 lb.",
+											"cost": 62,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "mEbKBEcVrfhw_YiZP",
+											"name": "Level 5",
+											"notes": "Max object weight: 5 lb.",
+											"cost": 65,
+											"cost_type": "points",
+											"disabled": true
+										}
+									]
+								}
+							],
+							"calc": {
+								"points": 47
+							}
+						}
+					],
+					"calc": {
+						"points": 50
+					}
+				},
+				{
+					"id": "T6nN4WS6fP19_nLzF",
+					"name": "Omen",
+					"tags": [
+						"Bird-Bird (Crow) Fruit",
+						"Devil Fruit"
+					],
+					"children": [
+						{
+							"id": "t_zKAcwG6w2UWv3Qp",
+							"name": "Banshee Cry",
+							"notes": "Hybrid Form.",
+							"tags": [
+								"Bird-Bird (Crow) Fruit",
+								"Devil Fruit"
+							],
+							"modifiers": [
+								{
+									"id": "MZOtt1CEtu2i4cRRJ",
+									"name": "Level (Choose One)",
+									"children": [
+										{
+											"id": "mkZhpQA7E9idXxOkz",
+											"name": "Level 1",
+											"vtt_notes": "[-1 to resist Banshee Cry]",
+											"cost": 22,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_max_range_bonus",
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 10
+												}
+											]
+										},
+										{
+											"id": "mEAzpzNAnk7Z_tl_K",
+											"name": "Level 2",
+											"vtt_notes": "[-2 to resist Banshee Cry]",
+											"cost": 27,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_max_range_bonus",
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 20
+												}
+											],
+											"disabled": true
+										},
+										{
+											"id": "mTdoBugRuQ9ORJfcq",
+											"name": "Level 3",
+											"vtt_notes": "[-3 to resist Banshee Cry]",
+											"cost": 36,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_max_range_bonus",
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 50
+												}
+											],
+											"disabled": true
+										},
+										{
+											"id": "m_X4proF5eWBJJT4l",
+											"name": "Level 4",
+											"vtt_notes": "[-4 to resist Banshee Cry]",
+											"cost": 45,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_max_range_bonus",
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 100
+												}
+											],
+											"disabled": true
+										},
+										{
+											"id": "mkNU7xdLJdn6HjrNe",
+											"name": "Level 5",
+											"vtt_notes": "[-5 to resist Banshee Cry]",
+											"cost": 54,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_max_range_bonus",
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 200
+												}
+											],
+											"disabled": true
+										}
+									]
+								}
+							],
+							"weapons": [
+								{
+									"id": "WvbfUFffZgTb8pdTP",
+									"damage": {
+										"type": "Special. Resist with Will - Level"
+									},
+									"usage": "Banshee Cry",
+									"defaults": [
+										{
+											"type": "will",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Banshee Cry"
+										}
+									],
+									"calc": {
+										"damage": "Special. Resist with Will - Level"
+									}
+								}
+							],
+							"calc": {
+								"points": 22
+							}
+						},
+						{
+							"id": "t11CfCOdzFIMb9jo1",
+							"name": "Cursed Chorus",
+							"notes": "Hybrid/Crow Form",
+							"tags": [
+								"Bird-Bird (Crow) Fruit",
+								"Devil Fruit"
+							],
+							"base_points": 21,
+							"weapons": [
+								{
+									"id": "WNjkDkURvDa4Bgy2D",
+									"damage": {
+										"type": "Curse Target"
+									},
+									"usage_notes": "15 seconds",
+									"rate_of_fire": "1",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Cursed Chorus"
+										},
+										{
+											"type": "will",
+											"modifier": -6
+										}
+									],
+									"calc": {
+										"damage": "Curse Target"
+									}
+								}
+							],
+							"calc": {
+								"points": 21
+							}
+						}
+					],
+					"calc": {
+						"points": 43
+					}
+				}
+			],
+			"calc": {
+				"points": 186
+			}
+		},
+		{
+			"id": "T_gJsxeBtvqB1_fuA",
+			"name": "Pain-Pain Fruit",
+			"calc": {
+				"points": 0
+			}
+		}
+	]
+}

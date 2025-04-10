@@ -1,0 +1,202 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "S87Yt2UhiAKB1NelO",
+			"name": "Eye-Eye Fruit",
+			"children": [
+				{
+					"id": "SNvnL98rFm_04NZht",
+					"name": "Techniques",
+					"children": [
+						{
+							"id": "qGmexp0XVgEq5jyWg",
+							"name": "Hide Eyeball",
+							"notes": "Costs 2 FP",
+							"tags": [
+								"Devil Fruit",
+								"Eye-Eye Fruit"
+							],
+							"difficulty": "h",
+							"default": {
+								"type": "ht",
+								"modifier": -2
+							},
+							"limit": 0,
+							"points": 2
+						},
+						{
+							"id": "qa_ihDZHsM1quaza0",
+							"name": "Sensor Eyeball",
+							"notes": "Costs 2 FP",
+							"tags": [
+								"Devil Fruit",
+								"Eye-Eye Fruit"
+							],
+							"difficulty": "h",
+							"default": {
+								"type": "ht",
+								"modifier": -3
+							},
+							"limit": 0,
+							"points": 2
+						},
+						{
+							"id": "q9Fuza04VAtYNq_Ml",
+							"name": "Exceed Eyeball Limit",
+							"notes": "Costs 2 FP",
+							"tags": [
+								"Devil Fruit",
+								"Eye-Eye Fruit"
+							],
+							"difficulty": "h",
+							"default": {
+								"type": "ht",
+								"modifier": -1
+							},
+							"points": 2
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "SBzpwsydzweXwC51N",
+			"name": "Bird-Bird (Crow) Fruit",
+			"children": [
+				{
+					"id": "s1QiI2e1w417ghx0W",
+					"name": "Banshee Cry",
+					"tags": [
+						"Bird-Bird (Crow) Fruit",
+						"Devil Fruit"
+					],
+					"difficulty": "will/h",
+					"defaults": [
+						{
+							"type": "will",
+							"modifier": -6
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "s8H2Eogtt2N8Q5HcE",
+					"name": "Cursed Chorus",
+					"tags": [
+						"Bird-Bird (Crow) Fruit",
+						"Devil Fruit"
+					],
+					"difficulty": "will/h",
+					"defaults": [
+						{
+							"type": "will",
+							"modifier": -6
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "sKTYMqmAD1WI1xgkn",
+					"name": "Gathered Valuables",
+					"tags": [
+						"Bird-Bird (Crow) Fruit",
+						"Devil Fruit"
+					],
+					"difficulty": "per/h",
+					"defaults": [
+						{
+							"type": "per",
+							"modifier": -6
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "SS8hTYQVbMr6VJnd1",
+					"name": "Techniques",
+					"children": [
+						{
+							"id": "q8u_CnGMnv0ADVThN",
+							"name": "Not-So-Shiny",
+							"tags": [
+								"Bird-Bird (Crow) Fruit",
+								"Devil Fruit"
+							],
+							"difficulty": "h",
+							"default": {
+								"type": "skill",
+								"name": "Gathered Valuables",
+								"modifier": -1
+							},
+							"limit": 0,
+							"points": 1
+						},
+						{
+							"id": "qSwzhgkN2MRhDMjgK",
+							"name": "Mass Cry",
+							"tags": [
+								"Bird-Bird (Crow) Fruit",
+								"Devil Fruit"
+							],
+							"difficulty": "h",
+							"default": {
+								"type": "skill",
+								"name": "Banshee Cry",
+								"modifier": -3
+							},
+							"limit": 0,
+							"points": 1
+						},
+						{
+							"id": "qt2qQPX5PnZk5vlW8",
+							"name": "Selective Mass Cry",
+							"tags": [
+								"Bird-Bird (Crow) Fruit",
+								"Devil Fruit"
+							],
+							"difficulty": "h",
+							"default": {
+								"type": "skill",
+								"name": "Mass Cry",
+								"modifier": -2
+							},
+							"limit": 0,
+							"points": 1
+						},
+						{
+							"id": "qGFMq7ZAa6vs8dLVY",
+							"name": "Instant Curse",
+							"tags": [
+								"Bird-Bird (Crow) Fruit",
+								"Devil Fruit"
+							],
+							"difficulty": "h",
+							"default": {
+								"type": "skill",
+								"name": "Cursed Chorus",
+								"modifier": -10
+							},
+							"points": 1
+						},
+						{
+							"id": "qYQtgSH91GteMdgZo",
+							"name": "Circling Omen",
+							"tags": [
+								"Bird-Bird (Crow) Fruit",
+								"Devil Fruit"
+							],
+							"difficulty": "h",
+							"default": {
+								"type": "skill",
+								"name": "Cursed Chorus",
+								"modifier": -3
+							},
+							"points": 1
+						}
+					]
+				}
+			]
+		}
+	]
+}
