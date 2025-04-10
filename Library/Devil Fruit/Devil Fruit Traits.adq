@@ -206,14 +206,14 @@
 								]
 							},
 							"vtt_notes": "[+3 Accuracy with 3 seconds Aim][+4 Accuracy with 4 seconds Aim]",
-							"base_points": 30,
+							"base_points": 22,
 							"calc": {
-								"points": 30
+								"points": 22
 							}
 						}
 					],
 					"calc": {
-						"points": 77
+						"points": 69
 					}
 				},
 				{
@@ -482,7 +482,7 @@
 				}
 			],
 			"calc": {
-				"points": 270
+				"points": 262
 			}
 		},
 		{
