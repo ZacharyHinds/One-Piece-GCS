@@ -130,7 +130,7 @@
 								"modifier": -1
 							},
 							"limit": 0,
-							"points": 1
+							"points": 2
 						},
 						{
 							"id": "qSwzhgkN2MRhDMjgK",
@@ -146,7 +146,7 @@
 								"modifier": -3
 							},
 							"limit": 0,
-							"points": 1
+							"points": 2
 						},
 						{
 							"id": "qt2qQPX5PnZk5vlW8",
@@ -162,7 +162,7 @@
 								"modifier": -2
 							},
 							"limit": 0,
-							"points": 1
+							"points": 2
 						},
 						{
 							"id": "qGFMq7ZAa6vs8dLVY",
@@ -177,7 +177,7 @@
 								"name": "Cursed Chorus",
 								"modifier": -10
 							},
-							"points": 1
+							"points": 2
 						},
 						{
 							"id": "qYQtgSH91GteMdgZo",
@@ -192,7 +192,562 @@
 								"name": "Cursed Chorus",
 								"modifier": -3
 							},
-							"points": 1
+							"points": 2
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "S39ThIQovbWZm03pG",
+			"name": "Pain-Pain Fruit",
+			"children": [
+				{
+					"id": "sZYfkf-JE412PLylz",
+					"name": "Pain Healing",
+					"tags": [
+						"Devil Fruit",
+						"Pain-Pain Fruit"
+					],
+					"difficulty": "iq/h",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Doctor!"
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "sOipwFsVeCA72UHKO",
+					"name": "Cure Afflictions",
+					"tags": [
+						"Devil Fruit",
+						"Pain-Pain Fruit"
+					],
+					"difficulty": "iq/h",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Doctor!"
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "sp04j6ZWv2dh_i-AK",
+					"name": "Relieve Exhaustion",
+					"tags": [
+						"Devil Fruit",
+						"Pain-Pain Fruit"
+					],
+					"difficulty": "iq/h",
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -6
+						},
+						{
+							"type": "skill",
+							"name": "Doctor!"
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "svY0SGkv8OA07zlv6",
+					"name": "Transfer Exhaustion",
+					"tags": [
+						"Devil Fruit",
+						"Pain-Pain Fruit"
+					],
+					"difficulty": "ht/h",
+					"defaults": [
+						{
+							"type": "ht",
+							"modifier": -6
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "sZSbcV8SphaC8D-P2",
+					"name": "Inflict Pain",
+					"tags": [
+						"Devil Fruit",
+						"Pain-Pain Fruit"
+					],
+					"difficulty": "ht/h",
+					"defaults": [
+						{
+							"type": "ht",
+							"modifier": -6
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "shbXO0JQ8rOtOHA8A",
+					"name": "Inflict Agony",
+					"tags": [
+						"Devil Fruit",
+						"Pain-Pain Fruit"
+					],
+					"difficulty": "ht/h",
+					"defaults": [
+						{
+							"type": "ht",
+							"modifier": -6
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "s6YB8AWGJ8DCQjxlU",
+					"name": "Inflict Wound",
+					"tags": [
+						"Devil Fruit",
+						"Pain-Pain Fruit"
+					],
+					"difficulty": "ht/h",
+					"defaults": [
+						{
+							"type": "ht",
+							"modifier": -6
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "s82Ggc2G868I0UTE7",
+					"name": "Pain Buffer",
+					"tags": [
+						"Devil Fruit",
+						"Pain-Pain Fruit"
+					],
+					"difficulty": "ht/h",
+					"defaults": [
+						{
+							"type": "ht",
+							"modifier": -6
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "sOk0qTJ7qsq-S3x4s",
+					"name": "Instill Numbness",
+					"tags": [
+						"Devil Fruit",
+						"Pain-Pain Fruit"
+					],
+					"difficulty": "ht/h",
+					"defaults": [
+						{
+							"type": "ht",
+							"modifier": -6
+						}
+					],
+					"points": 1
+				},
+				{
+					"id": "S1gU0QQ_F6B1T2fsP",
+					"name": "Techniques",
+					"children": [
+						{
+							"id": "SuNEwmNQqpKSvrXoV",
+							"name": "Pain Healing",
+							"children": [
+								{
+									"id": "q4TrxQmLfCqpAuA8C",
+									"name": "Negate Transfer",
+									"tags": [
+										"Devil Fruit",
+										"Pain-Pain Fruit"
+									],
+									"difficulty": "h",
+									"default": {
+										"type": "skill",
+										"name": "Pain Healing",
+										"modifier": -1
+									},
+									"limit": 0,
+									"points": 2
+								},
+								{
+									"id": "qxzAvMpI1IelRWjuv",
+									"name": "Heal Creatures",
+									"tags": [
+										"Devil Fruit",
+										"Pain-Pain Fruit"
+									],
+									"difficulty": "h",
+									"default": {
+										"type": "skill",
+										"name": "Pain Healing",
+										"modifier": -10
+									},
+									"limit": 0,
+									"points": 2
+								},
+								{
+									"id": "qThTRBtYYUrSAgwy4",
+									"name": "Heal Self",
+									"tags": [
+										"Devil Fruit",
+										"Pain-Pain Fruit"
+									],
+									"difficulty": "h",
+									"default": {
+										"type": "skill",
+										"name": "Pain Healing",
+										"modifier": -6
+									},
+									"limit": 0,
+									"points": 2
+								},
+								{
+									"id": "qOMaYNhIsSwB_JgPN",
+									"name": "Mass Heal",
+									"tags": [
+										"Devil Fruit",
+										"Pain-Pain Fruit"
+									],
+									"difficulty": "h",
+									"default": {
+										"type": "skill",
+										"name": "Pain Healing",
+										"modifier": -5
+									},
+									"limit": 0,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": false,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Pain Healing"
+												},
+												"level": {
+													"compare": "at_least"
+												},
+												"notes": {
+													"compare": "contains",
+													"qualifier": "Level 3"
+												}
+											},
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Pain Healing"
+												},
+												"notes": {
+													"compare": "contains",
+													"qualifier": "Level 2"
+												}
+											}
+										]
+									},
+									"points": 2
+								}
+							]
+						},
+						{
+							"id": "SduZRL9ke-Jz0nnp-",
+							"name": "Inflict Pain",
+							"children": [
+								{
+									"id": "qn19Ws1EHjikSCQ-f",
+									"name": "Mass Pain",
+									"tags": [
+										"Devil Fruit",
+										"Pain-Pain Fruit"
+									],
+									"difficulty": "h",
+									"default": {
+										"type": "skill",
+										"name": "Inflict Pain",
+										"modifier": -5
+									},
+									"limit": 0,
+									"points": 2
+								},
+								{
+									"id": "qNpxh_bNUphpt4rM9",
+									"name": "Selective Mass Pain",
+									"tags": [
+										"Devil Fruit",
+										"Pain-Pain Fruit"
+									],
+									"difficulty": "h",
+									"default": {
+										"type": "skill",
+										"name": "Mass Pain",
+										"modifier": -2
+									},
+									"limit": 0,
+									"points": 2
+								}
+							]
+						},
+						{
+							"id": "S4fpQUezH4lvsjEGN",
+							"name": "Inflict Agony",
+							"children": [
+								{
+									"id": "qNM_M8Z1V2FHXSFic",
+									"name": "Mass Agony",
+									"tags": [
+										"Devil Fruit",
+										"Pain-Pain Fruit"
+									],
+									"difficulty": "h",
+									"default": {
+										"type": "skill",
+										"name": "Inflict Agony",
+										"modifier": -5
+									},
+									"limit": 0,
+									"points": 2
+								},
+								{
+									"id": "qjhQBqVx6UvOIamWx",
+									"name": "Selective Mass Agony",
+									"tags": [
+										"Devil Fruit",
+										"Pain-Pain Fruit"
+									],
+									"difficulty": "h",
+									"default": {
+										"type": "skill",
+										"name": "Mass Agony",
+										"modifier": -2
+									},
+									"limit": 0,
+									"points": 2
+								}
+							]
+						},
+						{
+							"id": "SGQbMCNGnSMiq3q5E",
+							"name": "Inflict Wound",
+							"children": [
+								{
+									"id": "qb8l-MYuCLjLufcf5",
+									"name": "Mass Wound",
+									"tags": [
+										"Devil Fruit",
+										"Pain-Pain Fruit"
+									],
+									"difficulty": "h",
+									"default": {
+										"type": "skill",
+										"name": "Inflict Wound",
+										"modifier": -5
+									},
+									"limit": 0,
+									"points": 2
+								},
+								{
+									"id": "qNvE1BmblAixSbytt",
+									"name": "Selective Mass Wound",
+									"tags": [
+										"Devil Fruit",
+										"Pain-Pain Fruit"
+									],
+									"difficulty": "h",
+									"default": {
+										"type": "skill",
+										"name": "Mass Wound",
+										"modifier": -2
+									},
+									"limit": 0,
+									"points": 2
+								}
+							]
+						},
+						{
+							"id": "SMngTzlB5l8__VzJg",
+							"name": "Cure Affliction",
+							"children": [
+								{
+									"id": "qoo8IMPD3CjCdPBSH",
+									"name": "Cure Creatures",
+									"tags": [
+										"Devil Fruit",
+										"Pain-Pain Fruit"
+									],
+									"difficulty": "h",
+									"default": {
+										"type": "skill",
+										"name": "Cure Affliction",
+										"modifier": -10
+									},
+									"limit": 0,
+									"points": 2
+								},
+								{
+									"id": "qLYxHD89gFei7G_-H",
+									"name": "Mass Cure Afflictions",
+									"tags": [
+										"Devil Fruit",
+										"Pain-Pain Fruit"
+									],
+									"difficulty": "h",
+									"default": {
+										"type": "skill",
+										"name": "Cure Affliction",
+										"modifier": -5
+									},
+									"limit": 0,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": false,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Cure Afflictions"
+												},
+												"level": {
+													"compare": "at_least"
+												},
+												"notes": {
+													"compare": "contains",
+													"qualifier": "Level 3"
+												}
+											},
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Cure Afflictions"
+												},
+												"level": {
+													"compare": "at_least"
+												},
+												"notes": {
+													"compare": "contains",
+													"qualifier": "Level 2"
+												}
+											}
+										]
+									},
+									"points": 2
+								}
+							]
+						},
+						{
+							"id": "Sn-UYzhLlbr2-2lYP",
+							"name": "Relieve Exhaustion",
+							"children": [
+								{
+									"id": "qyJbjiKUCeOiYj7aG",
+									"name": "Mass Relief",
+									"tags": [
+										"Devil Fruit",
+										"Pain-Pain Fruit"
+									],
+									"difficulty": "h",
+									"default": {
+										"type": "skill",
+										"name": "Relieve Exhaustion",
+										"modifier": -5
+									},
+									"limit": 0,
+									"prereqs": {
+										"type": "prereq_list",
+										"all": false,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Relieve Exhaustion"
+												},
+												"level": {
+													"compare": "at_least"
+												},
+												"notes": {
+													"compare": "contains",
+													"qualifier": "Level 3"
+												}
+											},
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Relieve Exhaustion"
+												},
+												"level": {
+													"compare": "at_least"
+												},
+												"notes": {
+													"compare": "contains",
+													"qualifier": "Level 2"
+												}
+											}
+										]
+									},
+									"points": 2
+								},
+								{
+									"id": "q64URSD5tBgtke2A2",
+									"name": "Relieve Creatures",
+									"tags": [
+										"Devil Fruit",
+										"Pain-Pain Fruit"
+									],
+									"difficulty": "h",
+									"default": {
+										"type": "skill",
+										"name": "Relieve Exhaustion",
+										"modifier": -10
+									},
+									"limit": 0,
+									"points": 2
+								}
+							]
+						},
+						{
+							"id": "Sn46LRQxflVzZscpf",
+							"name": "Pain Buffer",
+							"children": [
+								{
+									"id": "qcxuUrYwaZJR7Lt8M",
+									"name": "Reflexive Barrier",
+									"tags": [
+										"Devil Fruit",
+										"Pain-Pain Fruit"
+									],
+									"difficulty": "h",
+									"default": {
+										"type": "skill",
+										"name": "Pain Buffer",
+										"modifier": -4
+									},
+									"limit": 0,
+									"points": 2
+								}
+							]
 						}
 					]
 				}

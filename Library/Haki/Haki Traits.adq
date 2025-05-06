@@ -571,8 +571,8 @@
 							"id": "tvYWUY0mHqaWt5vHW",
 							"name": "Presence Sense, Basic",
 							"tags": [
-								"Observation Haki",
-								"Haki"
+								"Haki",
+								"Observation Haki"
 							],
 							"prereqs": {
 								"type": "prereq_list",
@@ -606,8 +606,8 @@
 							"id": "ttq-q6J6AYFQbxxq8",
 							"name": "Presence Sense, Improved",
 							"tags": [
-								"Observation Haki",
-								"Haki"
+								"Haki",
+								"Observation Haki"
 							],
 							"prereqs": {
 								"type": "prereq_list",
@@ -641,8 +641,8 @@
 							"id": "tS3aPdxCy_FFn0CaS",
 							"name": "Presence Sense, Greater",
 							"tags": [
-								"Observation Haki",
-								"Haki"
+								"Haki",
+								"Observation Haki"
 							],
 							"prereqs": {
 								"type": "prereq_list",
@@ -676,8 +676,8 @@
 							"id": "tFfHmEedD4blTKKpN",
 							"name": "Presence Sense, Supreme",
 							"tags": [
-								"Observation Haki",
-								"Haki"
+								"Haki",
+								"Observation Haki"
 							],
 							"prereqs": {
 								"type": "prereq_list",
@@ -716,8 +716,8 @@
 					"id": "tpnhkVfv_0z-5UbSh",
 					"name": "Emotion Sense",
 					"tags": [
-						"Observation Haki",
-						"Haki"
+						"Haki",
+						"Observation Haki"
 					],
 					"prereqs": {
 						"type": "prereq_list",
@@ -749,8 +749,8 @@
 					"id": "T5hNA0CUpw3PK0pzP",
 					"name": "Near-Future Sense",
 					"tags": [
-						"Observation Haki",
-						"Haki"
+						"Haki",
+						"Observation Haki"
 					],
 					"prereqs": {
 						"type": "prereq_list",
@@ -758,7 +758,7 @@
 						"prereqs": [
 							{
 								"type": "prereq_list",
-								"all": true,
+								"all": false,
 								"prereqs": [
 									{
 										"type": "trait_prereq",
@@ -883,8 +883,8 @@
 					"id": "tuKONk7yLra1LYwAU",
 					"name": "Battle Sense",
 					"tags": [
-						"Observation Haki",
-						"Haki"
+						"Haki",
+						"Observation Haki"
 					],
 					"prereqs": {
 						"type": "prereq_list",
@@ -931,8 +931,8 @@
 					"id": "treS6sjRVriF8EK-9",
 					"name": "Observation Haki Talent",
 					"tags": [
-						"Observation Haki",
-						"Haki"
+						"Haki",
+						"Observation Haki"
 					],
 					"prereqs": {
 						"type": "prereq_list",
@@ -1051,7 +1051,7 @@
 						"prereqs": [
 							{
 								"type": "prereq_list",
-								"all": true,
+								"all": false,
 								"prereqs": [
 									{
 										"type": "attribute_prereq",
@@ -1085,7 +1085,7 @@
 					"base_points": 64,
 					"weapons": [
 						{
-							"id": "W9iR9XKH7VEW897n4",
+							"id": "WVDvOnnyPy0IUWgZH",
 							"damage": {
 								"type": "aff"
 							},

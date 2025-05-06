@@ -259,10 +259,10 @@
 					"reference": "B212",
 					"tags": [
 						"Combat",
+						"Haki",
 						"Melee Combat",
-						"Weapon",
 						"Observation Haki",
-						"Haki"
+						"Weapon"
 					],
 					"difficulty": "dx/h",
 					"prereqs": {
@@ -271,7 +271,7 @@
 						"prereqs": [
 							{
 								"type": "prereq_list",
-								"all": true,
+								"all": false,
 								"prereqs": [
 									{
 										"type": "trait_prereq",
@@ -342,7 +342,7 @@
 				},
 				{
 					"id": "q69Gos17kzplCsfuo",
-					"name": "Selective Will",
+					"name": "Conquering Will",
 					"notes": "Costs 10 HE\nGive targets a penalty to resist Overwhelming Will",
 					"tags": [
 						"Conqueror's Haki",

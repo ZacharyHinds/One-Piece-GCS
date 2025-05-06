@@ -2486,8 +2486,1022 @@
 		{
 			"id": "T_gJsxeBtvqB1_fuA",
 			"name": "Pain-Pain Fruit",
+			"tags": [
+				"Devil Fruit",
+				"Pain-Pain Fruit"
+			],
+			"children": [
+				{
+					"id": "tsrUxQnRS6HcTA6Va",
+					"name": "Pain-Pain Fruit Talent",
+					"tags": [
+						"Devil Fruit",
+						"Pain-Pain Fruit"
+					],
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to rolls for Eye-Eye Fruit abilities",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "TLCyAhR3fXNBB8AK9",
+					"name": "Core",
+					"tags": [
+						"Devil Fruit",
+						"Pain-Pain Fruit"
+					],
+					"children": [
+						{
+							"id": "tHhfmCWHv2jlCbX6e",
+							"name": "Pain Healing",
+							"tags": [
+								"Devil Fruit",
+								"Pain-Pain Fruit"
+							],
+							"modifiers": [
+								{
+									"id": "MF2BAeg2pvgIjnvM1",
+									"name": "Levels",
+									"children": [
+										{
+											"id": "mSeUcTvM8-rMBLX3u",
+											"name": "Level 1",
+											"cost": 18,
+											"cost_type": "points"
+										},
+										{
+											"id": "moIAzOgy-GrfKHasF",
+											"name": "Level 2",
+											"cost": 54,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "mzWe0ZDSdCxWI0bNm",
+											"name": "Level 3",
+											"cost": 69,
+											"cost_type": "points",
+											"disabled": true
+										}
+									]
+								}
+							],
+							"calc": {
+								"points": 18
+							}
+						}
+					],
+					"calc": {
+						"points": 18
+					}
+				},
+				{
+					"id": "TX1DRMcr0JLionGx3",
+					"name": "Afflict",
+					"tags": [
+						"Devil Fruit",
+						"Pain-Pain Fruit"
+					],
+					"children": [
+						{
+							"id": "txFg-AdvCcQcHS417",
+							"name": "Inflict Pain",
+							"notes": "Costs 2 FP",
+							"tags": [
+								"Devil Fruit",
+								"Pain-Pain Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Pain Healing"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Level"
+										}
+									}
+								]
+							},
+							"modifiers": [
+								{
+									"id": "MCjlJ3WGEaqVLennm",
+									"name": "Levels",
+									"children": [
+										{
+											"id": "m6s60gzBNH1xEUGuN",
+											"name": "Level 1",
+											"cost": 12,
+											"cost_type": "points"
+										},
+										{
+											"id": "me1eDtUB-2HP28s-B",
+											"name": "Level 2",
+											"cost": 23,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"percent": true,
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 100
+												}
+											],
+											"disabled": true
+										},
+										{
+											"id": "mPy81Df0qvf9_XnkI",
+											"name": "Level 3",
+											"cost": 34,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"percent": true,
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 200
+												}
+											],
+											"disabled": true
+										},
+										{
+											"id": "mRMaQM16iaECbUQB3",
+											"name": "Level 4",
+											"cost": 45,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"percent": true,
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 300
+												}
+											],
+											"disabled": true
+										}
+									]
+								}
+							],
+							"weapons": [
+								{
+									"id": "WYmN2LB22IWETkXJv",
+									"damage": {
+										"type": "nw tox",
+										"base": "1d"
+									},
+									"usage_notes": "Special side effect",
+									"rate_of_fire": "1",
+									"defaults": [
+										{
+											"type": "ht",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Inflict Wound"
+										}
+									],
+									"calc": {
+										"damage": "1d nw tox"
+									}
+								}
+							],
+							"calc": {
+								"points": 12
+							}
+						},
+						{
+							"id": "tWMjR79-cZpml3RrD",
+							"name": "Inflict Agony",
+							"notes": "Costs 4 FP",
+							"tags": [
+								"Devil Fruit",
+								"Pain-Pain Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Inflict Pain"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Level 4"
+										}
+									}
+								]
+							},
+							"points_per_level": 14,
+							"weapons": [
+								{
+									"id": "WzJOHg6q8ky1e5JcX",
+									"damage": {
+										"type": "nw tox",
+										"base": "1d"
+									},
+									"usage_notes": "Special side effect",
+									"rate_of_fire": "1",
+									"defaults": [
+										{
+											"type": "ht",
+											"modifier": -6
+										},
+										{
+											"type": "skill",
+											"name": "Inflict Wound"
+										}
+									],
+									"calc": {
+										"damage": "1d nw tox"
+									}
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 14
+							}
+						},
+						{
+							"id": "tROb_FMinXTvyysEm",
+							"name": "Inflict Wound",
+							"notes": "Costs 2 FP per Wound Potential",
+							"tags": [
+								"Devil Fruit",
+								"Pain-Pain Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Inflict Agony"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Level 4"
+										}
+									}
+								]
+							},
+							"modifiers": [
+								{
+									"id": "MhcwT3Lmnt7y8M4Rw",
+									"name": "Levels",
+									"children": [
+										{
+											"id": "mczlOKKp3pTMycUwn",
+											"name": "Level 0",
+											"cost": 3,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 0
+												}
+											]
+										},
+										{
+											"id": "madXCOWmM9Ur4N87s",
+											"name": "Level 1",
+											"cost": 5,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 1
+												}
+											],
+											"disabled": true
+										},
+										{
+											"id": "m23riI1mKysBKlu_4",
+											"name": "Level 2",
+											"cost": 8,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 2
+												}
+											],
+											"disabled": true
+										},
+										{
+											"id": "mKvQZptvBAet-U_3Y",
+											"name": "Level 3",
+											"cost": 9,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 3
+												}
+											],
+											"disabled": true
+										},
+										{
+											"id": "m7WH9E6swCwf9FR4v",
+											"name": "Level 4",
+											"cost": 16,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 6
+												}
+											],
+											"disabled": true
+										},
+										{
+											"id": "mewcQLtHtW3kI1V_S",
+											"name": "Level 5",
+											"cost": 20,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 8
+												}
+											],
+											"disabled": true
+										},
+										{
+											"id": "mdOkPTthmFoHQ7L1C",
+											"name": "Level 6",
+											"cost": 29,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 12
+												}
+											],
+											"disabled": true
+										},
+										{
+											"id": "mbDAP1oFrblvIl3MB",
+											"name": "Level 7",
+											"cost": 41,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 18
+												}
+											],
+											"disabled": true
+										},
+										{
+											"id": "m1EGnahgjjr4LF9Jw",
+											"name": "Level 8",
+											"cost": 53,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 24
+												}
+											],
+											"disabled": true
+										},
+										{
+											"id": "mmwiStv60BxyY-fWW",
+											"name": "Level 9",
+											"cost": 78,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 36
+												}
+											],
+											"disabled": true
+										},
+										{
+											"id": "m5srv5YC52Jleo-dF",
+											"name": "Level 10",
+											"cost": 126,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 90
+												}
+											],
+											"disabled": true
+										}
+									]
+								}
+							],
+							"weapons": [
+								{
+									"id": "Wo6vOrl0qx-pYuFLG",
+									"damage": {
+										"type": "tox",
+										"base": "1"
+									},
+									"rate_of_fire": "1",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Inflict Wound"
+										},
+										{
+											"type": "ht",
+											"modifier": -6
+										}
+									],
+									"calc": {
+										"damage": "1 tox"
+									}
+								}
+							],
+							"calc": {
+								"points": 3
+							}
+						}
+					],
+					"calc": {
+						"points": 29
+					}
+				},
+				{
+					"id": "T5Vta1GZMW8jlHceL",
+					"name": "Respite",
+					"tags": [
+						"Devil Fruit",
+						"Pain-Pain Fruit"
+					],
+					"children": [
+						{
+							"id": "tUdkQvZvdhfpdowsk",
+							"name": "Cure Afflictions",
+							"notes": "FP Cost and penalty varies.",
+							"tags": [
+								"Devil Fruit",
+								"Pain-Pain Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Pain Healing"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Level"
+										}
+									}
+								]
+							},
+							"modifiers": [
+								{
+									"id": "MlavjRIGVF9btkU49",
+									"name": "Level",
+									"children": [
+										{
+											"id": "mvFAxlCI2NXhMmjLT",
+											"name": "Level 1",
+											"cost": 15,
+											"cost_type": "points"
+										},
+										{
+											"id": "m-dYSHoPzQic3vZ_n",
+											"name": "Level 2",
+											"cost": 51,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "mYwo7BZ50S66MURbD",
+											"name": "Level 3",
+											"cost": 66,
+											"cost_type": "points",
+											"disabled": true
+										}
+									]
+								}
+							],
+							"calc": {
+								"points": 15
+							}
+						},
+						{
+							"id": "t7tNCVcMJH9ftR_OJ",
+							"name": "Relieve Exhaustion",
+							"notes": "Costs 1 FP per FP healed",
+							"tags": [
+								"Devil Fruit",
+								"Pain-Pain Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Cure Afflictions"
+										},
+										"level": {
+											"compare": "at_least"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Level"
+										}
+									}
+								]
+							},
+							"modifiers": [
+								{
+									"id": "MgTdoSK_93UP_EKgl",
+									"name": "Level",
+									"children": [
+										{
+											"id": "m9J_ApVR6SEtl37M7",
+											"name": "Level 1",
+											"cost": 27,
+											"cost_type": "points"
+										},
+										{
+											"id": "ml0zAB2I2lh3z9jHk",
+											"name": "Level 2",
+											"cost": 63,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "m6Ws9vCUJp8DEX3pp",
+											"name": "Level 3",
+											"cost": 78,
+											"cost_type": "points",
+											"disabled": true
+										}
+									]
+								}
+							],
+							"calc": {
+								"points": 27
+							}
+						},
+						{
+							"id": "tnxA0xOP1F11q0zes",
+							"name": "Transfer Exhaustion",
+							"tags": [
+								"Devil Fruit",
+								"Pain-Pain Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Relieve Exhaustion"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Level"
+										}
+									}
+								]
+							},
+							"modifiers": [
+								{
+									"id": "MlCXBxN3LrwwrOCnz",
+									"name": "Level",
+									"children": [
+										{
+											"id": "miB6RJGfh9sg25wD3",
+											"name": "Level 1",
+											"cost": 71,
+											"cost_type": "points"
+										},
+										{
+											"id": "mt8-zXXJXrXXQCtRY",
+											"name": "Level 2",
+											"cost": 104,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"percent": true,
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 100
+												}
+											],
+											"disabled": true
+										},
+										{
+											"id": "mHIE0gN4o9WE6jon3",
+											"name": "Level 3",
+											"cost": 135,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"percent": true,
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 200
+												}
+											],
+											"disabled": true
+										},
+										{
+											"id": "m5U_Goit7Xn2l2Hnv",
+											"name": "Level 4",
+											"cost": 166,
+											"cost_type": "points",
+											"features": [
+												{
+													"type": "weapon_bonus",
+													"percent": true,
+													"selection_type": "this_weapon",
+													"name": {
+														"compare": "is"
+													},
+													"level": {
+														"compare": "at_least"
+													},
+													"amount": 300
+												}
+											],
+											"disabled": true
+										}
+									]
+								}
+							],
+							"weapons": [
+								{
+									"id": "WDQ6kjkXqNWSahYL0",
+									"damage": {
+										"type": "fatigue",
+										"base": "1d"
+									},
+									"rate_of_fire": "1",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Trasnfer Exhaustion"
+										},
+										{
+											"type": "ht",
+											"modifier": -6
+										}
+									],
+									"calc": {
+										"damage": "1d fatigue"
+									}
+								}
+							],
+							"calc": {
+								"points": 71
+							}
+						}
+					],
+					"calc": {
+						"points": 113
+					}
+				},
+				{
+					"id": "TR_XQjnkLuVBo4taP",
+					"name": "Embolden",
+					"tags": [
+						"Devil Fruit",
+						"Pain-Pain Fruit"
+					],
+					"children": [
+						{
+							"id": "tDu-XqQuN9beYPXv4",
+							"name": "Pain Buffer",
+							"notes": "Costs 2 FP",
+							"tags": [
+								"Devil Fruit",
+								"Pain-Pain Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Pain Healing"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Level"
+										}
+									}
+								]
+							},
+							"modifiers": [
+								{
+									"id": "MlUMYvnxDQnaLgMbp",
+									"name": "Level",
+									"children": [
+										{
+											"id": "mfoaU_7GleQzcvQu_",
+											"name": "Level 1",
+											"cost": 26,
+											"cost_type": "points"
+										},
+										{
+											"id": "mXrOSTm-hTTJFCLEl",
+											"name": "Level 2",
+											"cost": 28,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "moMz1niWbVZAyXVGs",
+											"name": "Level 3",
+											"cost": 31,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "mFwHLtuSXo9UOHp4M",
+											"name": "Level 4",
+											"cost": 33,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "mSDqu-uNYLB_HdAYI",
+											"name": "Level 5",
+											"cost": 37,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "mpYruSIHwU_EtP3WZ",
+											"name": "Level 6",
+											"cost": 39,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "mYNdnxU-5cMpYXLk5",
+											"name": "Level 7",
+											"cost": 42,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "m8Bd3Rzi_CdUJcRWY",
+											"name": "Level 8",
+											"cost": 44,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "mgOJtMH8jN6A0Y6dO",
+											"name": "Level 9",
+											"cost": 48,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "mCrSMIj2O-Lnr4XzS",
+											"name": "Level 10",
+											"cost": 49,
+											"cost_type": "points",
+											"disabled": true
+										}
+									]
+								}
+							],
+							"calc": {
+								"points": 26
+							}
+						},
+						{
+							"id": "tqTECA_iNkCDCQ2rB",
+							"name": "Instill Numbness",
+							"notes": "Costs 2 FP",
+							"tags": [
+								"Devil Fruit",
+								"Pain-Pain Fruit"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Pain Buffer"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Level 10"
+										}
+									}
+								]
+							},
+							"modifiers": [
+								{
+									"id": "M_c39L6lbrnhmTdfp",
+									"name": "Level",
+									"children": [
+										{
+											"id": "mhec1zCS3Xc3wJYqI",
+											"name": "Level 1",
+											"cost": 46,
+											"cost_type": "points"
+										},
+										{
+											"id": "mYWGDMkdgTz3shXv6",
+											"name": "Level 2",
+											"cost": 62,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "m5QkLuhcsMa9Y2Vug",
+											"name": "Level 3",
+											"cost": 79,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "mSk9n9VmCUSg3gyXu",
+											"name": "Level 4",
+											"cost": 95,
+											"cost_type": "points",
+											"disabled": true
+										},
+										{
+											"id": "meUsfv-e1lOkJm0LM",
+											"name": "Level 5",
+											"cost": 111,
+											"cost_type": "points",
+											"disabled": true
+										}
+									]
+								}
+							],
+							"calc": {
+								"points": 46
+							}
+						}
+					],
+					"calc": {
+						"points": 72
+					}
+				}
+			],
 			"calc": {
-				"points": 0
+				"points": 237
 			}
 		}
 	]
