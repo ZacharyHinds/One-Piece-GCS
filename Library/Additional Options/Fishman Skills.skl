@@ -1,0 +1,112 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "SCy9WuHVldQFrfYl6",
+			"name": "Pufferfish Abilities",
+			"children": [
+				{
+					"id": "sz0SYbVLk6sr_mjuC",
+					"name": "Spine Shooter",
+					"difficulty": "dx/h",
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -6
+						}
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Spine Shooter"
+								},
+								"level": {
+									"compare": "at_least"
+								}
+							}
+						]
+					},
+					"points": 1
+				},
+				{
+					"id": "SyxVhJET-_cXXqlMx",
+					"name": "Spine Shooter Techniques",
+					"children": [
+						{
+							"id": "q8tYEQBv-mdpLuNpZ",
+							"name": "Anywhere Shot",
+							"difficulty": "h",
+							"default": {
+								"type": "skill",
+								"name": "Spine Shooter",
+								"modifier": -5
+							},
+							"points": 2
+						},
+						{
+							"id": "qWVv456C6GgxWxRap",
+							"name": "Foot Shot",
+							"difficulty": "h",
+							"default": {
+								"type": "skill",
+								"name": "Spine Shooter",
+								"modifier": -2
+							},
+							"points": 2
+						},
+						{
+							"id": "qRENzBM90fJghBQEN",
+							"name": "Piercing Shot",
+							"difficulty": "h",
+							"default": {
+								"type": "skill",
+								"name": "Spine Shooter",
+								"modifier": -5
+							},
+							"points": 2
+						},
+						{
+							"id": "qU87Cy68U5pO9l7Zl",
+							"name": "Sea-to-Air Shot",
+							"difficulty": "h",
+							"default": {
+								"type": "skill",
+								"name": "Spine Shooter",
+								"modifier": -3
+							},
+							"points": 2
+						},
+						{
+							"id": "qKnhXHppCTU71rBLI",
+							"name": "Shotgun Pop",
+							"difficulty": "h",
+							"default": {
+								"type": "skill",
+								"name": "Spine Shooter",
+								"modifier": -5
+							},
+							"points": 2
+						},
+						{
+							"id": "qeWMbfCbnIhktNVh8",
+							"name": "Stealth Shot",
+							"difficulty": "h",
+							"default": {
+								"type": "skill",
+								"name": "Spine Shooter",
+								"modifier": -2
+							},
+							"points": 2
+						}
+					]
+				}
+			]
+		}
+	]
+}
