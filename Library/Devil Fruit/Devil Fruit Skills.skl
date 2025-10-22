@@ -12,7 +12,7 @@
 						{
 							"id": "qGmexp0XVgEq5jyWg",
 							"name": "Hide Eyeball",
-							"notes": "Costs 2 FP",
+							"local_notes": "Costs 2 FP",
 							"tags": [
 								"Devil Fruit",
 								"Eye-Eye Fruit"
@@ -28,7 +28,7 @@
 						{
 							"id": "qa_ihDZHsM1quaza0",
 							"name": "Sensor Eyeball",
-							"notes": "Costs 2 FP",
+							"local_notes": "Costs 2 FP",
 							"tags": [
 								"Devil Fruit",
 								"Eye-Eye Fruit"
@@ -44,7 +44,7 @@
 						{
 							"id": "q9Fuza04VAtYNq_Ml",
 							"name": "Exceed Eyeball Limit",
-							"notes": "Costs 2 FP",
+							"local_notes": "Costs 2 FP",
 							"tags": [
 								"Devil Fruit",
 								"Eye-Eye Fruit"
@@ -546,6 +546,22 @@
 							"name": "Inflict Wound",
 							"children": [
 								{
+									"id": "qyRqHYdO3hJYErkyk",
+									"name": "Deep Wound",
+									"tags": [
+										"Devil Fruit",
+										"Pain-Pain Fruit"
+									],
+									"difficulty": "h",
+									"default": {
+										"type": "skill",
+										"name": "Inflict Wound",
+										"modifier": -10
+									},
+									"limit": 0,
+									"points": 2
+								},
+								{
 									"id": "qb8l-MYuCLjLufcf5",
 									"name": "Mass Wound",
 									"tags": [
@@ -557,6 +573,22 @@
 										"type": "skill",
 										"name": "Inflict Wound",
 										"modifier": -5
+									},
+									"limit": 0,
+									"points": 2
+								},
+								{
+									"id": "qrqBpSW2LKXceN2Wi",
+									"name": "Painful Wound",
+									"tags": [
+										"Devil Fruit",
+										"Pain-Pain Fruit"
+									],
+									"difficulty": "h",
+									"default": {
+										"type": "skill",
+										"name": "Inflict Wound",
+										"modifier": -7
 									},
 									"limit": 0,
 									"points": 2

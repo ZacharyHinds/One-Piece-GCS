@@ -28,7 +28,8 @@
 					"can_level": true,
 					"levels": 1,
 					"calc": {
-						"points": 5
+						"points": 5,
+						"current_level": 1
 					}
 				},
 				{
@@ -152,7 +153,7 @@
 						{
 							"id": "ttEQlI8PzZgkLo2FE",
 							"name": "Zooming Sight",
-							"notes": "Ignore -2 (-4 with Aim) in range penalties to Vision. +1 Accuracy per second spent Aiming, up to +2.",
+							"local_notes": "Ignore -2 (-4 with Aim) in range penalties to Vision. +1 Accuracy per second spent Aiming, up to +2.",
 							"tags": [
 								"Devil Fruit",
 								"Eye-Eye Fruit"
@@ -183,7 +184,7 @@
 						{
 							"id": "tpPp8F2rGqhiuoA7w",
 							"name": "Perfect Sight",
-							"notes": "See through invisibility, illusions, and disguises created by devil fruits",
+							"local_notes": "See through invisibility, illusions, and disguises created by devil fruits",
 							"tags": [
 								"Devil Fruit",
 								"Eye-Eye Fruit"
@@ -397,7 +398,8 @@
 							"can_level": true,
 							"levels": 1,
 							"calc": {
-								"points": 6
+								"points": 6,
+								"current_level": 1
 							}
 						}
 					],
@@ -416,7 +418,7 @@
 						{
 							"id": "tZnx_EnNWng9khhaw",
 							"name": "Place Eyeball",
-							"notes": "Max Eyes: @HT/2@\nRange: @See Table@",
+							"local_notes": "Max Eyes: @HT/2@\nRange: @See Table@",
 							"tags": [
 								"Devil Fruit",
 								"Eye-Eye Fruit"
@@ -426,7 +428,8 @@
 							"can_level": true,
 							"levels": 1,
 							"calc": {
-								"points": 65
+								"points": 65,
+								"current_level": 1
 							}
 						},
 						{
@@ -440,7 +443,8 @@
 							"can_level": true,
 							"levels": 1,
 							"calc": {
-								"points": 25
+								"points": 25,
+								"current_level": 1
 							}
 						},
 						{
@@ -472,7 +476,8 @@
 							"can_level": true,
 							"levels": 1,
 							"calc": {
-								"points": 5
+								"points": 5,
+								"current_level": 1
 							}
 						}
 					],
@@ -536,7 +541,8 @@
 					"can_level": true,
 					"levels": 1,
 					"calc": {
-						"points": 5
+						"points": 5,
+						"current_level": 1
 					}
 				},
 				{
@@ -557,8 +563,7 @@
 							"modifiers": [
 								{
 									"id": "mDBEC3AcRMOSQQVus",
-									"name": "Alternate Form",
-									"cost_type": "multiplier"
+									"name": "Alternate Form"
 								}
 							],
 							"children": [
@@ -584,7 +589,7 @@
 												{
 													"id": "mOZK-gPLFE3xiNH9z",
 													"name": "No Fine Manipulators",
-													"cost": -40
+													"cost_adj": "-40%"
 												}
 											],
 											"points_per_level": 20,
@@ -599,7 +604,8 @@
 											"can_level": true,
 											"levels": 4,
 											"calc": {
-												"points": 0
+												"points": 48,
+												"current_level": 4
 											}
 										},
 										{
@@ -628,12 +634,13 @@
 											"can_level": true,
 											"levels": 8,
 											"calc": {
-												"points": 0
+												"points": -80,
+												"current_level": 8
 											}
 										}
 									],
 									"calc": {
-										"points": 0
+										"points": -32
 									}
 								},
 								{
@@ -654,7 +661,8 @@
 											"can_level": true,
 											"levels": 4,
 											"calc": {
-												"points": 0
+												"points": 0,
+												"current_level": 4
 											}
 										},
 										{
@@ -675,7 +683,7 @@
 												{
 													"id": "mJPiAeQ95gmVE6DKD",
 													"name": "Size",
-													"cost": -10,
+													"cost_adj": "-10%",
 													"levels": 1,
 													"disabled": true
 												}
@@ -692,7 +700,8 @@
 											"can_level": true,
 											"levels": 8,
 											"calc": {
-												"points": 0
+												"points": 16,
+												"current_level": 8
 											}
 										},
 										{
@@ -721,7 +730,8 @@
 											"can_level": true,
 											"levels": 3,
 											"calc": {
-												"points": 0
+												"points": -15,
+												"current_level": 3
 											}
 										},
 										{
@@ -751,12 +761,13 @@
 											"can_level": true,
 											"levels": 2,
 											"calc": {
-												"points": 0
+												"points": 10,
+												"current_level": 2
 											}
 										}
 									],
 									"calc": {
-										"points": 0
+										"points": 11
 									}
 								},
 								{
@@ -788,7 +799,8 @@
 											"can_level": true,
 											"levels": 3,
 											"calc": {
-												"points": 0
+												"points": 6,
+												"current_level": 3
 											}
 										},
 										{
@@ -800,7 +812,7 @@
 											},
 											"name": "Flight",
 											"reference": "B56,P50,PSI14",
-											"notes": "Air Move is Basic Speed x 2 (drop all fractions)",
+											"local_notes": "Air Move is Basic Speed x 2 (drop all fractions)",
 											"tags": [
 												"Advantage",
 												"Exotic",
@@ -811,115 +823,115 @@
 													"id": "mvE05tTUJvJMrDc_z",
 													"name": "Newtonian Space Flight",
 													"reference": "B56",
-													"cost": 25,
+													"cost_adj": "25%",
 													"disabled": true
 												},
 												{
 													"id": "m_f88MCsGRbk6n5fG",
 													"name": "Space Flight",
 													"reference": "B56",
-													"cost": 50,
+													"cost_adj": "50%",
 													"disabled": true
 												},
 												{
 													"id": "mi3D5hZBer9KxsOo6",
 													"name": "Cannot Hover",
 													"reference": "B56",
-													"cost": -15,
+													"cost_adj": "-15%",
 													"disabled": true
 												},
 												{
 													"id": "mpcp_VuP9nTvq6Fij",
 													"name": "Controlled Gliding",
 													"reference": "B56",
-													"cost": -45,
+													"cost_adj": "-45%",
 													"disabled": true
 												},
 												{
 													"id": "mDsMVpu780ijqkQDT",
 													"name": "Gliding",
 													"reference": "B56",
-													"cost": -50,
+													"cost_adj": "-50%",
 													"disabled": true
 												},
 												{
 													"id": "mQKyNQCbWqpdMCHhQ",
 													"name": "Lighter Than Air",
 													"reference": "B56",
-													"cost": -10,
+													"cost_adj": "-10%",
 													"disabled": true
 												},
 												{
 													"id": "mMCRBsnPdthBW_9W8",
 													"name": "Low Ceiling",
 													"reference": "B56",
-													"notes": "30'",
-													"cost": -10,
+													"local_notes": "30'",
+													"cost_adj": "-10%",
 													"disabled": true
 												},
 												{
 													"id": "mCxlWMOGKHJrPXa3_",
 													"name": "Low Ceiling",
 													"reference": "B56",
-													"notes": "10'",
-													"cost": -20,
+													"local_notes": "10'",
+													"cost_adj": "-20%",
 													"disabled": true
 												},
 												{
 													"id": "mvUBipTuQ5ACFTRrl",
 													"name": "Low Ceiling",
 													"reference": "B56",
-													"notes": "5'",
-													"cost": -25,
+													"local_notes": "5'",
+													"cost_adj": "-25%",
 													"disabled": true
 												},
 												{
 													"id": "m433V-b__hQ8_wMg6",
 													"name": "Small Wings",
 													"reference": "B56",
-													"cost": -10,
+													"cost_adj": "-10%",
 													"disabled": true
 												},
 												{
 													"id": "mmx-C6tkfLg04UPYn",
 													"name": "Space Flight Only",
 													"reference": "B56",
-													"cost": -75,
+													"cost_adj": "-75%",
 													"disabled": true
 												},
 												{
 													"id": "mNHsqg5kCZ51wKRMf",
 													"name": "Winged",
 													"reference": "B56",
-													"cost": -25
+													"cost_adj": "-25%"
 												},
 												{
 													"id": "mQm2iu2mMAKQw4scx",
 													"name": "Planetary",
 													"reference": "P50",
-													"cost": -5,
+													"cost_adj": "-5%",
 													"disabled": true
 												},
 												{
 													"id": "mI3RH1PlBLhwh89FO",
 													"name": "Requires Surface",
 													"reference": "P50",
-													"cost": -20,
+													"cost_adj": "-20%",
 													"disabled": true
 												},
 												{
 													"id": "mECwU8wLZK11XR6Wg",
 													"name": "Slow",
 													"reference": "PSI14",
-													"notes": "Basic Speed",
-													"cost": -25,
+													"local_notes": "Basic Speed",
+													"cost_adj": "-25%",
 													"disabled": true
 												},
 												{
 													"id": "m1akDWpG4jUmkzYlZ",
 													"name": "Slow, Move 1",
 													"reference": "PSI14",
-													"cost": -45,
+													"cost_adj": "-45%",
 													"disabled": true
 												},
 												{
@@ -927,8 +939,8 @@
 													"name": "Encumbrance-Limited (No encumbrance)",
 													"reference": "FFWF12",
 													"reference_highlight": "Encumbrance-Limited",
-													"notes": "Can only glide at best when overburdened",
-													"cost": -15,
+													"local_notes": "Can only glide at best when overburdened",
+													"cost_adj": "-15%",
 													"disabled": true
 												},
 												{
@@ -936,8 +948,8 @@
 													"name": "Encumbrance-Limited (Light encumbrance)",
 													"reference": "FFWF12",
 													"reference_highlight": "Encumbrance-Limited",
-													"notes": "Can only glide at best when overburdened",
-													"cost": -10,
+													"local_notes": "Can only glide at best when overburdened",
+													"cost_adj": "-10%",
 													"disabled": true
 												},
 												{
@@ -945,14 +957,14 @@
 													"name": "Encumbrance-Limited (Medium encumbrance)",
 													"reference": "FFWF12",
 													"reference_highlight": "Encumbrance-Limited",
-													"notes": "Can only glide at best when overburdened",
-													"cost": -5,
+													"local_notes": "Can only glide at best when overburdened",
+													"cost_adj": "-5%",
 													"disabled": true
 												}
 											],
 											"base_points": 40,
 											"calc": {
-												"points": 0
+												"points": 30
 											}
 										},
 										{
@@ -972,7 +984,8 @@
 											"can_level": true,
 											"levels": 3,
 											"calc": {
-												"points": 0
+												"points": 3,
+												"current_level": 3
 											}
 										},
 										{
@@ -994,8 +1007,7 @@
 													"id": "moLXyOmTZrWmnExQF",
 													"name": "Provided by Vampiric Bite",
 													"reference": "B96",
-													"cost": -1,
-													"cost_type": "points",
+													"cost_adj": "-1",
 													"disabled": true
 												}
 											],
@@ -1003,6 +1015,7 @@
 											"weapons": [
 												{
 													"id": "wpb239juaWXBNTzCT",
+													"sv": 1,
 													"damage": {
 														"type": "pi+",
 														"st": "thr",
@@ -1025,7 +1038,7 @@
 												}
 											],
 											"calc": {
-												"points": 0
+												"points": 1
 											}
 										},
 										{
@@ -1045,6 +1058,7 @@
 											"weapons": [
 												{
 													"id": "wuWGgfIAgHoJcT7TI",
+													"sv": 1,
 													"damage": {
 														"type": "cut",
 														"st": "thr",
@@ -1076,6 +1090,7 @@
 												},
 												{
 													"id": "w6vFdbYBilEZR-iJ2",
+													"sv": 1,
 													"damage": {
 														"type": "imp",
 														"st": "thr",
@@ -1107,12 +1122,12 @@
 												}
 											],
 											"calc": {
-												"points": 0
+												"points": 8
 											}
 										}
 									],
 									"calc": {
-										"points": 0
+										"points": 48
 									}
 								},
 								{
@@ -1146,17 +1161,17 @@
 												}
 											],
 											"calc": {
-												"points": 0
+												"points": -30
 											}
 										}
 									],
 									"calc": {
-										"points": 0
+										"points": -30
 									}
 								}
 							],
 							"calc": {
-								"points": 0
+								"points": -3
 							}
 						},
 						{
@@ -1169,8 +1184,7 @@
 							"modifiers": [
 								{
 									"id": "mqknYl2kXHhM8OzU-",
-									"name": "Alternate Form",
-									"cost_type": "multiplier"
+									"name": "Alternate Form"
 								}
 							],
 							"children": [
@@ -1204,12 +1218,13 @@
 											"can_level": true,
 											"levels": 1,
 											"calc": {
-												"points": 0
+												"points": -5,
+												"current_level": 1
 											}
 										}
 									],
 									"calc": {
-										"points": 0
+										"points": -5
 									}
 								},
 								{
@@ -1241,7 +1256,8 @@
 											"can_level": true,
 											"levels": 1,
 											"calc": {
-												"points": 0
+												"points": 2,
+												"current_level": 1
 											}
 										},
 										{
@@ -1269,7 +1285,8 @@
 											"can_level": true,
 											"levels": 1,
 											"calc": {
-												"points": 0
+												"points": 2,
+												"current_level": 1
 											}
 										},
 										{
@@ -1289,7 +1306,8 @@
 											"can_level": true,
 											"levels": 1,
 											"calc": {
-												"points": 0
+												"points": 1,
+												"current_level": 1
 											}
 										},
 										{
@@ -1310,7 +1328,8 @@
 											"can_level": true,
 											"levels": 1,
 											"calc": {
-												"points": 0
+												"points": 4,
+												"current_level": 1
 											}
 										},
 										{
@@ -1330,6 +1349,7 @@
 											"weapons": [
 												{
 													"id": "wxbppir49aWJvaRAZ",
+													"sv": 1,
 													"damage": {
 														"type": "cut",
 														"st": "thr",
@@ -1361,6 +1381,7 @@
 												},
 												{
 													"id": "wZnh_9tIv2-pjj6zN",
+													"sv": 1,
 													"damage": {
 														"type": "cut",
 														"st": "thr"
@@ -1389,7 +1410,7 @@
 												}
 											],
 											"calc": {
-												"points": 0
+												"points": 5
 											}
 										},
 										{
@@ -1410,6 +1431,7 @@
 											"weapons": [
 												{
 													"id": "wpPzrK2ZB1pAcLWoo",
+													"sv": 1,
 													"damage": {
 														"type": "imp",
 														"base": "1d-2"
@@ -1428,7 +1450,7 @@
 												}
 											],
 											"calc": {
-												"points": 0
+												"points": 1
 											}
 										},
 										{
@@ -1450,18 +1472,18 @@
 													"id": "mYizuDl6xeL_fj7jn",
 													"name": "Voice Library",
 													"reference": "P61",
-													"cost": 50,
+													"cost_adj": "50%",
 													"disabled": true
 												}
 											],
 											"base_points": 10,
 											"calc": {
-												"points": 0
+												"points": 10
 											}
 										}
 									],
 									"calc": {
-										"points": 0
+										"points": 25
 									}
 								},
 								{
@@ -1486,8 +1508,7 @@
 													"id": "mMCDfp6ZDIy47Eir4",
 													"name": "Attractive",
 													"reference": "B21",
-													"cost": 4,
-													"cost_type": "points",
+													"cost_adj": "4",
 													"features": [
 														{
 															"type": "reaction_bonus",
@@ -1501,15 +1522,13 @@
 													"id": "mDUTBqB7JcelczkSi",
 													"name": "Average",
 													"reference": "B21",
-													"cost_type": "points",
 													"disabled": true
 												},
 												{
 													"id": "mka03ZR3sOZoJnoLD",
 													"name": "Beautiful",
 													"reference": "B21",
-													"cost": 12,
-													"cost_type": "points",
+													"cost_adj": "12",
 													"features": [
 														{
 															"type": "reaction_bonus",
@@ -1523,8 +1542,7 @@
 													"id": "mJrzYpEhousXiJkbs",
 													"name": "Beautiful (Androgynous)",
 													"reference": "B21",
-													"cost": 12,
-													"cost_type": "points",
+													"cost_adj": "12",
 													"features": [
 														{
 															"type": "reaction_bonus",
@@ -1538,8 +1556,7 @@
 													"id": "m9cekSSIx1memOAVs",
 													"name": "Beautiful (Impressive)",
 													"reference": "B21",
-													"cost": 12,
-													"cost_type": "points",
+													"cost_adj": "12",
 													"features": [
 														{
 															"type": "reaction_bonus",
@@ -1553,8 +1570,7 @@
 													"id": "m8zT8JrSfiH_dMyPY",
 													"name": "Handsome",
 													"reference": "B21",
-													"cost": 12,
-													"cost_type": "points",
+													"cost_adj": "12",
 													"features": [
 														{
 															"type": "reaction_bonus",
@@ -1568,8 +1584,7 @@
 													"id": "mzvCMq3n5ulrmDyCx",
 													"name": "Handsome (Androgynous)",
 													"reference": "B21",
-													"cost": 12,
-													"cost_type": "points",
+													"cost_adj": "12",
 													"features": [
 														{
 															"type": "reaction_bonus",
@@ -1583,8 +1598,7 @@
 													"id": "m7gGcL_aKis8TDKE1",
 													"name": "Handsome (Impressive)",
 													"reference": "B21",
-													"cost": 12,
-													"cost_type": "points",
+													"cost_adj": "12",
 													"features": [
 														{
 															"type": "reaction_bonus",
@@ -1598,8 +1612,7 @@
 													"id": "maGfbX9KtQq04QH7f",
 													"name": "Hideous",
 													"reference": "B21,B202",
-													"cost": -16,
-													"cost_type": "points",
+													"cost_adj": "-16",
 													"features": [
 														{
 															"type": "skill_bonus",
@@ -1621,8 +1634,7 @@
 													"id": "mWCNVk_WR_w3RQz_x",
 													"name": "Horrific",
 													"reference": "B21,B202",
-													"cost": -24,
-													"cost_type": "points",
+													"cost_adj": "-24",
 													"features": [
 														{
 															"type": "skill_bonus",
@@ -1645,15 +1657,13 @@
 													"id": "m8cNtzGXCgMdF8deA",
 													"name": "Impressive",
 													"reference": "B21",
-													"cost_type": "points",
 													"disabled": true
 												},
 												{
 													"id": "mEshQtSW7gzu0Gv-9",
 													"name": "Monstrous",
 													"reference": "B21,B202",
-													"cost": -20,
-													"cost_type": "points",
+													"cost_adj": "-20",
 													"features": [
 														{
 															"type": "skill_bonus",
@@ -1676,16 +1686,15 @@
 													"id": "m4PI_6DS_dJ2kqsqQ",
 													"name": "Off-the-Shelf Looks",
 													"reference": "B21",
-													"notes": "Halves the usual reaction bonus - adjust manually",
-													"cost": -50,
+													"local_notes": "Halves the usual reaction bonus - adjust manually",
+													"cost_adj": "-50%",
 													"disabled": true
 												},
 												{
 													"id": "mzfETTOis82Pnv7OO",
 													"name": "Transcendent",
 													"reference": "B21",
-													"cost": 20,
-													"cost_type": "points",
+													"cost_adj": "20",
 													"features": [
 														{
 															"type": "reaction_bonus",
@@ -1699,8 +1708,7 @@
 													"id": "mX35KhhmTbBDqmydN",
 													"name": "Transcendent (Androgynous)",
 													"reference": "B21",
-													"cost": 20,
-													"cost_type": "points",
+													"cost_adj": "20",
 													"features": [
 														{
 															"type": "reaction_bonus",
@@ -1714,8 +1722,7 @@
 													"id": "mYqnuCPyUFkxD22gR",
 													"name": "Transcendent (Impressive)",
 													"reference": "B21",
-													"cost": 20,
-													"cost_type": "points",
+													"cost_adj": "20",
 													"features": [
 														{
 															"type": "reaction_bonus",
@@ -1729,8 +1736,7 @@
 													"id": "mCto71P3huHkDH4me",
 													"name": "Ugly",
 													"reference": "B21",
-													"cost": -8,
-													"cost_type": "points",
+													"cost_adj": "-8",
 													"features": [
 														{
 															"type": "reaction_bonus",
@@ -1744,8 +1750,7 @@
 													"id": "m0vMRgJBPb6-hmCQv",
 													"name": "Unattractive",
 													"reference": "B21",
-													"cost": -4,
-													"cost_type": "points",
+													"cost_adj": "-4",
 													"features": [
 														{
 															"type": "reaction_bonus",
@@ -1759,15 +1764,14 @@
 													"id": "mzSisRstGNWfTHNH9",
 													"name": "Universal",
 													"reference": "B21",
-													"cost": 25,
+													"cost_adj": "25%",
 													"disabled": true
 												},
 												{
 													"id": "mVxf6AsxrkKEZwFvJ",
 													"name": "Very Beautiful",
 													"reference": "B21",
-													"cost": 16,
-													"cost_type": "points",
+													"cost_adj": "16",
 													"features": [
 														{
 															"type": "reaction_bonus",
@@ -1781,8 +1785,7 @@
 													"id": "mOYpX1TmKrMOmlxfH",
 													"name": "Very Beautiful (Androgynous)",
 													"reference": "B21",
-													"cost": 16,
-													"cost_type": "points",
+													"cost_adj": "16",
 													"features": [
 														{
 															"type": "reaction_bonus",
@@ -1796,8 +1799,7 @@
 													"id": "mjeQnPYVsUb3CD0cP",
 													"name": "Very Beautiful (Impressive)",
 													"reference": "B21",
-													"cost": 16,
-													"cost_type": "points",
+													"cost_adj": "16",
 													"features": [
 														{
 															"type": "reaction_bonus",
@@ -1811,8 +1813,7 @@
 													"id": "mqyu3XakDcKamgWbS",
 													"name": "Very Handsome",
 													"reference": "B21",
-													"cost": 16,
-													"cost_type": "points",
+													"cost_adj": "16",
 													"features": [
 														{
 															"type": "reaction_bonus",
@@ -1826,8 +1827,7 @@
 													"id": "mT1Rh7tELA4pcIG0_",
 													"name": "Very Handsome (Androgynous)",
 													"reference": "B21",
-													"cost": 16,
-													"cost_type": "points",
+													"cost_adj": "16",
 													"features": [
 														{
 															"type": "reaction_bonus",
@@ -1841,8 +1841,7 @@
 													"id": "mTcj__xPv3xeUZ00l",
 													"name": "Very Handsome (Impressive)",
 													"reference": "B21",
-													"cost": 16,
-													"cost_type": "points",
+													"cost_adj": "16",
 													"features": [
 														{
 															"type": "reaction_bonus",
@@ -1854,22 +1853,22 @@
 												}
 											],
 											"calc": {
-												"points": 0
+												"points": -16
 											}
 										}
 									],
 									"calc": {
-										"points": 0
+										"points": -16
 									}
 								}
 							],
 							"calc": {
-								"points": 0
+								"points": 4
 							}
 						}
 					],
 					"calc": {
-						"points": 0
+						"points": 1
 					}
 				},
 				{
@@ -1884,7 +1883,7 @@
 							"id": "t8NrP-bk4eyr0cZpz",
 							"name": "Change Form",
 							"reference": "B83",
-							"notes": "Bird-Bird Fruit (Crow)",
+							"local_notes": "Bird-Bird Fruit (Crow)",
 							"tags": [
 								"Bird-Bird (Crow) Fruit",
 								"Devil Fruit"
@@ -1897,49 +1896,43 @@
 										{
 											"id": "mYjRTLIgmGIzf-ldL",
 											"name": "Level 1",
-											"notes": "Transformation: 10 seconds",
-											"cost": 36,
-											"cost_type": "points",
+											"local_notes": "Transformation: 10 seconds",
+											"cost_adj": "36",
 											"use_level_from_trait": true,
 											"disabled": true
 										},
 										{
 											"id": "mzrv2oKcILkpvbtWe",
 											"name": "Level 2",
-											"notes": "Transformation: 5 seconds",
-											"cost": 42,
-											"cost_type": "points"
+											"local_notes": "Transformation: 5 seconds",
+											"cost_adj": "42"
 										},
 										{
 											"id": "mEyjnlqktq4b1h2SW",
 											"name": "Level 3",
-											"notes": "Transformation: 3 seconds",
-											"cost": 48,
-											"cost_type": "points",
+											"local_notes": "Transformation: 3 seconds",
+											"cost_adj": "48",
 											"disabled": true
 										},
 										{
 											"id": "mvmgzJb-apS_ayeE6",
 											"name": "Level 4",
-											"notes": "Transformation: 2 seconds",
-											"cost": 54,
-											"cost_type": "points",
+											"local_notes": "Transformation: 2 seconds",
+											"cost_adj": "54",
 											"disabled": true
 										},
 										{
 											"id": "miIRvRJgS4fGWhSvs",
 											"name": "Level 5",
-											"notes": "Transformation: 1 seconds",
-											"cost": 60,
-											"cost_type": "points",
+											"local_notes": "Transformation: 1 seconds",
+											"cost_adj": "60",
 											"disabled": true
 										},
 										{
 											"id": "mTMfIbwSrtJk1F68w",
 											"name": "Level 6",
-											"notes": "Transformation: Instant, Free Action",
-											"cost": 66,
-											"cost_type": "points",
+											"local_notes": "Transformation: Instant, Free Action",
+											"cost_adj": "66",
 											"disabled": true
 										}
 									]
@@ -1967,7 +1960,7 @@
 							},
 							"name": "Taloned Hybrid",
 							"reference": "B43",
-							"notes": "Hybrid Form",
+							"local_notes": "Hybrid Form",
 							"tags": [
 								"Bird-Bird (Crow) Fruit",
 								"Devil Fruit"
@@ -1980,14 +1973,12 @@
 										{
 											"id": "mZjtYGXoGzKeqYy9b",
 											"name": "Taloned Hybrid",
-											"cost": 3,
-											"cost_type": "points"
+											"cost_adj": "3"
 										},
 										{
 											"id": "mLCSzZ91HsDvqDx8M",
 											"name": "Improved Talons",
-											"cost": 11,
-											"cost_type": "points",
+											"cost_adj": "11",
 											"use_level_from_trait": true,
 											"features": [
 												{
@@ -2016,6 +2007,7 @@
 							"weapons": [
 								{
 									"id": "w-7TuaN_kbfmO7qMA",
+									"sv": 1,
 									"damage": {
 										"type": "cut",
 										"st": "thr",
@@ -2047,6 +2039,7 @@
 								},
 								{
 									"id": "wzTr0NhWXDIvPzJnI",
+									"sv": 1,
 									"damage": {
 										"type": "imp",
 										"st": "thr",
@@ -2084,7 +2077,7 @@
 						{
 							"id": "t0WlSWOwgkLCNY05r",
 							"name": "Carrion Diet",
-							"notes": "Hybrid \u0026 Crow Form. Food costs are 1% of normal.",
+							"local_notes": "Hybrid \u0026 Crow Form. Food costs are 1% of normal.",
 							"tags": [
 								"Bird-Bird (Crow) Fruit",
 								"Devil Fruit"
@@ -2115,7 +2108,7 @@
 							},
 							"name": "Hybrid Wings",
 							"reference": "B56,P50,PSI14",
-							"notes": "Hybrid Form. Air Move is Basic Speed x 2 (drop all fractions)",
+							"local_notes": "Hybrid Form. Air Move is Basic Speed x 2 (drop all fractions)",
 							"tags": [
 								"Bird-Bird (Crow) Fruit",
 								"Devil Fruit"
@@ -2128,14 +2121,12 @@
 										{
 											"id": "mggIdHneV2e-viZnd",
 											"name": "Level 1",
-											"cost": 18,
-											"cost_type": "points"
+											"cost_adj": "18"
 										},
 										{
 											"id": "mlSJQvF8DcWfEAjuq",
 											"name": "Level 2",
-											"cost": 27,
-											"cost_type": "points",
+											"cost_adj": "27",
 											"disabled": true
 										}
 									]
@@ -2155,7 +2146,7 @@
 							"name": "High-Speed Flying",
 							"reference": "B52,P49",
 							"reference_highlight": "Enhanced Move",
-							"notes": "Hybrid \u0026 Crow Form. Double your normal Air Move.",
+							"local_notes": "Hybrid \u0026 Crow Form. Double your normal Air Move.",
 							"tags": [
 								"Bird-Bird (Crow) Fruit",
 								"Devil Fruit"
@@ -2165,8 +2156,7 @@
 									"id": "msh8xNfPkMIJ_zlv2",
 									"name": "Handling Modifier",
 									"reference": "B52",
-									"cost": 1,
-									"cost_type": "points",
+									"cost_adj": "1",
 									"use_level_from_trait": true,
 									"features": [
 										{
@@ -2188,7 +2178,8 @@
 							"can_level": true,
 							"levels": 1,
 							"calc": {
-								"points": 14
+								"points": 14,
+								"current_level": 1
 							}
 						}
 					],
@@ -2207,7 +2198,7 @@
 						{
 							"id": "t3p74TyvaYqK4d1IA",
 							"name": "Feathered Pockets",
-							"notes": "Accessibly only in Hybrid/Crow Form. Total Storage: @BL/5 times Level@",
+							"local_notes": "Accessibly only in Hybrid/Crow Form. Total Storage: @BL/5 times Level@",
 							"tags": [
 								"Bird-Bird (Crow) Fruit",
 								"Devil Fruit"
@@ -2216,13 +2207,14 @@
 							"can_level": true,
 							"levels": 1,
 							"calc": {
-								"points": 3
+								"points": 3,
+								"current_level": 1
 							}
 						},
 						{
 							"id": "tvbJQl9zjvneMzSqO",
 							"name": "Gathered Valuables",
-							"notes": "Hybrid/Crow Form.",
+							"local_notes": "Hybrid/Crow Form.",
 							"tags": [
 								"Bird-Bird (Crow) Fruit",
 								"Devil Fruit"
@@ -2235,40 +2227,35 @@
 										{
 											"id": "mebI-xXbei0F-OAKs",
 											"name": "Level 1",
-											"notes": "Max object weight: 4 oz.",
-											"cost": 47,
-											"cost_type": "points"
+											"local_notes": "Max object weight: 4 oz.",
+											"cost_adj": "47"
 										},
 										{
 											"id": "m-H2J2JKpMLpEb0CC",
 											"name": "Level 2",
-											"notes": "Max object weight: 1 lb.",
-											"cost": 54,
-											"cost_type": "points",
+											"local_notes": "Max object weight: 1 lb.",
+											"cost_adj": "54",
 											"disabled": true
 										},
 										{
 											"id": "mdfFluaHmTs5EjiVw",
 											"name": "Level 3",
-											"notes": "Max object weight: 2 lb.",
-											"cost": 58,
-											"cost_type": "points",
+											"local_notes": "Max object weight: 2 lb.",
+											"cost_adj": "58",
 											"disabled": true
 										},
 										{
 											"id": "mTtyaiH-fCmCjlYE_",
 											"name": "Level 4",
-											"notes": "Max object weight: 3 lb.",
-											"cost": 62,
-											"cost_type": "points",
+											"local_notes": "Max object weight: 3 lb.",
+											"cost_adj": "62",
 											"disabled": true
 										},
 										{
 											"id": "mEbKBEcVrfhw_YiZP",
 											"name": "Level 5",
-											"notes": "Max object weight: 5 lb.",
-											"cost": 65,
-											"cost_type": "points",
+											"local_notes": "Max object weight: 5 lb.",
+											"cost_adj": "65",
 											"disabled": true
 										}
 									]
@@ -2294,7 +2281,7 @@
 						{
 							"id": "t_zKAcwG6w2UWv3Qp",
 							"name": "Banshee Cry",
-							"notes": "Hybrid Form.",
+							"local_notes": "Hybrid Form.",
 							"tags": [
 								"Bird-Bird (Crow) Fruit",
 								"Devil Fruit"
@@ -2308,8 +2295,7 @@
 											"id": "mkZhpQA7E9idXxOkz",
 											"name": "Level 1",
 											"vtt_notes": "[-1 to resist Banshee Cry]",
-											"cost": 22,
-											"cost_type": "points",
+											"cost_adj": "22",
 											"features": [
 												{
 													"type": "weapon_max_range_bonus",
@@ -2328,8 +2314,7 @@
 											"id": "mEAzpzNAnk7Z_tl_K",
 											"name": "Level 2",
 											"vtt_notes": "[-2 to resist Banshee Cry]",
-											"cost": 27,
-											"cost_type": "points",
+											"cost_adj": "27",
 											"features": [
 												{
 													"type": "weapon_max_range_bonus",
@@ -2349,8 +2334,7 @@
 											"id": "mTdoBugRuQ9ORJfcq",
 											"name": "Level 3",
 											"vtt_notes": "[-3 to resist Banshee Cry]",
-											"cost": 36,
-											"cost_type": "points",
+											"cost_adj": "36",
 											"features": [
 												{
 													"type": "weapon_max_range_bonus",
@@ -2370,8 +2354,7 @@
 											"id": "m_X4proF5eWBJJT4l",
 											"name": "Level 4",
 											"vtt_notes": "[-4 to resist Banshee Cry]",
-											"cost": 45,
-											"cost_type": "points",
+											"cost_adj": "45",
 											"features": [
 												{
 													"type": "weapon_max_range_bonus",
@@ -2391,8 +2374,7 @@
 											"id": "mkNU7xdLJdn6HjrNe",
 											"name": "Level 5",
 											"vtt_notes": "[-5 to resist Banshee Cry]",
-											"cost": 54,
-											"cost_type": "points",
+											"cost_adj": "54",
 											"features": [
 												{
 													"type": "weapon_max_range_bonus",
@@ -2414,6 +2396,7 @@
 							"weapons": [
 								{
 									"id": "WvbfUFffZgTb8pdTP",
+									"sv": 1,
 									"damage": {
 										"type": "Special. Resist with Will - Level"
 									},
@@ -2440,7 +2423,7 @@
 						{
 							"id": "t11CfCOdzFIMb9jo1",
 							"name": "Cursed Chorus",
-							"notes": "Hybrid/Crow Form",
+							"local_notes": "Hybrid/Crow Form",
 							"tags": [
 								"Bird-Bird (Crow) Fruit",
 								"Devil Fruit"
@@ -2449,6 +2432,7 @@
 							"weapons": [
 								{
 									"id": "WNjkDkURvDa4Bgy2D",
+									"sv": 1,
 									"damage": {
 										"type": "Curse Target"
 									},
@@ -2480,7 +2464,7 @@
 				}
 			],
 			"calc": {
-				"points": 186
+				"points": 187
 			}
 		},
 		{
@@ -2510,7 +2494,8 @@
 					"can_level": true,
 					"levels": 1,
 					"calc": {
-						"points": 5
+						"points": 5,
+						"current_level": 1
 					}
 				},
 				{
@@ -2536,21 +2521,18 @@
 										{
 											"id": "mSeUcTvM8-rMBLX3u",
 											"name": "Level 1",
-											"cost": 18,
-											"cost_type": "points"
+											"cost_adj": "18"
 										},
 										{
 											"id": "moIAzOgy-GrfKHasF",
 											"name": "Level 2",
-											"cost": 54,
-											"cost_type": "points",
+											"cost_adj": "54",
 											"disabled": true
 										},
 										{
 											"id": "mzWe0ZDSdCxWI0bNm",
 											"name": "Level 3",
-											"cost": 69,
-											"cost_type": "points",
+											"cost_adj": "69",
 											"disabled": true
 										}
 									]
@@ -2576,7 +2558,7 @@
 						{
 							"id": "txFg-AdvCcQcHS417",
 							"name": "Inflict Pain",
-							"notes": "Costs 2 FP",
+							"local_notes": "Costs 2 FP",
 							"tags": [
 								"Devil Fruit",
 								"Pain-Pain Fruit"
@@ -2607,14 +2589,12 @@
 										{
 											"id": "m6s60gzBNH1xEUGuN",
 											"name": "Level 1",
-											"cost": 12,
-											"cost_type": "points"
+											"cost_adj": "12"
 										},
 										{
 											"id": "me1eDtUB-2HP28s-B",
 											"name": "Level 2",
-											"cost": 23,
-											"cost_type": "points",
+											"cost_adj": "23",
 											"features": [
 												{
 													"type": "weapon_bonus",
@@ -2634,8 +2614,7 @@
 										{
 											"id": "mPy81Df0qvf9_XnkI",
 											"name": "Level 3",
-											"cost": 34,
-											"cost_type": "points",
+											"cost_adj": "34",
 											"features": [
 												{
 													"type": "weapon_bonus",
@@ -2655,8 +2634,7 @@
 										{
 											"id": "mRMaQM16iaECbUQB3",
 											"name": "Level 4",
-											"cost": 45,
-											"cost_type": "points",
+											"cost_adj": "45",
 											"features": [
 												{
 													"type": "weapon_bonus",
@@ -2679,6 +2657,7 @@
 							"weapons": [
 								{
 									"id": "WYmN2LB22IWETkXJv",
+									"sv": 1,
 									"damage": {
 										"type": "nw tox",
 										"base": "1d"
@@ -2707,7 +2686,7 @@
 						{
 							"id": "tWMjR79-cZpml3RrD",
 							"name": "Inflict Agony",
-							"notes": "Costs 4 FP",
+							"local_notes": "Costs 4 FP",
 							"tags": [
 								"Devil Fruit",
 								"Pain-Pain Fruit"
@@ -2734,9 +2713,10 @@
 							"weapons": [
 								{
 									"id": "WzJOHg6q8ky1e5JcX",
+									"sv": 1,
 									"damage": {
 										"type": "nw tox",
-										"base": "1d"
+										"base_leveled": "1d"
 									},
 									"usage_notes": "Special side effect",
 									"rate_of_fire": "1",
@@ -2751,20 +2731,26 @@
 										}
 									],
 									"calc": {
-										"damage": "1d nw tox"
+										"damage": "1d per level  nw tox"
 									}
 								}
 							],
 							"can_level": true,
 							"levels": 1,
 							"calc": {
-								"points": 14
+								"points": 14,
+								"current_level": 1
 							}
 						},
 						{
-							"id": "tROb_FMinXTvyysEm",
+							"id": "t8cbcrs8v8r5HriSu",
+							"source": {
+								"library": "/One-Piece",
+								"path": "One-Piece-GCS/Library/Devil Fruit/Devil Fruit Traits.adq",
+								"id": "tROb_FMinXTvyysEm"
+							},
 							"name": "Inflict Wound",
-							"notes": "Costs 2 FP per Wound Potential",
+							"local_notes": "Costs 2 FP",
 							"tags": [
 								"Devil Fruit",
 								"Pain-Pain Fruit"
@@ -2789,153 +2775,48 @@
 							},
 							"modifiers": [
 								{
-									"id": "MhcwT3Lmnt7y8M4Rw",
+									"id": "Mo-rrlvCqgnenIJSE",
 									"name": "Levels",
 									"children": [
 										{
-											"id": "mczlOKKp3pTMycUwn",
-											"name": "Level 0",
-											"cost": 3,
-											"cost_type": "points",
-											"features": [
-												{
-													"type": "weapon_bonus",
-													"selection_type": "this_weapon",
-													"name": {
-														"compare": "is"
-													},
-													"level": {
-														"compare": "at_least"
-													},
-													"amount": 0
-												}
-											]
-										},
-										{
-											"id": "madXCOWmM9Ur4N87s",
+											"id": "molbaITG49rl4RRYr",
 											"name": "Level 1",
-											"cost": 5,
-											"cost_type": "points",
-											"features": [
-												{
-													"type": "weapon_bonus",
-													"selection_type": "this_weapon",
-													"name": {
-														"compare": "is"
-													},
-													"level": {
-														"compare": "at_least"
-													},
-													"amount": 1
-												}
-											],
-											"disabled": true
+											"cost_adj": "+7"
 										},
 										{
-											"id": "m23riI1mKysBKlu_4",
+											"id": "m4BOKXv2PrUrFgmjt",
 											"name": "Level 2",
-											"cost": 8,
-											"cost_type": "points",
-											"features": [
-												{
-													"type": "weapon_bonus",
-													"selection_type": "this_weapon",
-													"name": {
-														"compare": "is"
-													},
-													"level": {
-														"compare": "at_least"
-													},
-													"amount": 2
-												}
-											],
+											"cost_adj": "+13",
 											"disabled": true
 										},
 										{
-											"id": "mKvQZptvBAet-U_3Y",
+											"id": "m_sEFg1EVwc2ntVbm",
 											"name": "Level 3",
-											"cost": 9,
-											"cost_type": "points",
-											"features": [
-												{
-													"type": "weapon_bonus",
-													"selection_type": "this_weapon",
-													"name": {
-														"compare": "is"
-													},
-													"level": {
-														"compare": "at_least"
-													},
-													"amount": 3
-												}
-											],
+											"cost_adj": "+19",
 											"disabled": true
 										},
 										{
-											"id": "m7WH9E6swCwf9FR4v",
+											"id": "m6F33pNtqasEEEx-5",
 											"name": "Level 4",
-											"cost": 16,
-											"cost_type": "points",
-											"features": [
-												{
-													"type": "weapon_bonus",
-													"selection_type": "this_weapon",
-													"name": {
-														"compare": "is"
-													},
-													"level": {
-														"compare": "at_least"
-													},
-													"amount": 6
-												}
-											],
+											"cost_adj": "+24",
 											"disabled": true
 										},
 										{
-											"id": "mewcQLtHtW3kI1V_S",
+											"id": "mxVUFG9pYG3m7CtAb",
 											"name": "Level 5",
-											"cost": 20,
-											"cost_type": "points",
-											"features": [
-												{
-													"type": "weapon_bonus",
-													"selection_type": "this_weapon",
-													"name": {
-														"compare": "is"
-													},
-													"level": {
-														"compare": "at_least"
-													},
-													"amount": 8
-												}
-											],
+											"cost_adj": "+29",
 											"disabled": true
 										},
 										{
-											"id": "mdOkPTthmFoHQ7L1C",
+											"id": "mIB4ElQp_EGOQS4D6",
 											"name": "Level 6",
-											"cost": 29,
-											"cost_type": "points",
-											"features": [
-												{
-													"type": "weapon_bonus",
-													"selection_type": "this_weapon",
-													"name": {
-														"compare": "is"
-													},
-													"level": {
-														"compare": "at_least"
-													},
-													"amount": 12
-												}
-											],
+											"cost_adj": "+34",
 											"disabled": true
 										},
 										{
-											"id": "mbDAP1oFrblvIl3MB",
+											"id": "mfe7xH9VNFQGtAocL",
 											"name": "Level 7",
-											"cost": 41,
-											"cost_type": "points",
+											"cost_adj": "+39",
 											"features": [
 												{
 													"type": "weapon_bonus",
@@ -2952,10 +2833,9 @@
 											"disabled": true
 										},
 										{
-											"id": "m1EGnahgjjr4LF9Jw",
+											"id": "m7jXWJ2W71fS9QxD1",
 											"name": "Level 8",
-											"cost": 53,
-											"cost_type": "points",
+											"cost_adj": "+43",
 											"features": [
 												{
 													"type": "weapon_bonus",
@@ -2972,10 +2852,9 @@
 											"disabled": true
 										},
 										{
-											"id": "mmwiStv60BxyY-fWW",
+											"id": "me7YDwexd3NLsH9hJ",
 											"name": "Level 9",
-											"cost": 78,
-											"cost_type": "points",
+											"cost_adj": "+47",
 											"features": [
 												{
 													"type": "weapon_bonus",
@@ -2992,10 +2871,9 @@
 											"disabled": true
 										},
 										{
-											"id": "m5srv5YC52Jleo-dF",
+											"id": "mTo-kVGNk_e8-BAgj",
 											"name": "Level 10",
-											"cost": 126,
-											"cost_type": "points",
+											"cost_adj": "+51",
 											"features": [
 												{
 													"type": "weapon_bonus",
@@ -3016,7 +2894,8 @@
 							],
 							"weapons": [
 								{
-									"id": "Wo6vOrl0qx-pYuFLG",
+									"id": "WVsWnL6a-x1ElW-ih",
+									"sv": 1,
 									"damage": {
 										"type": "tox",
 										"base": "1"
@@ -3033,17 +2912,18 @@
 										}
 									],
 									"calc": {
+										"level": 4,
 										"damage": "1 tox"
 									}
 								}
 							],
 							"calc": {
-								"points": 3
+								"points": 7
 							}
 						}
 					],
 					"calc": {
-						"points": 29
+						"points": 33
 					}
 				},
 				{
@@ -3057,7 +2937,7 @@
 						{
 							"id": "tUdkQvZvdhfpdowsk",
 							"name": "Cure Afflictions",
-							"notes": "FP Cost and penalty varies.",
+							"local_notes": "FP Cost and penalty varies.",
 							"tags": [
 								"Devil Fruit",
 								"Pain-Pain Fruit"
@@ -3088,21 +2968,18 @@
 										{
 											"id": "mvFAxlCI2NXhMmjLT",
 											"name": "Level 1",
-											"cost": 15,
-											"cost_type": "points"
+											"cost_adj": "15"
 										},
 										{
 											"id": "m-dYSHoPzQic3vZ_n",
 											"name": "Level 2",
-											"cost": 51,
-											"cost_type": "points",
+											"cost_adj": "51",
 											"disabled": true
 										},
 										{
 											"id": "mYwo7BZ50S66MURbD",
 											"name": "Level 3",
-											"cost": 66,
-											"cost_type": "points",
+											"cost_adj": "66",
 											"disabled": true
 										}
 									]
@@ -3115,7 +2992,7 @@
 						{
 							"id": "t7tNCVcMJH9ftR_OJ",
 							"name": "Relieve Exhaustion",
-							"notes": "Costs 1 FP per FP healed",
+							"local_notes": "Costs 1 FP per FP healed",
 							"tags": [
 								"Devil Fruit",
 								"Pain-Pain Fruit"
@@ -3149,21 +3026,18 @@
 										{
 											"id": "m9J_ApVR6SEtl37M7",
 											"name": "Level 1",
-											"cost": 27,
-											"cost_type": "points"
+											"cost_adj": "27"
 										},
 										{
 											"id": "ml0zAB2I2lh3z9jHk",
 											"name": "Level 2",
-											"cost": 63,
-											"cost_type": "points",
+											"cost_adj": "63",
 											"disabled": true
 										},
 										{
 											"id": "m6Ws9vCUJp8DEX3pp",
 											"name": "Level 3",
-											"cost": 78,
-											"cost_type": "points",
+											"cost_adj": "78",
 											"disabled": true
 										}
 									]
@@ -3206,14 +3080,12 @@
 										{
 											"id": "miB6RJGfh9sg25wD3",
 											"name": "Level 1",
-											"cost": 71,
-											"cost_type": "points"
+											"cost_adj": "71"
 										},
 										{
 											"id": "mt8-zXXJXrXXQCtRY",
 											"name": "Level 2",
-											"cost": 104,
-											"cost_type": "points",
+											"cost_adj": "104",
 											"features": [
 												{
 													"type": "weapon_bonus",
@@ -3233,8 +3105,7 @@
 										{
 											"id": "mHIE0gN4o9WE6jon3",
 											"name": "Level 3",
-											"cost": 135,
-											"cost_type": "points",
+											"cost_adj": "135",
 											"features": [
 												{
 													"type": "weapon_bonus",
@@ -3254,8 +3125,7 @@
 										{
 											"id": "m5U_Goit7Xn2l2Hnv",
 											"name": "Level 4",
-											"cost": 166,
-											"cost_type": "points",
+											"cost_adj": "166",
 											"features": [
 												{
 													"type": "weapon_bonus",
@@ -3278,6 +3148,7 @@
 							"weapons": [
 								{
 									"id": "WDQ6kjkXqNWSahYL0",
+									"sv": 1,
 									"damage": {
 										"type": "fatigue",
 										"base": "1d"
@@ -3318,7 +3189,7 @@
 						{
 							"id": "tDu-XqQuN9beYPXv4",
 							"name": "Pain Buffer",
-							"notes": "Costs 2 FP",
+							"local_notes": "Costs 2 FP",
 							"tags": [
 								"Devil Fruit",
 								"Pain-Pain Fruit"
@@ -3349,70 +3220,60 @@
 										{
 											"id": "mfoaU_7GleQzcvQu_",
 											"name": "Level 1",
-											"cost": 26,
-											"cost_type": "points"
+											"cost_adj": "26"
 										},
 										{
 											"id": "mXrOSTm-hTTJFCLEl",
 											"name": "Level 2",
-											"cost": 28,
-											"cost_type": "points",
+											"cost_adj": "28",
 											"disabled": true
 										},
 										{
 											"id": "moMz1niWbVZAyXVGs",
 											"name": "Level 3",
-											"cost": 31,
-											"cost_type": "points",
+											"cost_adj": "31",
 											"disabled": true
 										},
 										{
 											"id": "mFwHLtuSXo9UOHp4M",
 											"name": "Level 4",
-											"cost": 33,
-											"cost_type": "points",
+											"cost_adj": "33",
 											"disabled": true
 										},
 										{
 											"id": "mSDqu-uNYLB_HdAYI",
 											"name": "Level 5",
-											"cost": 37,
-											"cost_type": "points",
+											"cost_adj": "37",
 											"disabled": true
 										},
 										{
 											"id": "mpYruSIHwU_EtP3WZ",
 											"name": "Level 6",
-											"cost": 39,
-											"cost_type": "points",
+											"cost_adj": "39",
 											"disabled": true
 										},
 										{
 											"id": "mYNdnxU-5cMpYXLk5",
 											"name": "Level 7",
-											"cost": 42,
-											"cost_type": "points",
+											"cost_adj": "42",
 											"disabled": true
 										},
 										{
 											"id": "m8Bd3Rzi_CdUJcRWY",
 											"name": "Level 8",
-											"cost": 44,
-											"cost_type": "points",
+											"cost_adj": "44",
 											"disabled": true
 										},
 										{
 											"id": "mgOJtMH8jN6A0Y6dO",
 											"name": "Level 9",
-											"cost": 48,
-											"cost_type": "points",
+											"cost_adj": "48",
 											"disabled": true
 										},
 										{
 											"id": "mCrSMIj2O-Lnr4XzS",
 											"name": "Level 10",
-											"cost": 49,
-											"cost_type": "points",
+											"cost_adj": "49",
 											"disabled": true
 										}
 									]
@@ -3425,7 +3286,7 @@
 						{
 							"id": "tqTECA_iNkCDCQ2rB",
 							"name": "Instill Numbness",
-							"notes": "Costs 2 FP",
+							"local_notes": "Costs 2 FP",
 							"tags": [
 								"Devil Fruit",
 								"Pain-Pain Fruit"
@@ -3456,35 +3317,30 @@
 										{
 											"id": "mhec1zCS3Xc3wJYqI",
 											"name": "Level 1",
-											"cost": 46,
-											"cost_type": "points"
+											"cost_adj": "46"
 										},
 										{
 											"id": "mYWGDMkdgTz3shXv6",
 											"name": "Level 2",
-											"cost": 62,
-											"cost_type": "points",
+											"cost_adj": "62",
 											"disabled": true
 										},
 										{
 											"id": "m5QkLuhcsMa9Y2Vug",
 											"name": "Level 3",
-											"cost": 79,
-											"cost_type": "points",
+											"cost_adj": "79",
 											"disabled": true
 										},
 										{
 											"id": "mSk9n9VmCUSg3gyXu",
 											"name": "Level 4",
-											"cost": 95,
-											"cost_type": "points",
+											"cost_adj": "95",
 											"disabled": true
 										},
 										{
 											"id": "meUsfv-e1lOkJm0LM",
 											"name": "Level 5",
-											"cost": 111,
-											"cost_type": "points",
+											"cost_adj": "111",
 											"disabled": true
 										}
 									]
@@ -3501,7 +3357,7 @@
 				}
 			],
 			"calc": {
-				"points": 237
+				"points": 241
 			}
 		}
 	]
