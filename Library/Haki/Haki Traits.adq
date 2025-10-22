@@ -101,7 +101,7 @@
 						{
 							"id": "tUJRFVoqaZgXoGqeG",
 							"name": "Defensive Coating",
-							"notes": "Costs 2 HE to gain 2 DR to all hit locations for 1 sec. 1 HE to maintain",
+							"local_notes": "Costs 2 HE to gain 2 DR to all hit locations for 1 sec. 1 HE to maintain",
 							"tags": [
 								"Armament Haki",
 								"Haki"
@@ -136,6 +136,7 @@
 							"weapons": [
 								{
 									"id": "WyfmAUnLCGYL_7UyB",
+									"sv": 1,
 									"damage": {
 										"type": "pi",
 										"base": "1d",
@@ -205,7 +206,7 @@
 						{
 							"id": "tSLSKp74CDh90w3o-",
 							"name": "Defensive Coating",
-							"notes": "Costs 2 HE to gain 4 DR to all hit locations for 1 sec. 1 HE to maintain",
+							"local_notes": "Costs 2 HE to gain 4 DR to all hit locations for 1 sec. 1 HE to maintain",
 							"tags": [
 								"Armament Haki",
 								"Haki"
@@ -240,6 +241,7 @@
 							"weapons": [
 								{
 									"id": "WRThITRk1Fo2mS4FR",
+									"sv": 1,
 									"damage": {
 										"type": "pi",
 										"base": "2d",
@@ -309,7 +311,7 @@
 						{
 							"id": "thsPYRxuPst4wSmia",
 							"name": "Defensive Coating",
-							"notes": "Costs 2 HE to gain 6 DR to all hit locations for 1 sec. 1 HE to maintain",
+							"local_notes": "Costs 2 HE to gain 6 DR to all hit locations for 1 sec. 1 HE to maintain",
 							"tags": [
 								"Armament Haki",
 								"Haki"
@@ -344,6 +346,7 @@
 							"weapons": [
 								{
 									"id": "WXff0NwMXlpEJEAOG",
+									"sv": 1,
 									"damage": {
 										"type": "pi",
 										"base": "3d",
@@ -413,7 +416,7 @@
 						{
 							"id": "t2u86JMgBBq2HzpYS",
 							"name": "Defensive Coating",
-							"notes": "Costs 2 HE to gain 8 DR to all hit locations for 1 sec. 1 HE to maintain",
+							"local_notes": "Costs 2 HE to gain 8 DR to all hit locations for 1 sec. 1 HE to maintain",
 							"tags": [
 								"Armament Haki",
 								"Haki"
@@ -448,6 +451,7 @@
 							"weapons": [
 								{
 									"id": "W9yxSPwxIoBlQQD9D",
+									"sv": 1,
 									"damage": {
 										"type": "pi",
 										"base": "4d",
@@ -515,48 +519,126 @@
 					"can_level": true,
 					"levels": 1,
 					"calc": {
-						"points": 5
+						"points": 5,
+						"current_level": 1
 					}
 				},
 				{
-					"id": "tgepK276Y_o6apViK",
-					"name": "Iron Body",
-					"tags": [
-						"Armament Haki",
-						"Haki"
-					],
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "trait_prereq",
-								"has": true,
-								"name": {
-									"compare": "contains",
-									"qualifier": "Armament Haki"
-								},
-								"level": {
-									"compare": "at_least"
-								}
-							}
-						]
-					},
-					"base_points": 1,
-					"features": [
+					"id": "TFg4MgORMfTFulHLq",
+					"name": "Armament Haki Perks",
+					"children": [
 						{
-							"type": "conditional_modifier",
-							"situation": "+3 to ST and HT rolls to resist injury from Arm Lock, Leg Lock, Neck Snap, Wrench Arm, Wrench Leg, or similar techniques when Defensive Coating is active.",
-							"amount": 3
+							"id": "tgepK276Y_o6apViK",
+							"name": "Iron Body",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "trait_prereq",
+										"has": true,
+										"name": {
+											"compare": "contains",
+											"qualifier": "Armament Haki"
+										},
+										"level": {
+											"compare": "at_least"
+										}
+									}
+								]
+							},
+							"base_points": 1,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "+3 to ST and HT rolls to resist injury from Arm Lock, Leg Lock, Neck Snap, Wrench Arm, Wrench Leg, or similar techniques when Defensive Coating is active.",
+									"amount": 3
+								}
+							],
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "teayu1fd5XDp4CTiM",
+							"name": "Threatening Aura",
+							"tags": [
+								"Armament Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "prereq_list",
+										"all": false,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Armament Haki 4"
+												},
+												"level": {
+													"compare": "at_least"
+												}
+											},
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Armament Haki 3"
+												},
+												"level": {
+													"compare": "at_least"
+												}
+											},
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Armament Haki 2"
+												},
+												"level": {
+													"compare": "at_least"
+												}
+											},
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Armament Haki 1"
+												},
+												"level": {
+													"compare": "at_least"
+												}
+											}
+										]
+									}
+								]
+							},
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
 						}
 					],
 					"calc": {
-						"points": 1
+						"points": 2
 					}
 				}
 			],
 			"calc": {
-				"points": 308
+				"points": 309
 			}
 		},
 		{
@@ -790,7 +872,7 @@
 							},
 							"name": "Enhanced Time Sense",
 							"reference": "B52,MA44",
-							"notes": "You immediately act in combat before those without Enhanced Time Sense; Never freeze",
+							"local_notes": "You immediately act in combat before those without Enhanced Time Sense; Never freeze",
 							"tags": [
 								"Advantage",
 								"Exotic",
@@ -924,7 +1006,8 @@
 					"can_level": true,
 					"levels": 1,
 					"calc": {
-						"points": 30
+						"points": 30,
+						"current_level": 1
 					}
 				},
 				{
@@ -987,12 +1070,369 @@
 					"can_level": true,
 					"levels": 1,
 					"calc": {
-						"points": 5
+						"points": 5,
+						"current_level": 1
+					}
+				},
+				{
+					"id": "TINcmvcd-ybDV7RH7",
+					"name": "Observation Haki Perks",
+					"children": [
+						{
+							"id": "teWwtkALaJJ3ilfrW",
+							"name": "Aura Profile",
+							"tags": [
+								"Observation Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "Presence Sense, Basic"
+												},
+												"level": {
+													"compare": "at_least"
+												}
+											},
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "contains",
+													"qualifier": "Presence Sense, "
+												},
+												"level": {
+													"compare": "at_least"
+												}
+											}
+										]
+									}
+								]
+							},
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tcSdK6hJ2OPlaBsKz",
+							"name": "Devil Fruit Expert",
+							"tags": [
+								"Observation Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "contains",
+													"qualifier": "Presence Sense"
+												},
+												"level": {
+													"compare": "at_least"
+												}
+											}
+										]
+									}
+								]
+							},
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tddnIfCpTO0jwUfyK",
+							"name": "Read Their Moves",
+							"tags": [
+								"Observation Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "contains",
+													"qualifier": "Near-Future Sense"
+												},
+												"level": {
+													"compare": "at_least"
+												}
+											}
+										]
+									}
+								]
+							},
+							"points_per_level": 1,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 1,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "tRo9B6Y2vEl6Zmihi",
+							"name": "Sense Aura Flow",
+							"tags": [
+								"Observation Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "contains",
+													"qualifier": "Presence Sense"
+												},
+												"level": {
+													"compare": "at_least"
+												}
+											},
+											{
+												"type": "trait_prereq",
+												"has": false,
+												"name": {
+													"compare": "is",
+													"qualifier": "Presence Sense, Basic"
+												},
+												"level": {
+													"compare": "at_least"
+												}
+											}
+										]
+									}
+								]
+							},
+							"points_per_level": 1,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 1,
+								"current_level": 1
+							}
+						},
+						{
+							"id": "tbBQWJrsvMgb4g9XU",
+							"name": "Aura Sensitivity",
+							"tags": [
+								"Observation Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "contains",
+													"qualifier": "Emotion Sense"
+												},
+												"level": {
+													"compare": "at_least"
+												}
+											}
+										]
+									}
+								]
+							},
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "t2cfYJQfFYY-ksMXG",
+							"name": "Aura Lock-On",
+							"tags": [
+								"Observation Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "prereq_list",
+												"all": false,
+												"prereqs": [
+													{
+														"type": "trait_prereq",
+														"has": true,
+														"name": {
+															"compare": "is",
+															"qualifier": "Presence Sense, Supreme"
+														},
+														"level": {
+															"compare": "at_least"
+														}
+													},
+													{
+														"type": "trait_prereq",
+														"has": true,
+														"name": {
+															"compare": "is",
+															"qualifier": "Presence Sense, Greater"
+														},
+														"level": {
+															"compare": "at_least"
+														}
+													}
+												]
+											},
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "is"
+												},
+												"level": {
+													"compare": "at_least"
+												}
+											},
+											{
+												"type": "skill_prereq",
+												"has": true,
+												"name": {
+													"compare": "is",
+													"qualifier": "Sensitivity"
+												},
+												"level": {
+													"compare": "at_least",
+													"qualifier": 14
+												}
+											}
+										]
+									}
+								]
+							},
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tD231-0jVD47KC2OJ",
+							"name": "Status Check",
+							"tags": [
+								"Observation Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "Presence Sense"
+												},
+												"level": {
+													"compare": "at_least"
+												}
+											}
+										]
+									}
+								]
+							},
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						},
+						{
+							"id": "tf0sVHasEJpslnyiI",
+							"name": "Synchronize",
+							"tags": [
+								"Observation Haki",
+								"Haki"
+							],
+							"prereqs": {
+								"type": "prereq_list",
+								"all": true,
+								"prereqs": [
+									{
+										"type": "prereq_list",
+										"all": true,
+										"prereqs": [
+											{
+												"type": "trait_prereq",
+												"has": true,
+												"name": {
+													"compare": "starts_with",
+													"qualifier": "Emotion Sense"
+												},
+												"level": {
+													"compare": "at_least"
+												}
+											}
+										]
+									}
+								]
+							},
+							"base_points": 1,
+							"calc": {
+								"points": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 8
 					}
 				}
 			],
 			"calc": {
-				"points": 326
+				"points": 334
 			}
 		},
 		{
@@ -1030,7 +1470,8 @@
 			"can_level": true,
 			"levels": 1,
 			"calc": {
-				"points": 3
+				"points": 3,
+				"current_level": 1
 			}
 		},
 		{
@@ -1040,7 +1481,7 @@
 				{
 					"id": "t8OiL6lOmlndPbl6s",
 					"name": "Overwhelming Will",
-					"notes": "Costs 4 to 22 HE",
+					"local_notes": "Costs 4 to 22 HE",
 					"tags": [
 						"Conqueror's Haki",
 						"Haki"
@@ -1086,6 +1527,7 @@
 					"weapons": [
 						{
 							"id": "WVDvOnnyPy0IUWgZH",
+							"sv": 1,
 							"damage": {
 								"type": "aff"
 							},
@@ -1177,7 +1619,8 @@
 					"can_level": true,
 					"levels": 1,
 					"calc": {
-						"points": 7
+						"points": 7,
+						"current_level": 1
 					}
 				}
 			],
